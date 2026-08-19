@@ -42,3 +42,15 @@ The 0.60 bar was cleared only in labeled post-unseal mitigation, never blind. Th
 - **Real-data lesson banked:** decide shared-content and genre-vs-subject routing *before* modeling; condition distance claims on topic (a fifth of text is positional noise; amplified content is gold).
 
 *Everything is committed under `topic-modeling-bakeoff/` — preregistration, scripts 01–10b, outputs, five figures, article draft, README.*
+
+---
+
+## Errata & deviation disclosures (added 2026-08-19, post-hoc audit)
+
+The text above is the dated 2026-07-26 write-up and has not been rewritten; the following corrections apply to it.
+
+1. **Finding 2 overstates the community-visits replication.** "Both taxonomy runs independently saw a `community-visits` genre" is contradicted by the committed record: `outputs/llm_taxonomy.json` `run_agreement.notes` states the theme was **H1-only** ("H2 had scattered visit tweets into issue themes") and was kept from H1 in reconciliation. The genre reading is a one-run judgment, not an independent replication.
+
+2. **Preregistration §6's taxonomy-stability metric was never computed.** §6 promised greedy label matching with Jaccard overlap over the sample assignments; no script computes it and no output contains it. The 19/22 name+definition agreement reported in `llm_taxonomy.json` is a different, weaker stability measure. This substitution was not previously flagged.
+
+3. **Preregistration §7's missed-bar remedy was substituted.** §7 specified "a seeded/guided rerun (anchor terms from the entrant-5 taxonomy)" if the winner missed the 0.60 bar. What was actually run (`09_stageb_augment.py`) is a relabeling ladder of the winner's existing assignments (retweet routing → genre dissolve → coarsening) — no seeded topic-model rerun exists in the pipeline. The ARI deltas were reported as promised, but the method differs from the pre-registered one and should be read as a post-unseal mitigation measurement, not prereg compliance.

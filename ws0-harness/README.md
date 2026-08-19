@@ -22,7 +22,9 @@ reads identical inputs from this folder — nothing is recomputed downstream.
    `preregistration.md` (written first, dated).
 2. **Compare against `baselines/baseline_validation.csv`**, not against
    re-derived numbers. Key frozen references: TF-IDF axis r = 0.974
-   (the bar to clear), corrected w2v distance validity = 0.597,
+   (the bar to clear), corrected w2v distance validity = 0.592
+   (the canonical WS0 value in the `ws0_value` column — 0.597 is the
+   superseded 07-20 pilot figure in `frozen_0720_value`),
    between/within ratio = 1.35.
 3. **Use the frozen splits.** `subsample_150` (in `splits.json`) for any
    LLM-cost-bound step; `tweet_split_ab.parquet` for behavioral prediction

@@ -86,11 +86,18 @@ ax.set_title('"Far from whom, on what" — refined instrument (K=13)\n'
 fig.tight_layout()
 # Preserve the blind-winner fig5 as fig5b before overwriting — the docstring
 # promises it is "kept for the record", so keep it in code, not by hand.
+# CAVEAT: this keys on file existence, not provenance. It is correct in the
+# numbered run order (10_figures.py writes the blind-winner fig5, then this
+# script snapshots it). If figures/ was cleared and this script is run twice
+# WITHOUT re-running 10_figures.py in between, the snapshot would be the
+# refined heatmap mislabeled as the blind winner — hence the warning below.
 fig5 = fig_dir / "fig5_pair_topic_heatmap.png"
 fig5b = fig_dir / "fig5b_pair_topic_heatmap_blindwinner.png"
 if fig5.exists() and not fig5b.exists():
     import shutil
     shutil.copy2(fig5, fig5b)
-    print("blind-winner fig5 preserved as fig5b")
+    print("blind-winner fig5 preserved as fig5b — this assumes fig5 was "
+          "last written by 10_figures.py; if you ran 10b into an empty "
+          "figures/ dir, delete fig5b and rerun 10_figures.py first")
 fig.savefig(fig5)
 print("fig5 rebuilt on refined instrument")

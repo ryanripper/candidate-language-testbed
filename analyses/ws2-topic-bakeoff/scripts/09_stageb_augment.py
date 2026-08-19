@@ -3,8 +3,12 @@
 --------------------------------------------------------------------------------
 Everything here is explicitly post-unseal MITIGATION MEASUREMENT, not blind
 discovery (preregistration §7). The winner (direct LLM theming, ARI 0.289)
-missed the 0.60 bar; per prereg, a guided/refined rerun is run and the ARI
-delta reported.
+missed the 0.60 bar. DEVIATION NOTE (2026-08-19): prereg §7 specified a
+seeded/guided RERUN with anchor terms from the winner's taxonomy; what this
+script implements instead is a relabeling ladder of the winner's existing
+assignments. The ARI deltas are reported as promised, but the method is a
+substitution, not prereg compliance — see the errata section in
+ws2-writeup.md.
 
 The refinement ladder (each step's rationale is stated with what info it uses):
   L0  winner as-is (blind)                                    [blind]
@@ -97,9 +101,13 @@ for a, b in MERGE.items():
 # Guard: MERGE deliberately omits theme 23 (horse-race-news) because in the
 # committed run every L0 tweet labeled 23 is a retweet, rerouted to RT at
 # L1. If that ever stops holding, an unmapped 14th topic would silently
-# survive, breaking the K=13 design and the REFINED_NAMES dicts downstream
-# (10b_fig5_refined.py, synthesis/03) — fail loudly instead.
-EXPECTED_L3 = set(POLICY) | {20, RT}
+# survive, breaking the K=13 design and the topic-name dicts downstream
+# (REFINED_NAMES in 10b_fig5_refined.py, TOPIC_NAMES in synthesis/03) —
+# fail loudly instead.
+# exact K=13 label set: policy ids minus the merged-away ones, plus the
+# campaign-process sink (20) and the retweet label — a superset here would
+# let a broken MERGE entry slip through
+EXPECTED_L3 = (set(POLICY) - set(MERGE)) | {20, RT}
 leftover = set(np.unique(lab3)) - EXPECTED_L3
 assert not leftover, (
     f"L3 coarsening left unmapped theme ids {sorted(leftover)} — extend "

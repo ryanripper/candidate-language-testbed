@@ -86,12 +86,11 @@ def det_hash(s: str) -> int:
     return zlib.crc32(s.encode("utf-8"))
 
 
-def identify_partisan_axis(P: np.ndarray, party: np.ndarray) -> int:
-    """Blind axis identification: PC most separating D vs R (observable)."""
-    dr = np.isin(party, ["D", "R"])
-    y = (party[dr] == "R").astype(float)
-    corrs = [abs(np.corrcoef(P[dr, k], y)[0, 1]) for k in range(P.shape[1])]
-    return int(np.argmax(corrs))
+# Blind axis identification: single canonical implementation lives in
+# metrics.py (with its NaN/degenerate-PC guard) — this script previously
+# carried an unguarded duplicate, the highest-stakes call site of the
+# function since it builds the frozen baselines.
+from metrics import identify_partisan_axis  # noqa: E402
 
 
 def orient(score: np.ndarray, party: np.ndarray) -> np.ndarray:

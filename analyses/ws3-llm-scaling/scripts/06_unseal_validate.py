@@ -180,6 +180,11 @@ if dec_path.exists():
     for k in ("d1_status", "d1_status_note"):
         if k in prior:
             decision[k] = prior[k]
+if "d1_status_note" not in decision:
+    print("WARNING: decision.json had no d1_status/d1_status_note to "
+          "preserve — those hand-recorded fields are NOT regenerable. "
+          "Restore them from git history before running synthesis 05, "
+          "which reads d1_status_note.")
 json.dump(decision, open(dec_path, "w"), indent=1)
 print(val.to_string(index=False))
 print(); print(pd.DataFrame(ma).to_string(index=False))

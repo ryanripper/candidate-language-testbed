@@ -47,7 +47,7 @@ Axis recovery — Pearson r against planted ideology, n = 910 unless noted:
 
 | Instrument | r vs truth | Notes |
 |---|---|---|
-| Behavioral (retweet-source ideology) | **.977** | n = 150 pilot support (.980 at n = 905); generator ceiling ≈ .98 |
+| Behavioral (retweet-source ideology) | **.977** | n = 146 pilot support (.980 at n = 905); generator ceiling ≈ .98 |
 | TF-IDF + SVD | **.974** | the frozen baseline, and the bar to beat |
 | LLM ask-and-average | **.970** | n = 150 pilot; **zero corpus training** |
 | Model2Vec (static distilled) | .900 | best of the embedding family |
@@ -56,7 +56,7 @@ Axis recovery — Pearson r against planted ideology, n = 910 unless noted:
 
 Distance validity (do pairwise text distances reproduce ideological distances?): Model2Vec corrected **.640** *(exploratory)* ≈ TF-IDF **.624** > word2vec .592 ≫ MiniLM .397. Within the retweet-content topic slice alone: **.849**.
 
-Topic recovery: in the blind bake-off, **nobody cleared the .60 ARI bar** — the LLM entrant won at .289. Three observable refinements then took it to ARI **.890**: the retweet-routing convention (decided before modeling, not after) lifted it to .765, dissolving two genre themes to .824, and coarsening the taxonomy to K = 13 to .890.
+Topic recovery: in the blind bake-off, **nobody cleared the .60 ARI bar** — the LLM entrant won at .289. Three post-unseal refinements then took it to ARI **.890**: the retweet-routing convention (an observable-column rule that was *available* blind — the bake-off simply didn't think of it) lifted it to .765, dissolving two genre themes the unseal exposed as boundary errors to .824, and coarsening the taxonomy to K = 13 to .890. Only the first step could have been applied without the answer key.
 
 Held-out behavior prediction (retweet-source choice, estimated on split A, evaluated on split B): oracle 2.317 < TF-IDF 2.348 < LLM 2.368 < Model2Vec 2.430, against nulls at ≈ 2.98–3.00.
 
@@ -64,9 +64,9 @@ Held-out behavior prediction (retweet-source choice, estimated on split A, evalu
 
 **1. Direction is much easier than distance.** Four instrument families place candidates on a left–right axis at r ≥ .90, yet no high-dimensional text geometry gets above .66 agreement with the true pairwise-distance structure. Recovering *who is to the left of whom* and recovering *how far apart they are* are different problems with a large difficulty gap between them.
 
-**2. The retweet-style confound is universal.** Every embedding space tested — word2vec, GloVe, fastText, doc2vec, MiniLM, Model2Vec, TF-IDF — devotes a dominant principal component to **retweet share**, an observable covariate, at |r| = .90–.96. It is PC1 in the word-vector models and PC2 in doc2vec and TF-IDF. This is detectable blind, which is the point: the confound gate catches it before any substantive claim is made. Correcting for it is what lifts word2vec distance validity from .278 to .592.
+**2. The retweet-style confound is universal.** Every embedding space tested — word2vec, GloVe, fastText, doc2vec, MiniLM, Model2Vec, TF-IDF — devotes a dominant principal component to **retweet share**, an observable covariate, at |r| = .84–.97 (.90–.96 for the five WS4 spaces; Model2Vec −.97, MiniLM −.84). It is PC1 in the word-vector models, MiniLM, and Model2Vec, and PC2 in doc2vec and TF-IDF. This is detectable blind, which is the point: the confound gate catches it before any substantive claim is made. Correcting for it is what lifts word2vec distance validity from .278 to .592.
 
-**3. Instrument errors cluster into two families.** Partialling out the oracle and correlating the residuals reveals a **content family** (LLM–behavioral .58, LLM–TF-IDF .55) and a **style family** (word2vec–MiniLM .61, MiniLM–Model2Vec .47), with cross-family residuals at .15–.38. Practical consequence: an ensemble gains almost nothing from a second instrument *within* a family. Buy diversity *across* families.
+**3. Instrument errors cluster into two families.** Partialling out the oracle and correlating the residuals reveals a **content family** (LLM–behavioral .58, LLM–TF-IDF .55) and a **style family** (word2vec–MiniLM .61, MiniLM–Model2Vec .47), with cross-family residuals at .15–.38 for eight of the nine pairs (the exception is TF-IDF–word2vec at .45, the leakiest boundary between the families). Practical consequence: an ensemble gains almost nothing from a second instrument *within* a family. Buy diversity *across* families.
 
 **4. The "far from whom, on what" decomposition can be estimated truth-free.** Replacing the oracle with LLM pilot scores reproduces the WS2 signal-tier ladder almost exactly (tier-order Spearman ρ = **.97**) — LLM taxonomy topics + LLM positional scores + per-topic centroid distances, with no ground truth anywhere in the pipeline. That is precisely the configuration available on real data.
 

@@ -542,7 +542,16 @@ def main():
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
         w.writerows(rows)
-    with open(out, "rb") as f_in, gzip.open(out + ".gz", "wb") as f_out:
+    # mtime=0 so the .gz bytes are identical across reruns (gzip's default
+    # header embeds the current time, so byte-identical CSV content would
+    # otherwise hash differently every run). NOTE: the 2026-07 committed
+    # artifact was written without mtime=0, so even a faithful regeneration
+    # will not byte-match the hash pinned in ws0-harness — the CSV *content*
+    # is identical (seed-determined), only the gzip header differs. If you
+    # regenerate by accident, restore the pinned artifact with
+    # `git checkout -- data/synthetic-candidate-tweets/`.
+    with open(out, "rb") as f_in, \
+            gzip.GzipFile(out + ".gz", "wb", mtime=0) as f_out:
         f_out.writelines(f_in)
     os.remove(out)
 

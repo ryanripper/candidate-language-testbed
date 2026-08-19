@@ -21,7 +21,7 @@ But agreement among instruments that all track a strong common signal is cheap. 
 | TF-IDF × behavioral | .38 |
 | word2vec × MiniLM | **.61** |
 | MiniLM × Model2Vec | .47 |
-| cross-family pairs | .15–.38 |
+| cross-family pairs | .15–.38 (8 of 9; TF-IDF × word2vec .45) |
 
 A **content family** (LLM, lexical, behavioral) misses on the same candidates in the same direction — the LLM annotator, it turns out, errs most like the *retweet-source* signal, which is a satisfying mechanical hint: when the text is ambiguous, whoever a candidate amplifies is also what tips a bundle's read. And a **style family** (word2vec, MiniLM — the two spaces WS1 caught carrying a retweet-style axis) shares its own, different blind spots. The ensemble lesson is direct: a second instrument from the same family buys correlated errors; diversity worth paying for crosses the family line.
 
@@ -37,7 +37,7 @@ WS2's best result was a decomposition: within-topic distance validity splits int
 
 Rank the 150 pilot candidates by the SD of their six instrument z-scores and no single covariate explains the top of the list (all |r| ≤ .18) — disagreement lives in conjunctions. So, per the plan (and the NOTES.md quant-qual entry that inspired it): pull the eight most-contested candidates, print each one's scores next to twelve of their split-A tweets, and read. Every case resolves, and they sort into three mechanisms:
 
-**Style overshoot.** Junia Quimby (D, truth z −1.2) tweets 70% retweets; word2vec and MiniLM score her −2.2 to −2.7 — the retweet-style confound, diagnosed statistically in three prior analyses, here visible as a named candidate flung past the pole. The LLM compresses her slightly instead (−0.9) and posts its highest repetition SD (.152): with so few original sentences per bundle, the annotator has little candidate-authored position to read. Same pattern, same diagnosis: Tamika Xiong (68% retweets).
+**Style overshoot.** Junia Quimby (D, truth z −1.2) tweets 70% retweets; word2vec and MiniLM score her −2.2 to −2.7 — the retweet-style confound, diagnosed statistically in three prior analyses, here visible as a named candidate flung past the pole. The LLM compresses her slightly instead (−0.9) and posts the highest repetition SD among the eight divergence cases (.152; the pilot-wide max is .254): with so few original sentences per bundle, the annotator has little candidate-authored position to read. Same pattern, same diagnosis: Tamika Xiong (68% retweets).
 
 **Process-diet flips.** Colton Ostrander and Maeve Northcutt (both D, small bundles) spend their feeds on yard signs, ride-alongs, and "met with local business owners" — the topic tier WS2 measured at *zero* positional signal. Embedding centroids anchored in positionless text drift to the middle or across it: MiniLM puts Northcutt (truth −0.9) at **+1.1**. Northcutt is also the packet's one genuinely cross-pressured candidate — three copies of "both parties share the blame" on immigration, a balanced-budget line — and every text instrument duly compresses her toward center. The instruments read her *presentation* correctly; the generator's latent is simply more liberal than the language it dealt her. That distinction — presentation vs latent — is exactly what no correlation table can surface and one minute of reading can.
 

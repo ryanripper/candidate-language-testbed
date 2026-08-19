@@ -59,8 +59,10 @@ def main() -> None:
             sys.exit(
                 "ERROR: source corpus hash does not match the committed "
                 "seal_manifest.json. Refusing to overwrite the seal record. "
-                "If a reseal is genuinely intended, rerun with --reseal "
-                "(and say so loudly in the commit message)."
+                "If the corpus was accidentally regenerated, restore it with "
+                "`git checkout -- data/synthetic-candidate-tweets/`. If a "
+                "reseal is genuinely intended, rerun with --reseal (and say "
+                "so loudly in the commit message)."
             )
 
     df = pd.read_csv(DATA, compression="gzip")

@@ -184,3 +184,25 @@ coverage. Validation target changes from planted truth to roll-call
 behavior (DW-NOMINATE), where the behavioral-instrument ceiling
 observed here suggests behavior-derived references are the right
 gold standard.
+
+---
+
+## Errata (added 2026-08-19, post-hoc audit)
+
+The text above is the dated synthesis write-up and has not been rewritten;
+the following corrections apply to it.
+
+1. **The cross-family residual band ".15–.38" (§ error families) omits one
+   pair.** `outputs/error_correlation_150.csv` puts TF-IDF × word2vec at
+   **.449**; the other eight cross-family pairs are .149–.376. The
+   within-vs-across-family contrast stands, but the band as stated
+   understates the leakiest cross-family pairing.
+
+2. **§4 "Quimby also has the pilot's highest rep SD, .152" is wrong in
+   scope.** .152 is the maximum among the eight divergence cases only; the
+   pilot-wide maximum is **.254** (C0450), with eight candidates above .152
+   (`outputs/divergence_index.csv` / ws3 `scores_main.csv`).
+
+3. **§4's style-overshoot range "−2.2…−2.5 z" is too narrow.**
+   `outputs/divergence_cases.csv` runs to **−2.66** (Quimby, MiniLM). The
+   article draft's "−2.2 to −2.7" is the correct range.

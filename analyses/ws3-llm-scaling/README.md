@@ -65,6 +65,13 @@ raw agent JSON, the non-regenerable primary data (unlike the `batches/`
 prompt files, which are deterministic from `01_build_bundles.py` and not
 committed).
 
+Provenance note (2026-08 audit): `scores_tweetlevel_items.csv` is an ad-hoc
+in-session merge of `tweetlevel_map.csv` with the per-item scores — no
+committed script produces or consumes it. It is kept as a convenience
+denormalization; the canonical per-item record is `raw_scores.tar.gz` +
+`tweetlevel_map.csv`, and the aggregate `scores_tweetlevel.csv` is what the
+pipeline reads.
+
 ## Notes for synthesis / real data
 
 - The synthesis stage now has all five instruments on common support:

@@ -62,3 +62,10 @@ analyses/ws4-preanalysis/outputs/corpus_glove.txt
 analyses/ws4-preanalysis/outputs/glove_*
 # Corpus generator: uncompressed intermediate (also deleted by the script)
 data/synthetic-candidate-tweets/synthetic_candidate_tweets_2022.csv
+# Pilot (00-embeddings-pca) regenerable binaries + its honor-system truth
+# file — a pilot rerun must not be committable via `git add -A`
+analyses/00-embeddings-pca/outputs/ground_truth_SEALED.csv
+analyses/00-embeddings-pca/outputs/tokenized_corpus.jsonl.gz
+analyses/00-embeddings-pca/outputs/candidate_vectors.npz
+analyses/00-embeddings-pca/outputs/pca_scores.npz
+analyses/00-embeddings-pca/outputs/distance_matrix_*.npy
