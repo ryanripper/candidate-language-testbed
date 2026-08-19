@@ -152,6 +152,13 @@ def main() -> None:
     tfidf_ratio = float(bv.loc[bv["measure"].str.startswith(
         "TF-IDF between/within"), "ws0_value"].iloc[0])
     ax = pd.read_csv(WS0 / "baselines" / "axis_scores.csv")
+    # Align by candidate_id, never by row position: this feeds a
+    # pre-registered blind gate, and a re-sorted baseline CSV must not be
+    # able to silently corrupt it.
+    ax = ax.set_index("candidate_id").reindex(cand_order)
+    assert ax["tfidf_partisan_score"].notna().all(), (
+        "axis_scores.csv does not cover every candidate in "
+        "candidate_metadata.csv")
     dr = np.isin(party, ["D", "R"])
     y = (party[dr] == "R").astype(float)
     tfidf_dr = abs(np.corrcoef(

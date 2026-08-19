@@ -20,9 +20,14 @@ Two deliberate changes for reproducibility, recorded in the manifest:
 07-20 validation numbers (validation_results.csv) before anything is frozen
 for downstream use.
 
-Everything here is BLIND: reads blind_corpus.parquet only. Partisan axes are
+Everything here is BLIND in the sense that no design decision touches truth:
+instruments are built from blind_corpus.parquet only, and partisan axes are
 identified from the observable party label (D/R separation), exactly as in
-the 07-20 step 3, and oriented so that R > D on the axis score.
+the 07-20 step 3, and oriented so that R > D on the axis score. One
+non-blind file IS read: the pilot's published unseal output
+(analyses/00-embeddings-pca/outputs/validation_results.csv, five aggregate
+r values) is copied verbatim into baselines/frozen_validation_20260720.csv
+as the frozen comparison table. No per-candidate truth enters this script.
 
 Outputs (ws0/baselines/):
   candidate_vectors.npz   candidate_ids, X_w2v, X_tfidf  (910 x 100 each)

@@ -1,6 +1,12 @@
 """
 03_blind_diagnostics.py — BLIND-SAFE checks, run and saved BEFORE unseal
-(preregistration §6 and §8-blind). Touches no truth.
+(preregistration §6 and §8-blind).
+
+Reads no WS3 truth. One caveat, declared in the preregistration: the
+topic-entropy covariate uses ws2's assignments_llm_refined.npy, whose
+L2/L3 refinement steps were WS2-post-unseal (truth-informed at the WS2
+stage). No per-candidate ideology truth enters this script, but "blind" is
+relative to the WS3 unseal, not truth-free end to end.
 
 Outputs: outputs/blind_diagnostics.csv, outputs/blind_covariates.csv
 """

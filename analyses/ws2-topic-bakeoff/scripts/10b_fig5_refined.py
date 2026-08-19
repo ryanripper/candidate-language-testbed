@@ -84,5 +84,13 @@ cb.set_label("within-topic cosine distance (corrected Model2Vec)", fontsize=8)
 ax.set_title('"Far from whom, on what" — refined instrument (K=13)\n'
              "(gray = pair not comparable: a member has <5 tweets in topic)")
 fig.tight_layout()
-fig.savefig(fig_dir / "fig5_pair_topic_heatmap.png")
+# Preserve the blind-winner fig5 as fig5b before overwriting — the docstring
+# promises it is "kept for the record", so keep it in code, not by hand.
+fig5 = fig_dir / "fig5_pair_topic_heatmap.png"
+fig5b = fig_dir / "fig5b_pair_topic_heatmap_blindwinner.png"
+if fig5.exists() and not fig5b.exists():
+    import shutil
+    shutil.copy2(fig5, fig5b)
+    print("blind-winner fig5 preserved as fig5b")
+fig.savefig(fig5)
 print("fig5 rebuilt on refined instrument")

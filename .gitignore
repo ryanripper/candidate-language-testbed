@@ -45,3 +45,20 @@ analyses/ws4-preanalysis/outputs/candidate_vectors_all.npz
 *_embeddings.npz
 tokens_*.pkl
 tfidf_*.npz
+
+# Actual intermediate filenames the scripts write (2026-08 audit: the
+# patterns above did not match these — a regeneration followed by a
+# careless `git add -A` would have committed ~100+ MB of binaries)
+# WS1 tweet embeddings: scripts/01_embed_corpus.py
+analyses/ws1-sentence-transformers/intermediate/emb_tier*.npz
+# WS2 token/TF-IDF intermediates: scripts/01_prepare_tokens.py
+analyses/ws2-topic-bakeoff/intermediate/tokens.pkl
+analyses/ws2-topic-bakeoff/intermediate/tfidf.npz
+analyses/ws2-topic-bakeoff/intermediate/vocab.json
+analyses/ws2-topic-bakeoff/intermediate/eval_idx.npy
+# WS4 tokenization + GloVe intermediates: scripts/01_prepare.py, 02_embed.py
+analyses/ws4-preanalysis/outputs/tokenized_corpus.jsonl.gz
+analyses/ws4-preanalysis/outputs/corpus_glove.txt
+analyses/ws4-preanalysis/outputs/glove_*
+# Corpus generator: uncompressed intermediate (also deleted by the script)
+data/synthetic-candidate-tweets/synthetic_candidate_tweets_2022.csv

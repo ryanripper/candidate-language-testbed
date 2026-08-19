@@ -10,7 +10,7 @@ Run from inside this folder, in order:
 
 | Step | Command | Produces |
 |---|---|---|
-| 1 | `python scripts/01_embed_corpus.py` | `intermediate/emb_tier{A,B}.npz` — tweet-level embeddings, never committed at any point (~104k × dim, and cheap to recompute) |
+| 1 | `python scripts/01_embed_corpus.py A` then `python scripts/01_embed_corpus.py B` (the tier argument is required — run once per tier) | `intermediate/emb_tier{A,B}.npz` — tweet-level embeddings, never committed at any point (~104k × dim, and cheap to recompute) |
 | 2 | `python scripts/02_candidate_representations.py` | `outputs/centroids_tier{A,B}.npz` *(excluded)*, `outputs/pca_tier{A,B}.npz` *(committed)*, `outputs/blind_axis_scores.csv` *(committed)* |
 | 3 | `python scripts/03_confound_gate.py` | `outputs/corrected_tier{A,B}.npz` *(excluded)*, plus the committed confound-regression and topic-entropy CSVs |
 | 4 | `python scripts/04_distances.py` | the 16 `outputs/D_tier{A,B}_{variant}_{rep}.npy` matrices *(excluded)*, plus committed `blind_diagnostics.csv` and `tierC_gate.json` |
@@ -20,5 +20,7 @@ preregistration §7; its outputs are committed. Re-running it does not invalidat
 anything — the blind protocol was already discharged — but be aware you are
 running it with the answer key visible, which the original run was not.
 
-Tier A is MiniLM (sentence-transformers); tier B is Model2Vec. Both download
-model weights on first use.
+Tier A is Model2Vec (`minishlab/potion-base-8M`); tier B is MiniLM
+(sentence-transformers `all-MiniLM-L6-v2`) — see the `MODELS` dict in
+`scripts/01_embed_corpus.py`, which is authoritative. (An earlier version of
+this file had the two swapped.) Both download model weights on first use.

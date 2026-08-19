@@ -47,16 +47,16 @@ Axis recovery — Pearson r against planted ideology, n = 910 unless noted:
 
 | Instrument | r vs truth | Notes |
 |---|---|---|
-| Behavioral (retweet-source ideology) | **.977** | generator ceiling ≈ .98 |
+| Behavioral (retweet-source ideology) | **.977** | n = 150 pilot support (.980 at n = 905); generator ceiling ≈ .98 |
 | TF-IDF + SVD | **.974** | the frozen baseline, and the bar to beat |
 | LLM ask-and-average | **.970** | n = 150 pilot; **zero corpus training** |
 | Model2Vec (static distilled) | .900 | best of the embedding family |
-| word2vec | .878 | |
+| word2vec | .878 | n = 150 pilot support (.885 at n = 910) |
 | MiniLM sentence transformer | .721 | style-contaminated axis |
 
 Distance validity (do pairwise text distances reproduce ideological distances?): Model2Vec corrected **.640** *(exploratory)* ≈ TF-IDF **.624** > word2vec .592 ≫ MiniLM .397. Within the retweet-content topic slice alone: **.849**.
 
-Topic recovery: in the blind bake-off, **nobody cleared the .60 ARI bar** — the LLM entrant won at .289. Once an *observable* retweet-routing convention was applied (decided before modeling, not after), the refined LLM taxonomy at K = 13 reached ARI **.890**.
+Topic recovery: in the blind bake-off, **nobody cleared the .60 ARI bar** — the LLM entrant won at .289. Three observable refinements then took it to ARI **.890**: the retweet-routing convention (decided before modeling, not after) lifted it to .765, dissolving two genre themes to .824, and coarsening the taxonomy to K = 13 to .890.
 
 Held-out behavior prediction (retweet-source choice, estimated on split A, evaluated on split B): oracle 2.317 < TF-IDF 2.348 < LLM 2.368 < Model2Vec 2.430, against nulls at ≈ 2.98–3.00.
 
@@ -104,9 +104,9 @@ python 03_build_splits.py
 python 04_verify_harness.py     # must print HARNESS VERIFIED
 ```
 
-Then run any analysis folder's `scripts/` in numeric order. Every script is seed-pinned; word2vec in particular is sensitive to library version and thread count, and the canonical recipe is seed 20260720, `workers=1`, deterministic `hashfxn`.
+Then run any analysis folder's `scripts/` in numeric order. Every script is seed-pinned, but three steps are not bit-reproducible despite the seed: the pilot's word2vec (`00-embeddings-pca/scripts/02_embeddings.py`, `workers=4`, no pinned `hashfxn` — the harness's `02_freeze_baselines.py` retrains with the canonical recipe of seed 20260720, `workers=1`, deterministic `hashfxn`, and its arrays are the frozen baselines going forward), WS2's `LdaMulticore(workers=3)`, and WS4's multithreaded GloVe/fastText/doc2vec. The frozen numbers are verified within declared tolerances by `04_verify_harness.py`, not re-derived exactly.
 
-The LLM-dependent steps (WS2 topic labelling, WS3 scoring) call an external model API and are the only steps that are not free to re-run. Their outputs are committed so the downstream analyses reproduce without re-scoring; `analyses/ws3-llm-scaling/outputs/raw_scores.tar.gz` is the audit archive.
+The LLM-dependent steps (WS2 topic labelling, WS3 scoring) were performed by in-session LLM agents at pilot scale — there is no committed API-calling code, so they are the only steps that cannot be re-run from this repo. Their outputs are committed so the downstream analyses reproduce without re-scoring; `analyses/ws3-llm-scaling/outputs/raw_scores.tar.gz` is the audit archive of the raw scores, and `analyses/ws3-llm-scaling/prompts/scoring_prompt_v1.md` is the frozen scoring prompt.
 
 ## Project structure
 
@@ -139,7 +139,7 @@ Each analysis folder carries its own `scripts/` (numbered pipeline), `outputs/`,
 | `00-embeddings-pca` | | | | `00_workflow_outline.md` |
 | `ws1-sentence-transformers` | ✓ | ✓ | ✓ | `ws1-writeup.md` |
 | `ws2-topic-bakeoff` | ✓ | ✓ | ✓ | `ws2-writeup.md` |
-| `ws3-llm-scaling` | ✓ | ✓ | | `ws3-writeup.md` |
+| `ws3-llm-scaling` | ✓ | ✓ | ✓ | `ws3-writeup.md` |
 | `ws4-preanalysis` | ✓ | | ✓ | `ws4-preanalysis-writeup.md` |
 | `synthesis` | ✓ | | | `synthesis-writeup.md` |
 
@@ -167,6 +167,7 @@ Read these before quoting any number above.
 - **Score-derived distance matrices are rank-1 by construction**, so the .93–.95 agreement among score-based geometries is partly bookkeeping.
 - **LLM coverage is the n = 150 stratified pilot only.** The full 910 × 5 scale-up cleared its pre-registered bar (r = .970 ≥ .90) and was recommended, but was deferred on 2026-07-27 and is not funded.
 - **WS4 preanalysis is truth-visible and informal** — directional only, and must not be quoted alongside the frozen blind numbers without this caveat.
+- **The "raw → corrected" distance-validity lift conflates two effects.** The raw branch uses uncentered vectors while the corrected branch centers *and* projects out the style PC, so part of the .28 → .60 improvement is mean-centering, not style removal. The between-instrument comparisons are unaffected (every instrument uses the same convention), but the lift should not be read as a pure measure of the confound's cost.
 
 ## Status
 

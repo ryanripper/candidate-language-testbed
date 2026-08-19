@@ -74,7 +74,9 @@ if len(b) > 1 and b.iloc[0]["ari"] - b.iloc[1]["ari"] < 0.03:
     winner = top2.sort_values("judge", ascending=False).iloc[0]["entrant"]
 decision = {
     "winner": winner,
-    "winner_ari": float(b.iloc[0]["ari"]),
+    # the winner's own ARI — not b.iloc[0]'s, which would pair the flipped
+    # winner with the wrong entrant's score if the judge tie-break fires
+    "winner_ari": float(b.loc[b["entrant"] == winner, "ari"].iloc[0]),
     "tie_break_used": bool(len(b) > 1 and
                            b.iloc[0]["ari"] - b.iloc[1]["ari"] < 0.03),
     "success_bar_ari_0.60": bool((board["ari"] >= 0.60).any()),

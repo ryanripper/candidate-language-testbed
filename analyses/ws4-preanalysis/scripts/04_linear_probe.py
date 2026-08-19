@@ -11,6 +11,14 @@ measures TOTAL linearly-decodable signal — exactly the quantity WS4's
 supervised prediction will exploit. Splits are by candidate (rows are
 candidates), consistent with the WS4 design note that all splits must be
 candidate-level.
+
+KNOWN CAVEAT (kept for reproducibility of the committed outputs): the
+top-10-PC variant fits PCA on all 910 candidates before cross-validation,
+so probe_r_top10pc / probe_R2_top10pc carry mild unsupervised leakage (the
+PCA basis, though not the labels, saw the test rows). The full-100d probe
+has no such issue — scaler and ridge are fit strictly in-fold. This stage
+is informal and truth-visible by design; treat the top-10-PC numbers as
+slightly optimistic. A clean version would fit the PCA inside each fold.
 """
 
 import numpy as np

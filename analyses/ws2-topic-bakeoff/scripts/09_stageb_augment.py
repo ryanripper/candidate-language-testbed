@@ -94,6 +94,17 @@ MERGE = {10: 9,              # student-debt -> education-schools
 lab3 = lab2.copy()
 for a, b in MERGE.items():
     lab3[lab3 == a] = b
+# Guard: MERGE deliberately omits theme 23 (horse-race-news) because in the
+# committed run every L0 tweet labeled 23 is a retweet, rerouted to RT at
+# L1. If that ever stops holding, an unmapped 14th topic would silently
+# survive, breaking the K=13 design and the REFINED_NAMES dicts downstream
+# (10b_fig5_refined.py, synthesis/03) — fail loudly instead.
+EXPECTED_L3 = set(POLICY) | {20, RT}
+leftover = set(np.unique(lab3)) - EXPECTED_L3
+assert not leftover, (
+    f"L3 coarsening left unmapped theme ids {sorted(leftover)} — extend "
+    "MERGE/GENRE_DISSOLVE (theme 23 horse-race-news is the known gap) "
+    "before writing assignments_llm_refined.npy")
 rows.append({"level": "L3_coarsened", **ari_nmi(lab3, tt)})
 np.save(out / "assignments_llm_refined.npy", lab3)
 

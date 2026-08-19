@@ -23,6 +23,7 @@ Everything (names, handles, orgs) is fictional. Deterministic under SEED.
 import csv
 import gzip
 import math
+import os
 import random
 import string
 from datetime import datetime, timedelta
@@ -479,6 +480,11 @@ def gen_retweet(cand):
     src = rng.choices(RT_SOURCES, weights=weights)[0]
     lean = pick_lean(src["ideology"])
     text = rng.choice(RT_TEXTS[lean])
+    # NOTE (documented limitation, do not "fix" — the shipped corpus is
+    # hash-pinned in ws0-harness): `lean` is drawn here so retweet text IS
+    # framing-coded, but the caller records true_framing="" for retweets.
+    # The planted framing truth for the 26.5% retweet rows is therefore
+    # discarded, and framing recovery cannot be evaluated on retweets.
     return src["handle"], f"RT {src['handle']}: {text}"
 
 def main():
@@ -527,7 +533,10 @@ def main():
     for i, r in enumerate(rows, 1):
         r["tweet_id"] = f"T{i:07d}"
 
-    out = "synthetic_candidate_tweets_2022.csv"
+    # anchor output next to this script (not the cwd), and don't leave an
+    # uncompressed ~30MB duplicate behind
+    out = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                       "synthetic_candidate_tweets_2022.csv")
     fields = list(rows[0].keys())
     with open(out, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fields)
@@ -535,8 +544,9 @@ def main():
         w.writerows(rows)
     with open(out, "rb") as f_in, gzip.open(out + ".gz", "wb") as f_out:
         f_out.writelines(f_in)
+    os.remove(out)
 
-    print(f"Tweets: {len(rows)} rows -> {out}")
+    print(f"Tweets: {len(rows)} rows -> {out}.gz")
 
 if __name__ == "__main__":
     main()

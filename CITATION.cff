@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this testbed or its findings, please cite it as below."
+title: "candidate-language-testbed: a synthetic-ground-truth testbed for text-based ideology measurement"
+authors:
+  - family-names: Ripper
+    given-names: Ryan
+type: software
+date-released: "2026-08-18"
+year: 2026
+url: "https://github.com/ryanripper/candidate-language-testbed"
+repository-code: "https://github.com/ryanripper/candidate-language-testbed"
+abstract: >-
+  A synthetic corpus of 104,601 tweets from 910 fictional 2022-cycle
+  candidates with planted ideological ground truth, plus a blind
+  seal/preregister/unseal harness, used to measure how well six families of
+  text-based instruments recover planted ideology - and whether their
+  failures are detectable without the answer key.
+keywords:
+  - ideal point estimation
+  - text as data
+  - political methodology
+  - synthetic data
+  - embeddings
+  - topic models

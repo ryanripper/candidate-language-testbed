@@ -11,10 +11,20 @@ pandas>=2.0
 scipy>=1.11
 scikit-learn>=1.3
 matplotlib>=3.8
-pyarrow>=14.0            # parquet I/O for the sealed corpus
+pyarrow>=14.0.1          # parquet I/O for the sealed corpus
+                         # (>=14.0.1: 14.0.0 carries CVE-2023-47248)
 
-gensim>=4.3              # word2vec / doc2vec (ws0 baselines, ws4)
+gensim>=4.3.3            # word2vec / doc2vec (ws0 baselines, ws4)
+                         # (>=4.3.3 for NumPy 2.x compatibility, since the
+                         # numpy floor above admits 2.x)
 sentence-transformers>=2.2   # MiniLM tier (ws1)
 model2vec>=0.3           # static distilled embeddings (ws1)
 umap-learn>=0.5          # BERTopic-style entrant (ws2)
 hdbscan>=0.8             # BERTopic-style entrant (ws2)
+
+# Install notes:
+# * hdbscan compiles C/Cython on platforms without wheels, and umap-learn
+#   pulls numba/llvmlite, which can lag new Python releases — if either
+#   fails to install, only the WS2 BERTopic-style entrant needs them.
+# * WS4's GloVe entrant additionally needs the compiled Stanford GloVe
+#   binary (not a Python package) — see ws4-preanalysis/REGENERATE.md.

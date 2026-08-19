@@ -72,6 +72,12 @@ assert rts["src_ideo"].notna().all(), "unmapped retweet source"
 behav_full = rts.groupby("candidate_id")["src_ideo"].mean()
 
 # ------------------------------------------------- WS1 tiers, wide format
+# The committed blind_axis_scores.csv carries only space=="centered" rows,
+# but the WS1 pipeline can emit other spaces (raw/corrected); filter
+# explicitly so pivot_table's default aggfunc="mean" never silently
+# averages across spaces (ws3/03_blind_diagnostics.py does the same).
+if "space" in ws1.columns:
+    ws1 = ws1[ws1["space"] == "centered"]
 ws1_wide = ws1.pivot_table(
     index="candidate_id", columns=["tier"], values="blind_axis_score"
 )

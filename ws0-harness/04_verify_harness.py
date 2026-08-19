@@ -30,6 +30,14 @@ import metrics
 
 HERE = Path(__file__).resolve().parent
 BASE = HERE / "baselines"
+DATA = (HERE.parent / "data" / "synthetic-candidate-tweets"
+        / "synthetic_candidate_tweets_2022.csv.gz")
+
+# Pinned commitment to the corpus sealed on 2026-07-25. Deliberately a
+# constant here rather than a manifest lookup: 01_seal_corpus.py regenerates
+# seal_manifest.json, so verifying only against the manifest would let a
+# modified corpus pass against its own fresh reseal.
+SOURCE_SHA256 = "9f7b64ce28891585d4921ca98f48e7bdbca24212b63058720d8516a8339f661d"
 
 # frozen 07-20 values (embeddings-pca-analysis/outputs/validation_results.csv)
 FROZEN = {
@@ -65,6 +73,10 @@ def main() -> None:
     manifest = json.load(open(HERE / "seal_manifest.json"))
     blind = pd.read_parquet(HERE / "blind_corpus.parquet")
     sealed = pd.read_parquet(HERE / "sealed_truth.parquet")
+    check("source corpus hash matches pinned 2026-07-25 seal",
+          sha256(DATA) == SOURCE_SHA256)
+    check("manifest source hash matches pinned seal",
+          manifest["source_sha256"] == SOURCE_SHA256)
     check("no true_* columns in blind corpus",
           not any(c.startswith("true_") for c in blind.columns))
     check("blind corpus hash matches manifest",

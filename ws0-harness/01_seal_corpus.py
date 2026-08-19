@@ -22,6 +22,7 @@ deterministic — no randomness here.
 
 import hashlib
 import json
+import sys
 from datetime import date
 from pathlib import Path
 
@@ -46,6 +47,22 @@ def sha256(path: Path) -> str:
 
 
 def main() -> None:
+    # Guard the committed seal record: rebuilding the parquet views is fine,
+    # but silently rewriting seal_manifest.json would let a modified corpus
+    # pass verification against its own fresh manifest. Rebuilds must either
+    # keep the manifest byte-identical or be explicitly flagged as a reseal.
+    manifest_path = HERE / "seal_manifest.json"
+    reseal = "--reseal" in sys.argv
+    prior = json.load(open(manifest_path)) if manifest_path.exists() else None
+    if prior is not None and not reseal:
+        if sha256(DATA) != prior.get("source_sha256"):
+            sys.exit(
+                "ERROR: source corpus hash does not match the committed "
+                "seal_manifest.json. Refusing to overwrite the seal record. "
+                "If a reseal is genuinely intended, rerun with --reseal "
+                "(and say so loudly in the commit message)."
+            )
+
     df = pd.read_csv(DATA, compression="gzip")
     n_cand = df["candidate_id"].nunique()
     print(f"Loaded {len(df):,} rows, {n_cand} candidates")
@@ -60,8 +77,14 @@ def main() -> None:
     blind.to_parquet(blind_path, index=False, compression="zstd")
     sealed.to_parquet(sealed_path, index=False, compression="zstd")
 
+    # On a plain rebuild (same source, no --reseal) the parquet hashes may
+    # legitimately change with pandas/pyarrow versions; refresh them but
+    # preserve the original seal date so the seal's provenance is not
+    # silently re-stamped.
     manifest = {
-        "sealed_on": date.today().isoformat(),
+        "sealed_on": (prior["sealed_on"] if prior is not None and not reseal
+                      else date.today().isoformat()),
+        "rebuilt_on": date.today().isoformat(),
         "source_file": DATA.name,
         "source_sha256": sha256(DATA),
         "blind_corpus": {

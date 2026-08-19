@@ -62,7 +62,14 @@ def identify_partisan_axis(P: np.ndarray, party: np.ndarray) -> int:
     party = np.asarray(party)
     dr = np.isin(party, ["D", "R"])
     y = (party[dr] == "R").astype(float)
-    corrs = [abs(np.corrcoef(P[dr, k], y)[0, 1]) for k in range(P.shape[1])]
+    corrs = np.array(
+        [abs(np.corrcoef(P[dr, k], y)[0, 1]) for k in range(P.shape[1])])
+    # A degenerate (zero-variance) PC yields a NaN correlation, and NaN wins
+    # np.argmax — guard so a garbage axis can never be selected silently.
+    corrs = np.nan_to_num(corrs, nan=0.0)
+    if not corrs.any():
+        raise ValueError("identify_partisan_axis: no PC correlates with "
+                         "party (all correlations zero or NaN)")
     return int(np.argmax(corrs))
 
 
@@ -135,7 +142,14 @@ def npmi_coherence(topics: list[list[str]], tokenized_docs: list[list[str]],
     Self-contained implementation (no gensim needed): P(w), P(wi, wj) from
     document-level co-occurrence with add-epsilon smoothing.
     Returns per-topic scores and the mean. Range [-1, 1], higher = better.
+
+    Only document-level co-occurrence is implemented; sliding-window NPMI
+    (the other common literature variant) is not. `window` must be None.
     """
+    if window is not None:
+        raise NotImplementedError(
+            "npmi_coherence implements document-level co-occurrence only; "
+            "sliding-window NPMI is not supported (pass window=None)")
     n_docs = len(tokenized_docs)
     doc_sets = [set(d) for d in tokenized_docs]
     vocab = set(w for t in topics for w in t[:topn])

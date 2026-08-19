@@ -171,7 +171,16 @@ decision = {
                           "do not spend API budget; pilot is the result"),
     "true_framing_labels_found": fr_labels,
 }
-json.dump(decision, open(OUT / "decision.json", "w"), indent=1)
+# Preserve the D1 status record (added by hand on 2026-07-27 when the
+# scale-up was deferred): a re-run of this script must not erase it —
+# synthesis/scripts/05_consolidated_table.py reads d1_status_note.
+dec_path = OUT / "decision.json"
+if dec_path.exists():
+    prior = json.load(open(dec_path))
+    for k in ("d1_status", "d1_status_note"):
+        if k in prior:
+            decision[k] = prior[k]
+json.dump(decision, open(dec_path, "w"), indent=1)
 print(val.to_string(index=False))
 print(); print(pd.DataFrame(ma).to_string(index=False))
 print(); print(json.dumps(decision, indent=1))

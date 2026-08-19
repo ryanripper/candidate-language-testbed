@@ -32,6 +32,11 @@ read exactly once (`scripts/08_unseal_validate.py`).
 | `08_unseal_validate.py` | — | **single unseal**: scoreboard, winner, Stage C validity |
 | `09_stageb_augment.py` | B | mitigation ladder L0→L3 + supervised merge ceiling |
 | `10_figures.py`, `10b_fig5_refined.py` | — | figures 1–5 |
+| `11_reconstruct_exploratory.py` | — | post-unseal reconstruction (2026-08 audit) of `exploratory_rt_routing.csv` + `stagec_validity_refined.csv`, originally ad-hoc session computations |
+
+Naming note: preregistration §7 names the unseal script `07_unseal_validate.py`;
+it shipped as `08_unseal_validate.py` because `07_stagec.py` took the 07 slot.
+Same script, same single-unseal discipline — the number is the only deviation.
 
 LLM stages ran in-session per decision D1: two independent taxonomy agents
 (19/22 theme agreement), eight labeling agents (2,000 tweets), two blinded
