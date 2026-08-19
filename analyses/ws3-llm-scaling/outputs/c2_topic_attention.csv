@@ -1,0 +1,6 @@
+instrument,mean_JS_divergence
+LLM ask-and-average,0.15083465472183982
+TF-IDF+SVD PC1,0.14989822531598412
+WS1 Tier A Model2Vec,0.14875519604310275
+Oracle (true_ideology),0.15074837106285785
+NULL split-A grand-mean shares,0.15805508032704782

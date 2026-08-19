@@ -1,0 +1,11 @@
+candidate_a,candidate_b,same_party,cosine_distance
+"Maeve Dunmore (R-GA, House)","Sterling Calloway (D-MO, House)",False,1.77
+"Renata Wexford (R-WA, House)","Walker Delacroix (D-MN, Senate)",False,1.7691
+"Sterling Calloway (D-MO, House)","Ivan Ellingson (R-MI, Senate)",False,1.7658
+"Russell Calloway (D-FL, House)","Lavinia Underhill (R-TX, House)",False,1.7651
+"Russell Calloway (D-FL, House)","Ivan Ellingson (R-MI, Senate)",False,1.7617
+"Jocelyn Marchetti (D-FL, House)","Ivan Ellingson (R-MI, Senate)",False,1.7592
+"Lorenzo Fairbanks (R-MA, House)","Marcus Ashford (D-MI, Senate)",False,1.7545
+"Sterling Calloway (D-MO, House)","Ulysses Alcott (R-TX, House)",False,1.7527
+"Sterling Calloway (D-MO, House)","Sterling Ravenscroft (R-NC, House)",False,1.7487
+"Grant Crowder (R-AL, House)","Sterling Calloway (D-MO, House)",False,1.7454

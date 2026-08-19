@@ -1,0 +1,17 @@
+{
+  "primary_axis_r": 0.7211886740884041,
+  "tfidf_axis_r": 0.9737576975157686,
+  "axis_beats_tfidf": false,
+  "best_distributional": {
+    "which": "tier A corrected/mmd",
+    "dv": 0.48048586573456353
+  },
+  "best_centroid": {
+    "which": "tier A corrected/centroid_cosine",
+    "dv": 0.6399760405500345
+  },
+  "tfidf_distance_validity": 0.6238404664666743,
+  "w2v_corrected_distance_validity": 0.5921445535718243,
+  "distributional_wins_distances": false,
+  "outcome": "Negative result: on short, topically-planted political text, lexical baselines remain sufficient; Model2Vec becomes the real-data default on cost grounds."
+}

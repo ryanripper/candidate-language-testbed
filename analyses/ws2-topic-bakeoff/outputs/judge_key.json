@@ -1,0 +1,610 @@
+{
+ "T000": {
+  "entrant": "lsa",
+  "topic": 8
+ },
+ "T001": {
+  "entrant": "bertopic",
+  "topic": 80
+ },
+ "T002": {
+  "entrant": "bertopic",
+  "topic": 39
+ },
+ "T003": {
+  "entrant": "lsa",
+  "topic": 9
+ },
+ "T004": {
+  "entrant": "lsa",
+  "topic": 38
+ },
+ "T005": {
+  "entrant": "lda",
+  "topic": 19
+ },
+ "T006": {
+  "entrant": "lda",
+  "topic": 8
+ },
+ "T007": {
+  "entrant": "lda",
+  "topic": 4
+ },
+ "T008": {
+  "entrant": "bertopic",
+  "topic": 681
+ },
+ "T009": {
+  "entrant": "llm",
+  "topic": 17
+ },
+ "T010": {
+  "entrant": "llm",
+  "topic": 13
+ },
+ "T011": {
+  "entrant": "bertopic",
+  "topic": 703
+ },
+ "T012": {
+  "entrant": "bertopic",
+  "topic": 365
+ },
+ "T013": {
+  "entrant": "lda",
+  "topic": 13
+ },
+ "T014": {
+  "entrant": "lsa",
+  "topic": 10
+ },
+ "T015": {
+  "entrant": "lda",
+  "topic": 5
+ },
+ "T016": {
+  "entrant": "lda",
+  "topic": 38
+ },
+ "T017": {
+  "entrant": "bertopic",
+  "topic": 29
+ },
+ "T018": {
+  "entrant": "lda",
+  "topic": 2
+ },
+ "T019": {
+  "entrant": "bertopic",
+  "topic": 520
+ },
+ "T020": {
+  "entrant": "bertopic",
+  "topic": 657
+ },
+ "T021": {
+  "entrant": "bertopic",
+  "topic": 457
+ },
+ "T022": {
+  "entrant": "llm",
+  "topic": 21
+ },
+ "T023": {
+  "entrant": "bertopic",
+  "topic": 522
+ },
+ "T024": {
+  "entrant": "lsa",
+  "topic": 12
+ },
+ "T025": {
+  "entrant": "bertopic",
+  "topic": 556
+ },
+ "T026": {
+  "entrant": "lsa",
+  "topic": 20
+ },
+ "T027": {
+  "entrant": "lda",
+  "topic": 34
+ },
+ "T028": {
+  "entrant": "llm",
+  "topic": 11
+ },
+ "T029": {
+  "entrant": "bertopic",
+  "topic": 338
+ },
+ "T030": {
+  "entrant": "lda",
+  "topic": 12
+ },
+ "T031": {
+  "entrant": "bertopic",
+  "topic": 433
+ },
+ "T032": {
+  "entrant": "lsa",
+  "topic": 13
+ },
+ "T033": {
+  "entrant": "llm",
+  "topic": 4
+ },
+ "T034": {
+  "entrant": "bertopic",
+  "topic": 567
+ },
+ "T035": {
+  "entrant": "llm",
+  "topic": 24
+ },
+ "T036": {
+  "entrant": "llm",
+  "topic": 8
+ },
+ "T037": {
+  "entrant": "lda",
+  "topic": 26
+ },
+ "T038": {
+  "entrant": "nmf",
+  "topic": 5
+ },
+ "T039": {
+  "entrant": "bertopic",
+  "topic": 558
+ },
+ "T040": {
+  "entrant": "bertopic",
+  "topic": 149
+ },
+ "T041": {
+  "entrant": "lsa",
+  "topic": 37
+ },
+ "T042": {
+  "entrant": "lsa",
+  "topic": 27
+ },
+ "T043": {
+  "entrant": "lda",
+  "topic": 35
+ },
+ "T044": {
+  "entrant": "lsa",
+  "topic": 15
+ },
+ "T045": {
+  "entrant": "lda",
+  "topic": 1
+ },
+ "T046": {
+  "entrant": "lda",
+  "topic": 9
+ },
+ "T047": {
+  "entrant": "llm",
+  "topic": 19
+ },
+ "T048": {
+  "entrant": "lda",
+  "topic": 37
+ },
+ "T049": {
+  "entrant": "lda",
+  "topic": 29
+ },
+ "T050": {
+  "entrant": "lda",
+  "topic": 16
+ },
+ "T051": {
+  "entrant": "llm",
+  "topic": 6
+ },
+ "T052": {
+  "entrant": "lsa",
+  "topic": 33
+ },
+ "T053": {
+  "entrant": "lsa",
+  "topic": 2
+ },
+ "T054": {
+  "entrant": "lda",
+  "topic": 24
+ },
+ "T055": {
+  "entrant": "llm",
+  "topic": 10
+ },
+ "T056": {
+  "entrant": "llm",
+  "topic": 20
+ },
+ "T057": {
+  "entrant": "nmf",
+  "topic": 6
+ },
+ "T058": {
+  "entrant": "bertopic",
+  "topic": 585
+ },
+ "T059": {
+  "entrant": "bertopic",
+  "topic": 290
+ },
+ "T060": {
+  "entrant": "bertopic",
+  "topic": 98
+ },
+ "T061": {
+  "entrant": "lda",
+  "topic": 27
+ },
+ "T062": {
+  "entrant": "bertopic",
+  "topic": 263
+ },
+ "T063": {
+  "entrant": "bertopic",
+  "topic": 327
+ },
+ "T064": {
+  "entrant": "bertopic",
+  "topic": 322
+ },
+ "T065": {
+  "entrant": "llm",
+  "topic": 0
+ },
+ "T066": {
+  "entrant": "lda",
+  "topic": 0
+ },
+ "T067": {
+  "entrant": "lsa",
+  "topic": 16
+ },
+ "T068": {
+  "entrant": "llm",
+  "topic": 2
+ },
+ "T069": {
+  "entrant": "nmf",
+  "topic": 7
+ },
+ "T070": {
+  "entrant": "lsa",
+  "topic": 6
+ },
+ "T071": {
+  "entrant": "nmf",
+  "topic": 1
+ },
+ "T072": {
+  "entrant": "llm",
+  "topic": 18
+ },
+ "T073": {
+  "entrant": "lda",
+  "topic": 17
+ },
+ "T074": {
+  "entrant": "lsa",
+  "topic": 28
+ },
+ "T075": {
+  "entrant": "lsa",
+  "topic": 24
+ },
+ "T076": {
+  "entrant": "lsa",
+  "topic": 22
+ },
+ "T077": {
+  "entrant": "lda",
+  "topic": 18
+ },
+ "T078": {
+  "entrant": "lda",
+  "topic": 31
+ },
+ "T079": {
+  "entrant": "lda",
+  "topic": 36
+ },
+ "T080": {
+  "entrant": "lda",
+  "topic": 33
+ },
+ "T081": {
+  "entrant": "lsa",
+  "topic": 11
+ },
+ "T082": {
+  "entrant": "lda",
+  "topic": 28
+ },
+ "T083": {
+  "entrant": "llm",
+  "topic": 5
+ },
+ "T084": {
+  "entrant": "bertopic",
+  "topic": 728
+ },
+ "T085": {
+  "entrant": "lda",
+  "topic": 22
+ },
+ "T086": {
+  "entrant": "lda",
+  "topic": 14
+ },
+ "T087": {
+  "entrant": "lda",
+  "topic": 23
+ },
+ "T088": {
+  "entrant": "lsa",
+  "topic": 39
+ },
+ "T089": {
+  "entrant": "lsa",
+  "topic": 5
+ },
+ "T090": {
+  "entrant": "lsa",
+  "topic": 21
+ },
+ "T091": {
+  "entrant": "bertopic",
+  "topic": 256
+ },
+ "T092": {
+  "entrant": "llm",
+  "topic": 3
+ },
+ "T093": {
+  "entrant": "lda",
+  "topic": 20
+ },
+ "T094": {
+  "entrant": "lsa",
+  "topic": 4
+ },
+ "T095": {
+  "entrant": "bertopic",
+  "topic": 435
+ },
+ "T096": {
+  "entrant": "bertopic",
+  "topic": 505
+ },
+ "T097": {
+  "entrant": "lsa",
+  "topic": 0
+ },
+ "T098": {
+  "entrant": "lsa",
+  "topic": 29
+ },
+ "T099": {
+  "entrant": "lsa",
+  "topic": 14
+ },
+ "T100": {
+  "entrant": "lsa",
+  "topic": 23
+ },
+ "T101": {
+  "entrant": "bertopic",
+  "topic": 257
+ },
+ "T102": {
+  "entrant": "nmf",
+  "topic": 3
+ },
+ "T103": {
+  "entrant": "llm",
+  "topic": 23
+ },
+ "T104": {
+  "entrant": "lsa",
+  "topic": 17
+ },
+ "T105": {
+  "entrant": "bertopic",
+  "topic": 677
+ },
+ "T106": {
+  "entrant": "lsa",
+  "topic": 32
+ },
+ "T107": {
+  "entrant": "lda",
+  "topic": 25
+ },
+ "T108": {
+  "entrant": "bertopic",
+  "topic": 614
+ },
+ "T109": {
+  "entrant": "llm",
+  "topic": 15
+ },
+ "T110": {
+  "entrant": "lsa",
+  "topic": 36
+ },
+ "T111": {
+  "entrant": "llm",
+  "topic": 9
+ },
+ "T112": {
+  "entrant": "lda",
+  "topic": 32
+ },
+ "T113": {
+  "entrant": "llm",
+  "topic": 16
+ },
+ "T114": {
+  "entrant": "lda",
+  "topic": 39
+ },
+ "T115": {
+  "entrant": "lsa",
+  "topic": 3
+ },
+ "T116": {
+  "entrant": "bertopic",
+  "topic": 512
+ },
+ "T117": {
+  "entrant": "lda",
+  "topic": 10
+ },
+ "T118": {
+  "entrant": "bertopic",
+  "topic": 444
+ },
+ "T119": {
+  "entrant": "bertopic",
+  "topic": 226
+ },
+ "T120": {
+  "entrant": "lsa",
+  "topic": 7
+ },
+ "T121": {
+  "entrant": "llm",
+  "topic": 14
+ },
+ "T122": {
+  "entrant": "lsa",
+  "topic": 26
+ },
+ "T123": {
+  "entrant": "lsa",
+  "topic": 18
+ },
+ "T124": {
+  "entrant": "nmf",
+  "topic": 0
+ },
+ "T125": {
+  "entrant": "lsa",
+  "topic": 19
+ },
+ "T126": {
+  "entrant": "bertopic",
+  "topic": 330
+ },
+ "T127": {
+  "entrant": "llm",
+  "topic": 1
+ },
+ "T128": {
+  "entrant": "lsa",
+  "topic": 25
+ },
+ "T129": {
+  "entrant": "bertopic",
+  "topic": 455
+ },
+ "T130": {
+  "entrant": "nmf",
+  "topic": 2
+ },
+ "T131": {
+  "entrant": "bertopic",
+  "topic": 397
+ },
+ "T132": {
+  "entrant": "lsa",
+  "topic": 35
+ },
+ "T133": {
+  "entrant": "lda",
+  "topic": 11
+ },
+ "T134": {
+  "entrant": "lda",
+  "topic": 3
+ },
+ "T135": {
+  "entrant": "lda",
+  "topic": 7
+ },
+ "T136": {
+  "entrant": "llm",
+  "topic": 22
+ },
+ "T137": {
+  "entrant": "lsa",
+  "topic": 1
+ },
+ "T138": {
+  "entrant": "bertopic",
+  "topic": 430
+ },
+ "T139": {
+  "entrant": "lsa",
+  "topic": 31
+ },
+ "T140": {
+  "entrant": "bertopic",
+  "topic": 680
+ },
+ "T141": {
+  "entrant": "llm",
+  "topic": 12
+ },
+ "T142": {
+  "entrant": "nmf",
+  "topic": 4
+ },
+ "T143": {
+  "entrant": "lsa",
+  "topic": 34
+ },
+ "T144": {
+  "entrant": "llm",
+  "topic": 7
+ },
+ "T145": {
+  "entrant": "lda",
+  "topic": 6
+ },
+ "T146": {
+  "entrant": "lda",
+  "topic": 21
+ },
+ "T147": {
+  "entrant": "lda",
+  "topic": 15
+ },
+ "T148": {
+  "entrant": "bertopic",
+  "topic": 155
+ },
+ "T149": {
+  "entrant": "bertopic",
+  "topic": 561
+ },
+ "T150": {
+  "entrant": "lsa",
+  "topic": 30
+ },
+ "T151": {
+  "entrant": "bertopic",
+  "topic": 337
+ }
+}

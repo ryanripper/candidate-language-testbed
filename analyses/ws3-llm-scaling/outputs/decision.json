@@ -1,0 +1,14 @@
+{
+ "preregistered_bar": 0.9,
+ "llm_pilot_r": 0.9696837244006236,
+ "bar_cleared": true,
+ "d1_recommendation": "scale to full 910 x 5 via Anthropic API (Ryan's key)",
+ "d1_status": "DEFERRED",
+ "d1_status_note": "2026-07-27: Ryan deferred (pinned) the scale-up run - not funded for now; gate result stands if revisited. Synthesis proceeds on n=150 pilot coverage.",
+ "true_framing_labels_found": [
+  "con",
+  "lib",
+  "nan",
+  "neu"
+ ]
+}

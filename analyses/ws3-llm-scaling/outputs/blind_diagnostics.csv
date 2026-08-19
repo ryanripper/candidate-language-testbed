@@ -1,0 +1,18 @@
+measure,value
+LLM D/R point-biserial,0.9549609821057985
+"LLM vs TF-IDF frozen axis (blind r, n=150)",0.9748308439136696
+"LLM vs WS1 TierA axis (blind r, n=150)",0.905218421247573
+LLM score min,-0.79
+LLM score max,0.834
+LLM score share |s|>0.5,0.6866666666666666
+median across-rep SD,0.08944271909999155
+confound screen: LLM score vs rt_share_A (gate |r|>=0.6 on rt/vol),-0.061160626115753236
+confound screen: LLM score vs log10_vol_A (gate |r|>=0.6 on rt/vol),-0.11103783891742945
+confound screen: LLM score vs topic_entropy_A (gate |r|>=0.6 on rt/vol),0.038477550079180134
+cue-condition D/R point-biserial,0.9535163146802585
+stripped(reps1-2) D/R point-biserial,0.9549966076042843
+cue-stripped paired shift mean,-0.014233333333333324
+cue-stripped paired shift mean |shift|,0.05536666666666667
+cue shift mean (D),-0.037676056338028154
+cue shift mean (R),0.009657534246575353
+cue vs stripped12 r,0.9930634528427197

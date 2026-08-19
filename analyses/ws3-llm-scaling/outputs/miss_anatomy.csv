@@ -1,0 +1,11 @@
+measure,value
+stability: across-rep SD vs |error| (non-small-bundle),-0.10528645096243863
+|error| vs |true_ideology| (moderates harder if negative),0.1322520461635177
+|error| vs log10_vol_A,-0.13851799157127334
+error vs log10_vol_A (post-unseal confound gate |r|>=0.6),-0.033788605791695826
+|error| vs rt_share_A,-0.07459678547763371
+error vs rt_share_A (post-unseal confound gate |r|>=0.6),-0.01150666269933045
+|error| vs topic_entropy_A,-0.04545993316937334
+error vs topic_entropy_A (post-unseal confound gate |r|>=0.6),-0.060158209433599424
+RMSE of affine-calibrated LLM score,0.16288467024886535
+cue-bias delta r (cue - stripped12),0.0038294305143600216

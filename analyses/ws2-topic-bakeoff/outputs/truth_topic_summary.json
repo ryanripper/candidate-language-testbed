@@ -1,0 +1,17 @@
+{
+  "n_true_topics": 12,
+  "true_topic_names": [
+    "abortion",
+    "campaign_logistics",
+    "climate_energy",
+    "crime_policing",
+    "democracy_rights",
+    "economy",
+    "education",
+    "foreign_policy",
+    "guns",
+    "healthcare",
+    "immigration",
+    "retweet_source"
+  ]
+}

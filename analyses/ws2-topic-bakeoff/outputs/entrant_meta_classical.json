@@ -1,0 +1,17 @@
+{
+  "nmf": {
+    "chosen_K": 8,
+    "n_topics_used": 8,
+    "wall_seconds": 227.5
+  },
+  "lsa": {
+    "chosen_K": 40,
+    "n_topics_used": 40,
+    "wall_seconds": 48.1
+  },
+  "lda": {
+    "chosen_K": 40,
+    "n_topics_used": 39,
+    "wall_seconds": 311.4
+  }
+}

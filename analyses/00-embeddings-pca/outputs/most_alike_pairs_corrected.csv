@@ -1,0 +1,11 @@
+candidate_a,candidate_b,same_party,cosine_distance
+"Ingrid Yancey (R-MN, House)","Petra Meriwether (R-NY, House)",True,0.1303
+"Celeste Marchetti (R-MA, House)","Thea Abernathy (R-MO, House)",True,0.1314
+"York Oglesby (D-FL, House)","Dexter Palafox (D-PA, House)",True,0.136
+"Wendell Bickford (D-NY, House)","Jocelyn Ostrander (D-NJ, Senate)",True,0.1547
+"Silas Rutledge (D-OH, House)","Ramona Ostrander (D-UT, House)",True,0.157
+"York Delacroix (D-CA, House)","Ximena Jankowski (D-MO, House)",True,0.1658
+"Silas Nakamura (D-MN, House)","Zelda Crowder (D-NJ, House)",True,0.1667
+"Priya Yarborough (R-FL, House)","Walker Oglesby (R-NC, House)",True,0.1671
+"Petra Zablocki (R-GA, House)","Tamika Nakamura (R-SC, House)",True,0.172
+"Ezra Ibarra (R-FL, House)","Marisol Bickford (R-OK, Senate)",True,0.1728

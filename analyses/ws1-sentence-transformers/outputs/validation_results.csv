@@ -1,0 +1,25 @@
+measure,kind,tier,space,value,spearman,primary,rep,ratio
+Tier A (Model2Vec potion-8M) centered partisan axis PC2 vs true_ideology (r),axis,A,centered,0.9000689211222807,0.8572500450074031,False,,
+Tier A (Model2Vec potion-8M) corrected partisan axis PC1 vs true_ideology (r),axis,A,corrected,0.9000689210514686,0.8572500450074031,False,,
+Tier B (MiniLM-L6-v2) centered partisan axis PC2 vs true_ideology (r),axis,B,centered,0.7211886750301535,0.7323950529887266,False,,
+Tier B (MiniLM-L6-v2) corrected partisan axis PC1 vs true_ideology (r),axis,B,corrected,0.7211886740884041,0.7323950529887266,True,,
+Tier A raw centroid_cosine distance validity,distance,A,raw,0.3260801275813343,,False,centroid_cosine,1.2287979705956555
+Tier A centered centroid_cosine distance validity,distance,A,centered,0.4758655723431865,,False,centroid_cosine,1.243110635673542
+Tier A whitened centroid_cosine distance validity,distance,A,whitened,0.3113822214606258,,False,centroid_cosine,1.0839253577417396
+Tier A corrected centroid_cosine distance validity,distance,A,corrected,0.6399760405500345,,False,centroid_cosine,1.3013661063569264
+Tier A centered energy distance validity,distance,A,centered,0.36943127127530473,,False,energy,1.3644233201056144
+Tier A centered mmd distance validity,distance,A,centered,0.36498593734241425,,False,mmd,1.1853171715814008
+Tier A corrected energy distance validity,distance,A,corrected,0.4772937245073972,,False,energy,1.4562258628463594
+Tier A corrected mmd distance validity,distance,A,corrected,0.48048586573456353,,False,mmd,1.233882917163096
+Tier B raw centroid_cosine distance validity,distance,B,raw,0.3250645710927167,,False,centroid_cosine,1.2111319896074002
+Tier B centered centroid_cosine distance validity,distance,B,centered,0.4545339257601843,,False,centroid_cosine,1.2207265892162802
+Tier B whitened centroid_cosine distance validity,distance,B,whitened,0.3161836878378689,,False,centroid_cosine,1.0668132608718697
+Tier B corrected centroid_cosine distance validity,distance,B,corrected,0.39734171645553884,,False,centroid_cosine,1.1654551562685858
+Tier B centered energy distance validity,distance,B,centered,0.3536147250438713,,False,energy,1.324252341924992
+Tier B centered mmd distance validity,distance,B,centered,0.34248061057615253,,False,mmd,1.159857492010974
+Tier B corrected energy distance validity,distance,B,corrected,0.3271700636691594,,False,energy,1.291724704173629
+Tier B corrected mmd distance validity,distance,B,corrected,0.2962599820939661,,False,mmd,1.135952793936455
+TF-IDF PC1 (frozen baseline) vs true_ideology (r),frozen,,,0.9737576975157686,,False,,
+word2vec partisan axis (frozen baseline) (r),frozen,,,0.8853820551346304,,False,,
+TF-IDF distance validity (frozen baseline),frozen,,,0.6238404664666743,,False,,
+w2v corrected distance validity (frozen baseline),frozen,,,0.5921445535718243,,False,,

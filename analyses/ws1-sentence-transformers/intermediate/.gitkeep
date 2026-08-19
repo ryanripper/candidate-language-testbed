@@ -1,0 +1,3 @@
+Placeholder. scripts/01_embed_corpus.py writes emb_tierA.npz / emb_tierB.npz here
+and does not create the directory itself. Tweet-level embeddings are never
+committed - see ../REGENERATE.md.

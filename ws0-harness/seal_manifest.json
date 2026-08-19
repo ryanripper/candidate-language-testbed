@@ -1,0 +1,39 @@
+{
+  "sealed_on": "2026-07-25",
+  "source_file": "synthetic_candidate_tweets_2022.csv.gz",
+  "source_sha256": "9f7b64ce28891585d4921ca98f48e7bdbca24212b63058720d8516a8339f661d",
+  "blind_corpus": {
+    "file": "blind_corpus.parquet",
+    "sha256": "787865b3af702d23ed7f828634ca58decda7d560995f122ae7601646c729a96c",
+    "rows": 104601,
+    "candidates": 910,
+    "columns": [
+      "tweet_id",
+      "candidate_id",
+      "candidate_name",
+      "handle",
+      "party",
+      "chamber",
+      "state",
+      "district",
+      "incumbent",
+      "timestamp_utc",
+      "is_retweet",
+      "retweeted_handle",
+      "text"
+    ]
+  },
+  "sealed_truth": {
+    "file": "sealed_truth.parquet",
+    "sha256": "efeae2ae6ca503a67938387cc3eaad7820a19b7ac2388ed1440ca68c27a727c3",
+    "rows": 104601,
+    "columns": [
+      "tweet_id",
+      "candidate_id",
+      "true_topic",
+      "true_framing",
+      "true_ideology"
+    ]
+  },
+  "protocol": "Workstreams read blind_corpus.parquet only. sealed_truth.parquet is opened once per workstream at the validation step declared in its preregistration.md, written BEFORE unsealing."
+}

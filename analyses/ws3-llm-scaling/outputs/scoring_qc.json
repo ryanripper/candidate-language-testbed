@@ -1,0 +1,264 @@
+{
+ "batches": {
+  "main_00": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_01": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_02": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_03": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_04": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_05": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_06": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_07": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_08": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_09": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_10": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_11": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_12": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_13": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_14": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_15": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_16": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_17": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_18": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_19": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_20": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_21": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_22": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_23": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_24": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_25": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_26": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_27": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_28": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "main_29": {
+   "expected": 25,
+   "got": 25,
+   "missing": [],
+   "extra": []
+  },
+  "cue_00": {
+   "expected": 50,
+   "got": 50,
+   "missing": [],
+   "extra": []
+  },
+  "cue_01": {
+   "expected": 50,
+   "got": 50,
+   "missing": [],
+   "extra": []
+  },
+  "cue_02": {
+   "expected": 50,
+   "got": 50,
+   "missing": [],
+   "extra": []
+  },
+  "cue_03": {
+   "expected": 50,
+   "got": 50,
+   "missing": [],
+   "extra": []
+  },
+  "cue_04": {
+   "expected": 50,
+   "got": 50,
+   "missing": [],
+   "extra": []
+  },
+  "cue_05": {
+   "expected": 50,
+   "got": 50,
+   "missing": [],
+   "extra": []
+  },
+  "tweet_00": {
+   "expected": 125,
+   "got": 125,
+   "missing": [],
+   "extra": []
+  },
+  "tweet_01": {
+   "expected": 125,
+   "got": 125,
+   "missing": [],
+   "extra": []
+  },
+  "tweet_02": {
+   "expected": 125,
+   "got": 125,
+   "missing": [],
+   "extra": []
+  },
+  "tweet_03": {
+   "expected": 125,
+   "got": 125,
+   "missing": [],
+   "extra": []
+  },
+  "tweet_04": {
+   "expected": 125,
+   "got": 125,
+   "missing": [],
+   "extra": []
+  },
+  "tweet_05": {
+   "expected": 55,
+   "got": 55,
+   "missing": [],
+   "extra": []
+  }
+ },
+ "missing": [],
+ "out_of_range": [],
+ "n_bundle_scores": 1050,
+ "n_tweet_scores": 680,
+ "n_candidates_main": 150,
+ "rep_counts": {
+  "5": 150
+ }
+}

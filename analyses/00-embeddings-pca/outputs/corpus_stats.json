@@ -1,0 +1,17 @@
+{
+  "n_tweets": 104601,
+  "n_candidates": 910,
+  "n_tokens": 1439390,
+  "vocab_size_raw": 828,
+  "share_retweets": 0.26531295111901415,
+  "party_counts": {
+    "R": 447,
+    "D": 433,
+    "I": 30
+  },
+  "chamber_counts": {
+    "House": 841,
+    "Senate": 69
+  },
+  "median_tweets_per_candidate": 99.0
+}

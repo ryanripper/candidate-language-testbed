@@ -1,0 +1,8 @@
+{
+  "n_docs": 104601,
+  "vocab_size": 661,
+  "mean_tokens_per_doc": 8.124826722497874,
+  "empty_docs": 0,
+  "eval_subsample": 10000,
+  "seed": 20260726
+}

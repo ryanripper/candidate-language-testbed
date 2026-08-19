@@ -1,0 +1,30 @@
+workstream,family,measure,instrument,support_n,value,source,note
+WS0,axis,r vs true_ideology,TF-IDF+SVD PC1,910,0.9738,ws0/baselines/baseline_validation.csv,
+WS0,axis,r vs true_ideology,word2vec partisan axis,910,0.8854,ws0/baselines/baseline_validation.csv,
+WS0,distance,distance validity,TF-IDF,910,0.6238,ws0/baselines/baseline_validation.csv,
+WS0,distance,distance validity,w2v corrected,910,0.5921,ws0/baselines/baseline_validation.csv,
+WS1,axis,r vs true_ideology,Model2Vec potion-8M corrected axis,910,0.9001,sentence-transformer-analysis/outputs/validation_results.csv,secondary
+WS1,axis,r vs true_ideology,MiniLM-L6-v2 corrected axis,910,0.7212,sentence-transformer-analysis/outputs/validation_results.csv,pre-registered negative result: loses to TF-IDF
+WS1,distance,distance validity,Model2Vec corrected centroid cosine,910,0.64,sentence-transformer-analysis/outputs/validation_results.csv,EXPLORATORY label required (rule named distributional distances)
+WS2,topic,blind ARI vs true_topic,llm,104601,0.2889,topic-modeling-bakeoff/outputs/scoreboard.csv,K=25; blind bar ARI>=0.60 missed by all
+WS2,topic,blind ARI vs true_topic,lda,104601,0.156,topic-modeling-bakeoff/outputs/scoreboard.csv,K=39; blind bar ARI>=0.60 missed by all
+WS2,topic,blind ARI vs true_topic,lsa,104601,0.1382,topic-modeling-bakeoff/outputs/scoreboard.csv,K=40; blind bar ARI>=0.60 missed by all
+WS2,topic,blind ARI vs true_topic,nmf,104601,0.0442,topic-modeling-bakeoff/outputs/scoreboard.csv,K=8; blind bar ARI>=0.60 missed by all
+WS2,topic,blind ARI vs true_topic,bertopic,104601,0.0229,topic-modeling-bakeoff/outputs/scoreboard.csv,K=763; blind bar ARI>=0.60 missed by all
+WS2,topic,ARI vs true_topic (post-unseal ladder),LLM L0_blind_winner,104601,0.2889,topic-modeling-bakeoff/outputs/stageb_ladder.csv,"labeled mitigation, not blind"
+WS2,topic,ARI vs true_topic (post-unseal ladder),LLM L1_retweet_routing,104601,0.7647,topic-modeling-bakeoff/outputs/stageb_ladder.csv,"labeled mitigation, not blind"
+WS2,topic,ARI vs true_topic (post-unseal ladder),LLM L2_dissolve_genres,104601,0.8236,topic-modeling-bakeoff/outputs/stageb_ladder.csv,"labeled mitigation, not blind"
+WS2,topic,ARI vs true_topic (post-unseal ladder),LLM L3_coarsened,104601,0.8895,topic-modeling-bakeoff/outputs/stageb_ladder.csv,"labeled mitigation, not blind"
+WS2,distance,within-topic distance validity,retweet-content slice (K=13 refined),863,0.8492,topic-modeling-bakeoff/outputs/stagec_validity_refined.csv,top of three-tier ladder; campaign-process bottom at .004
+WS3,axis,r vs true_ideology,"LLM ask-and-average (pilot, stripped)",150,0.9697,llm-scaling-analysis/outputs/validation_results.csv,clears preregistered bar r>=0.90; D1 910x5 scale-up DEFERRED 2026-07-27 (Ryan)
+WS3,axis,r vs true_ideology,behavioral mean RT-source ideology (split A),146,0.9766,llm-scaling-analysis/outputs/validation_results.csv,generator ceiling ~.98
+WS3,behavior,held-out log-loss (C1 retweet choice),LLM ask-and-average,2498,2.3678,llm-scaling-analysis/outputs/c1_retweet_choice.csv,"lower is better; fit on split A, tested on split B"
+WS3,behavior,held-out log-loss (C1 retweet choice),TF-IDF+SVD PC1,2498,2.3484,llm-scaling-analysis/outputs/c1_retweet_choice.csv,"lower is better; fit on split A, tested on split B"
+WS3,behavior,held-out log-loss (C1 retweet choice),WS1 Tier A Model2Vec,2498,2.4304,llm-scaling-analysis/outputs/c1_retweet_choice.csv,"lower is better; fit on split A, tested on split B"
+WS3,behavior,held-out log-loss (C1 retweet choice),Oracle (true_ideology),2498,2.3174,llm-scaling-analysis/outputs/c1_retweet_choice.csv,"lower is better; fit on split A, tested on split B"
+WS3,behavior,held-out log-loss (C1 retweet choice),NULL uniform,2498,2.9957,llm-scaling-analysis/outputs/c1_retweet_choice.csv,"lower is better; fit on split A, tested on split B"
+WS3,behavior,held-out log-loss (C1 retweet choice),NULL split-A org base rates,2498,2.9799,llm-scaling-analysis/outputs/c1_retweet_choice.csv,"lower is better; fit on split A, tested on split B"
+WS3,decision,preregistered bar,LLM pilot,150,0.9,llm-scaling-analysis/outputs/decision.json,2026-07-27: Ryan deferred (pinned) the scale-up run - not funded for now; gate result stands if revisited. Synthesis proceeds on n=150 pilot coverage.
+Synthesis,agreement,"min pairwise Pearson r, score level",all 7 instruments,150,0.7217,synthesis/outputs/agreement_150_pearson.csv,weakest pair: MiniLM x truth
+Synthesis,agreement,"Mantel r, oracle vs LLM geometry",D_truth x D_llm,150,0.9309,synthesis/outputs/mantel_150.csv,"999 perms, p=.001"
+Synthesis,agreement,topic signal-tier reproduction (Spearman),LLM |gap| vs WS2 910-support tier order,13,0.9725,synthesis/outputs/topic_conditioned_agreement.csv,truth-free instrument reproduces the far-from-whom-on-what ladder

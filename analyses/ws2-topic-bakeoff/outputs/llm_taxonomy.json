@@ -1,0 +1,41 @@
+{
+  "merged_on": "2026-07-26",
+  "merge_rule": "union-then-dedupe (preregistration §2): themes from the two runs merged iff they would label the same tweets; where one run split what the other lumped, the finer split is kept when the underlying tweet sets are distinct",
+  "run_agreement": {
+    "H1_themes": 22,
+    "H2_themes": 22,
+    "direct_matches": 19,
+    "notes": [
+      "19/22 themes matched one-to-one on name+definition (healthcare, abortion, guns, crime-policing, immigration, taxes-spending, workers-wages, energy-climate, education, student-debt, foreign-policy, gotv-logistics, fundraising, volunteers, endorsements, holidays, horse-race news, election-integrity core, rallies/debates core)",
+      "Splits resolved by the distinct-tweet-sets test: H2 split trade-manufacturing out of H1's jobs theme (kept split); H1 split debates from rallies-town-halls where H2 merged (kept split); H1 split democracy-reform (gerrymandering/dark money) from election-integrity (voter ID/suppression) where H2 merged (kept split)",
+      "H1-only theme community-visits kept (H2 had scattered visit tweets into issue themes; the visit genre is a distinct tweet set); H2-only themes veterans and generic-values-message kept (H1 had scattered them into community-visits and taxes-spending respectively)"
+    ]
+  },
+  "themes": [
+    {"id": 0,  "name": "healthcare",              "definition": "Healthcare affordability, insurance, drug prices, Medicaid, rural hospitals, pre-existing conditions, government vs market care."},
+    {"id": 1,  "name": "abortion",                "definition": "Abortion and reproductive rights from either side: Roe, pro-life pledges, taxpayer funding, 'deeply personal' hedges."},
+    {"id": 2,  "name": "guns",                    "definition": "Second Amendment defense, gun control (red flag laws, background checks), gun violence prevention."},
+    {"id": 3,  "name": "crime-policing",          "definition": "Crime, policing and public safety: back the blue, soft-on-crime attacks, accountability, sentencing, community safety investment."},
+    {"id": 4,  "name": "immigration-border",      "definition": "Border security, wall, catch-and-release, sanctuary cities, Dreamers, family separation, immigrant contributions, reform."},
+    {"id": 5,  "name": "taxes-spending",          "definition": "Taxes, government spending, deficits, deregulation/red tape, limited government, who pays fair share."},
+    {"id": 6,  "name": "workers-wages",           "definition": "Workers and wages: unions, minimum wage, price gouging, corporate profits/consolidation, antitrust."},
+    {"id": 7,  "name": "trade-manufacturing",     "definition": "Trade competition (China), domestic manufacturing, supply chains, plant/factory content."},
+    {"id": 8,  "name": "energy-climate",          "definition": "Energy and climate: clean energy jobs, climate crisis, drilling/energy independence, green mandates, Big Oil, air and water."},
+    {"id": 9,  "name": "education-schools",       "definition": "K-12 and family education: teacher pay/funding, school choice, parental rights, book bans, curriculum, pre-K, childcare costs."},
+    {"id": 10, "name": "student-debt",            "definition": "Higher-education affordability: student loan relief, free community college."},
+    {"id": 11, "name": "veterans",                "definition": "Honoring, meeting, and prioritizing veterans and their care."},
+    {"id": 12, "name": "foreign-policy",          "definition": "Foreign policy and defense: diplomacy vs endless wars, peace through strength, alliances, human rights, overseas spending."},
+    {"id": 13, "name": "election-integrity",      "definition": "Voting-rules fights: voter ID, election integrity, voter suppression, voter purges, ballot access."},
+    {"id": 14, "name": "democracy-reform",        "definition": "Structural reform: gerrymandering, independent redistricting commissions, dark money, campaign-finance disclosure."},
+    {"id": 15, "name": "community-visits",        "definition": "Campaign-trail visit/meeting reports: toured, stopped by, met with local police, schools, plants, clinics, small businesses."},
+    {"id": 16, "name": "gotv-logistics",          "definition": "Get-out-the-vote housekeeping: check your registration, early voting starts soon, make your plan, every vote counts."},
+    {"id": 17, "name": "rallies-town-halls",      "definition": "Announcements and thank-yous for town halls and rallies: doors open early, standing room only, movement growing."},
+    {"id": 18, "name": "debates",                 "definition": "Debate content: tune-in promotion, debate night, debate schedules."},
+    {"id": 19, "name": "endorsements",            "definition": "Endorsement teasers and announcements."},
+    {"id": 20, "name": "fundraising",             "definition": "Fundraising and ads: FEC reports, grassroots donor milestones, powered by people not PACs, chip in, new ad live."},
+    {"id": 21, "name": "volunteers",              "definition": "Field operations: phone banks, door knocking, yard signs, volunteer sign-ups, training provided."},
+    {"id": 22, "name": "holidays",                "definition": "Holiday greetings from the candidate/family with no policy content."},
+    {"id": 23, "name": "horse-race-news",         "definition": "Election meta-news (mostly retweets): polling roundups, turnout reports, race trackers, key races tightening."},
+    {"id": 24, "name": "generic-values",          "definition": "Broad values/message tweets with no specific policy: fair shot, listen first, anti-Washington-elites, freedom slogans."}
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "frozen_on": "2026-07-25",
+  "provenance": "Regenerated from blind_corpus.parquet with the 2026-07-20 recipe (seed 20260720, identical tokenization and hyperparameters). Original arrays were never committed; these arrays are now the canonical frozen baselines. Changes vs 07-20 run: workers=1 and deterministic hashfxn (crc32) for exact reproducibility. Verified against frozen 07-20 validation numbers in 04_verify_harness.py (see baselines/baseline_validation.csv).",
+  "w2v_params": {
+    "vector_size": 100,
+    "window": 5,
+    "min_count": 5,
+    "sg": 1,
+    "workers": 1,
+    "epochs": 10,
+    "seed": 20260720,
+    "hashfxn": "zlib.crc32"
+  },
+  "tfidf_params": {
+    "min_df": 5,
+    "sublinear_tf": true,
+    "svd_components": 100,
+    "svd_seed": 20260720
+  },
+  "partisan_axis": {
+    "w2v": "PC2",
+    "tfidf": "PC1",
+    "identified_by": "max |corr| with observable D/R label; oriented so R > D"
+  },
+  "sha256": {
+    "candidate_vectors.npz": "1552594160c42d9fe31521f4079cb77f7a3f7112a0b178bf51193d380a195adf",
+    "pca_scores.npz": "61246d5226736ca297d7607da80b37ff363a298dbf4f777da0ea0b89dd34b491",
+    "axis_scores.csv": "ebc233b54dd9eec163f104c70afba8b153e70e011365c833bee1d36b98e6a1a2",
+    "D_w2v_raw.npy": "6e4663a75f94da6233b03a746509ae0ec6db0cd48f4d9a1405af0eeb8d75be6c",
+    "D_w2v_corrected.npy": "6598d727a5a642c353b6bed15ea32f0d20f5a5a9d5bd320b347beef85d15000c",
+    "D_tfidf.npy": "4e73f78466b693070b3c8e49c7b8b24a552a83fd02ca4281f3dc5eee8b0750cf",
+    "frozen_validation_20260720.csv": "3233e20160bd3ccd93e3ccc5f710f9977307e469df82224289228674fa80929e",
+    "candidate_metadata.csv": "c0f4a318dff648348b6c6bccbcbb3c3147465fd6236e80879a3f105a47a2de64"
+  }
+}

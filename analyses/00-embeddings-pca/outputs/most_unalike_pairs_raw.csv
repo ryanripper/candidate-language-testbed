@@ -1,0 +1,11 @@
+candidate_a,candidate_b,same_party,cosine_distance
+"Hattie Underhill (R-CA, House)","Sterling Jankowski (D-MD, House)",False,0.1345
+"Hattie Underhill (R-CA, House)","Lavinia Xiong (R-OR, House)",True,0.1299
+"Hattie Underhill (R-CA, House)","Uriel Fairbanks (R-IL, House)",True,0.1298
+"Hattie Underhill (R-CA, House)","Deshawn Yancey (R-PA, House)",True,0.1283
+"Maeve Tunstall (D-CA, House)","Lavinia Xiong (R-OR, House)",False,0.1269
+"Simone Stanfield (R-AR, House)","Junia Quimby (D-NY, House)",False,0.1251
+"Hattie Underhill (R-CA, House)","Junia Quimby (D-NY, House)",False,0.1251
+"Silas Granger (R-LA, House)","Deshawn Yancey (R-PA, House)",True,0.1247
+"Simone Stanfield (R-AR, House)","Sterling Jankowski (D-MD, House)",False,0.1241
+"Hattie Underhill (R-CA, House)","Sterling Thackeray (D-WI, House)",False,0.124

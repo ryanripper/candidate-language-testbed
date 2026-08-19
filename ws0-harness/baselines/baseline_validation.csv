@@ -1,0 +1,10 @@
+measure,ws0_value,frozen_0720_value
+TF-IDF partisan axis vs true_ideology (r),0.9737576975157686,0.9737576975157686
+word2vec partisan axis vs true_ideology (r),0.8853820551346304,0.8856356960116624
+word2vec PC1 style axis vs true_ideology (r),0.17496298094327947,0.17094304293436158
+w2v raw distance validity,0.2781359393993844,0.28110777359909134
+w2v corrected distance validity,0.5921445535718243,0.5966391079131852
+TF-IDF distance validity  [NEW at WS0.4],0.6238404664666743,
+w2v raw between/within ratio,1.2587628933520991,1.26
+w2v corrected between/within ratio,1.3517202006410518,1.35
+TF-IDF between/within ratio  [NEW at WS0.4],1.3255331482532884,

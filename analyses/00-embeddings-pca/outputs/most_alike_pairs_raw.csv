@@ -1,0 +1,11 @@
+candidate_a,candidate_b,same_party,cosine_distance
+"Wendell Bickford (D-NY, House)","Jocelyn Ostrander (D-NJ, Senate)",True,0.0025
+"York Delacroix (D-CA, House)","Ximena Jankowski (D-MO, House)",True,0.003
+"Flora Xiong (R-CA, House)","Ivan Lindqvist (R-MD, House)",True,0.0034
+"Mordecai Fairbanks (D-CT, House)","Grant Ivester (D-PA, House)",True,0.0034
+"Maeve Dunmore (R-GA, House)","Ivan Ellingson (R-MI, Senate)",True,0.0035
+"Zelda Jankowski (R-NY, House)","Sterling Ravenscroft (R-NC, House)",True,0.0035
+"Ximena Vandermeer (D-TN, House)","Lavinia Lindqvist (D-TX, House)",True,0.0036
+"Quincy Northcutt (R-NJ, House)","Boyd Delacroix (R-VA, House)",True,0.0036
+"Wendell Bickford (D-NY, House)","Paloma Sandoval (D-UT, House)",True,0.0036
+"Delphine Holloway (D-AR, House)","Lavinia Lockhart (D-CT, House)",True,0.0037

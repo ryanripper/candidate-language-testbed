@@ -1,0 +1,9 @@
+{
+  "tierB_max_blind_ratio": 1.3242523419249919,
+  "tfidf_ratio_reference": 1.3255331482532884,
+  "tierB_corrected_axis_dr_abscorr": 0.7004395297365026,
+  "tfidf_axis_dr_abscorr": 0.9448513892836808,
+  "criterion_1_ratio": false,
+  "criterion_2_axis": false,
+  "tier_C_runs": false
+}

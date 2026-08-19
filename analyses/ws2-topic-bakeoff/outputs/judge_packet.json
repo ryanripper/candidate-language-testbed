@@ -1,0 +1,3194 @@
+[
+ {
+  "item_id": "T000",
+  "terms": [
+   "immediately",
+   "benefit",
+   "expands",
+   "breaking",
+   "rural",
+   "state",
+   "medicaid",
+   "hospitals",
+   "future",
+   "fundraising"
+  ],
+  "examples": [
+   "RT @WorkersUnitedHQ: BREAKING: Another state expands Medicaid \u2014 and rural hospitals immediately benefit.",
+   "RT @ProgressNowDaily: BREAKING: Another state expands Medicaid \u2014 and rural hospitals immediately benefit.",
+   "RT @GreenFutureFund: BREAKING: Another state expands Medicaid \u2014 and rural hospitals immediately benefit."
+  ],
+  "n_tweets": 1702
+ },
+ {
+  "item_id": "T001",
+  "terms": [
+   "schedule",
+   "calendar",
+   "fall",
+   "debate",
+   "link",
+   "gas",
+   "future",
+   "fundraising",
+   "funded",
+   "fund"
+  ],
+  "examples": [
+   "RT @TheDailyLedgerUS: Debate schedule for the fall is out. Full calendar at the link.",
+   "RT @TheDailyLedgerUS: Debate schedule for the fall is out. Full calendar at the link.",
+   "RT @TheDailyLedgerUS: Debate schedule for the fall is out. Full calendar at the link."
+  ],
+  "n_tweets": 140
+ },
+ {
+  "item_id": "T002",
+  "terms": [
+   "china",
+   "eating",
+   "lunch",
+   "technology",
+   "trade",
+   "american",
+   "workers",
+   "ill",
+   "future",
+   "fundraising"
+  ],
+  "examples": [
+   "China is eating our lunch on trade and technology. I'll put American workers first.",
+   "China is eating our lunch on trade and technology. I'll put American workers first.",
+   "China is eating our lunch on trade and technology. I'll put American workers first."
+  ],
+  "n_tweets": 63
+ },
+ {
+  "item_id": "T003",
+  "terms": [
+   "kids",
+   "classroom",
+   "fight",
+   "bureaucrats",
+   "ill",
+   "expand",
+   "patient",
+   "insulin",
+   "cap",
+   "bans"
+  ],
+  "examples": [
+   "Parents \u2014 not bureaucrats \u2014 should decide what their kids learn. I'll fight for parental rights in every classroom.",
+   "Parents \u2014 not bureaucrats \u2014 should decide what their kids learn. I'll fight for parental rights in every classroom.",
+   "Parents \u2014 not bureaucrats \u2014 should decide what their kids learn. I'll fight for parental rights in every classroom."
+  ],
+  "n_tweets": 4294
+ },
+ {
+  "item_id": "T004",
+  "terms": [
+   "support",
+   "deserve",
+   "defunding",
+   "blue",
+   "relief",
+   "holding",
+   "debt",
+   "college",
+   "student",
+   "generation"
+  ],
+  "examples": [
+   "I'll always back the blue. Our officers in WA deserve support, not defunding.",
+   "I'll always back the blue. Our officers in NY deserve support, not defunding.",
+   "I'll always back the blue. Our officers in FL deserve support, not defunding."
+  ],
+  "n_tweets": 3059
+ },
+ {
+  "item_id": "T005",
+  "terms": [
+   "deserve",
+   "book",
+   "bans",
+   "harassment",
+   "librarians",
+   "wage",
+   "minimum",
+   "working",
+   "rein",
+   "lift"
+  ],
+  "examples": [
+   "Book bans don't protect kids. Librarians and teachers deserve our trust, not harassment.",
+   "Book bans don't protect kids. Librarians and teachers deserve our trust, not harassment.",
+   "Book bans don't protect kids. Librarians and teachers deserve our trust, not harassment."
+  ],
+  "n_tweets": 1360
+ },
+ {
+  "item_id": "T006",
+  "terms": [
+   "rights",
+   "parental",
+   "decide",
+   "learn",
+   "weakness",
+   "allies",
+   "alliances",
+   "constitutional",
+   "owner",
+   "bureaucrats"
+  ],
+  "examples": [
+   "Parents \u2014 not bureaucrats \u2014 should decide what their kids learn. I'll fight for parental rights in every classroom.",
+   "Parents \u2014 not bureaucrats \u2014 should decide what their kids learn. I'll fight for parental rights in every classroom.",
+   "Parents \u2014 not bureaucrats \u2014 should decide what their kids learn. I'll fight for parental rights in every classroom."
+  ],
+  "n_tweets": 1607
+ },
+ {
+  "item_id": "T007",
+  "terms": [
+   "candidate",
+   "house",
+   "covers",
+   "senate",
+   "race",
+   "tracker",
+   "bookmark",
+   "clean",
+   "page",
+   "growth"
+  ],
+  "examples": [
+   "RT @CarePolicyProject: ICYMI: our candidate tracker now covers every House and Senate race. Bookmark it.",
+   "RT @HeartlandDispatch: ICYMI: our candidate tracker now covers every House and Senate race. Bookmark it.",
+   "RT @PatriotPressWire: ICYMI: our candidate tracker now covers every House and Senate race. Bookmark it."
+  ],
+  "n_tweets": 5244
+ },
+ {
+  "item_id": "T008",
+  "terms": [
+   "drives",
+   "enforce",
+   "illegal",
+   "wages",
+   "american",
+   "jobs",
+   "protect",
+   "law",
+   "immigration",
+   "workers"
+  ],
+  "examples": [
+   "Illegal immigration drives down wages for WA workers. Enforce the law, protect American jobs.",
+   "Illegal immigration drives down wages for OH workers. Enforce the law, protect American jobs.",
+   "Illegal immigration drives down wages for MI workers. Enforce the law, protect American jobs."
+  ],
+  "n_tweets": 122
+ },
+ {
+  "item_id": "T009",
+  "terms": [
+   "questions",
+   "saturday",
+   "hall",
+   "open",
+   "town",
+   "bring",
+   "growing",
+   "movement",
+   "doors",
+   "join"
+  ],
+  "examples": [
+   "Join us Saturday at 6pm for a town hall in Newport! Doors open early \u2014 bring your questions.",
+   "Join us Saturday at 2pm for a town hall in Newport! Doors open early \u2014 bring your questions.",
+   "Join us Saturday at 5:30pm for a town hall in Newport! Doors open early \u2014 bring your questions."
+  ],
+  "n_tweets": 2219
+ },
+ {
+  "item_id": "T010",
+  "terms": [
+   "voter",
+   "overwhelming",
+   "supports",
+   "controversial",
+   "poll",
+   "majority",
+   "accelerating",
+   "quietly",
+   "tracking",
+   "ahead"
+  ],
+  "examples": [
+   "RT @CleanAirCoalition: Poll: overwhelming majority supports voter ID. This shouldn't be controversial.",
+   "RT @FaithAndFlagDaily: Poll: overwhelming majority supports voter ID. This shouldn't be controversial.",
+   "RT @SecondAmendmentNow: Poll: overwhelming majority supports voter ID. This shouldn't be controversial."
+  ],
+  "n_tweets": 4502
+ },
+ {
+  "item_id": "T011",
+  "terms": [
+   "issue",
+   "listen",
+   "deeply",
+   "personal",
+   "defunding",
+   "blue",
+   "ill",
+   "families",
+   "support",
+   "officers"
+  ],
+  "examples": [
+   "This issue is deeply personal for families across FL. I'll always listen first.",
+   "This issue is deeply personal for families across TN. I'll always listen first.",
+   "This issue is deeply personal for families across TN. I'll always listen first."
+  ],
+  "n_tweets": 238
+ },
+ {
+  "item_id": "T012",
+  "terms": [
+   "schedule",
+   "calendar",
+   "fall",
+   "debate",
+   "link",
+   "gas",
+   "future",
+   "fundraising",
+   "funded",
+   "fund"
+  ],
+  "examples": [
+   "RT @CivicSignal: Debate schedule for the fall is out. Full calendar at the link.",
+   "RT @CivicSignal: Debate schedule for the fall is out. Full calendar at the link.",
+   "RT @CivicSignal: Debate schedule for the fall is out. Full calendar at the link."
+  ],
+  "n_tweets": 132
+ },
+ {
+  "item_id": "T013",
+  "terms": [
+   "breaking",
+   "immediately",
+   "benefit",
+   "expands",
+   "state",
+   "rural",
+   "medicaid",
+   "hospitals",
+   "hall",
+   "open"
+  ],
+  "examples": [
+   "RT @CarePolicyProject: BREAKING: Another state expands Medicaid \u2014 and rural hospitals immediately benefit.",
+   "RT @GreenFutureFund: BREAKING: Another state expands Medicaid \u2014 and rural hospitals immediately benefit.",
+   "RT @PublicSquareNews: BREAKING: Another state expands Medicaid \u2014 and rural hospitals immediately benefit."
+  ],
+  "n_tweets": 3300
+ },
+ {
+  "item_id": "T014",
+  "terms": [
+   "supports",
+   "poll",
+   "controversial",
+   "majority",
+   "overwhelming",
+   "shouldnt",
+   "voter",
+   "growth",
+   "fund",
+   "fully"
+  ],
+  "examples": [
+   "RT @LibertyLedger: Poll: overwhelming majority supports voter ID. This shouldn't be controversial.",
+   "RT @SecondAmendmentNow: Poll: overwhelming majority supports voter ID. This shouldn't be controversial.",
+   "RT @VotingRightsWatch: Poll: overwhelming majority supports voter ID. This shouldn't be controversial."
+  ],
+  "n_tweets": 1807
+ },
+ {
+  "item_id": "T015",
+  "terms": [
+   "billions",
+   "federal",
+   "study",
+   "pays",
+   "decade",
+   "cut",
+   "tape",
+   "year",
+   "cost",
+   "regulations"
+  ],
+  "examples": [
+   "RT @HeritageHorizon: REPORT: Federal regulations cost small businesses billions last year. Time to cut the red tape.",
+   "RT @FreeMarketForum: REPORT: Federal regulations cost small businesses billions last year. Time to cut the red tape.",
+   "RT @HeartlandDispatch: REPORT: Federal regulations cost small businesses billions last year. Time to cut the red tape."
+  ],
+  "n_tweets": 4979
+ },
+ {
+  "item_id": "T016",
+  "terms": [
+   "killing",
+   "job",
+   "tape",
+   "cut",
+   "regulations",
+   "drowning",
+   "red",
+   "day",
+   "know",
+   "better"
+  ],
+  "examples": [
+   "Small businesses in FL are drowning in red tape. I'll cut job-killing regulations on day one.",
+   "Small businesses in NH are drowning in red tape. I'll cut job-killing regulations on day one.",
+   "Small businesses in TX are drowning in red tape. I'll cut job-killing regulations on day one."
+  ],
+  "n_tweets": 1560
+ },
+ {
+  "item_id": "T017",
+  "terms": [
+   "filed",
+   "supporter",
+   "fundraising",
+   "fec",
+   "quarter",
+   "best",
+   "thank",
+   "report",
+   "gas",
+   "funded"
+  ],
+  "examples": [
+   "Filed our FEC report: best fundraising quarter yet. Thank you to every supporter.",
+   "Filed our FEC report: best fundraising quarter yet. Thank you to every supporter.",
+   "Filed our FEC report: best fundraising quarter yet. Thank you to every supporter."
+  ],
+  "n_tweets": 215
+ },
+ {
+  "item_id": "T018",
+  "terms": [
+   "record",
+   "profits",
+   "undeniable",
+   "data",
+   "hit",
+   "highs",
+   "stagnate",
+   "wages",
+   "corporate",
+   "report"
+  ],
+  "examples": [
+   "RT @TheDailyLedgerUS: NEW REPORT: Corporate profits hit record highs while wages stagnate. The data is undeniable.",
+   "RT @GreenFutureFund: NEW REPORT: Corporate profits hit record highs while wages stagnate. The data is undeniable.",
+   "RT @FreeMarketForum: NEW REPORT: Corporate profits hit record highs while wages stagnate. The data is undeniable."
+  ],
+  "n_tweets": 3476
+ },
+ {
+  "item_id": "T019",
+  "terms": [
+   "prices",
+   "negotiate",
+   "lobbying",
+   "millions",
+   "spends",
+   "pharma",
+   "high",
+   "money",
+   "big",
+   "dont"
+  ],
+  "examples": [
+   "Big Pharma spends millions lobbying to keep prices high. I don't take their money \u2014 and I'll vote to negotiate prices.",
+   "Big Pharma spends millions lobbying to keep prices high. I don't take their money \u2014 and I'll vote to negotiate prices.",
+   "Big Pharma spends millions lobbying to keep prices high. I don't take their money \u2014 and I'll vote to negotiate prices."
+  ],
+  "n_tweets": 82
+ },
+ {
+  "item_id": "T020",
+  "terms": [
+   "parties",
+   "solutions",
+   "blame",
+   "decades",
+   "broken",
+   "immigration",
+   "share",
+   "deserves",
+   "gas",
+   "fundraising"
+  ],
+  "examples": [
+   "Our immigration system has been broken for decades. Both parties share the blame \u2014 MO deserves solutions.",
+   "Our immigration system has been broken for decades. Both parties share the blame \u2014 AK deserves solutions.",
+   "Our immigration system has been broken for decades. Both parties share the blame \u2014 MA deserves solutions."
+  ],
+  "n_tweets": 269
+ },
+ {
+  "item_id": "T021",
+  "terms": [
+   "immediately",
+   "benefit",
+   "expands",
+   "breaking",
+   "medicaid",
+   "rural",
+   "hospitals",
+   "state",
+   "future",
+   "fundraising"
+  ],
+  "examples": [
+   "RT @CleanAirCoalition: BREAKING: Another state expands Medicaid \u2014 and rural hospitals immediately benefit.",
+   "RT @CleanAirCoalition: BREAKING: Another state expands Medicaid \u2014 and rural hospitals immediately benefit.",
+   "RT @CleanAirCoalition: BREAKING: Another state expands Medicaid \u2014 and rural hospitals immediately benefit."
+  ],
+  "n_tweets": 186
+ },
+ {
+  "item_id": "T022",
+  "terms": [
+   "grab",
+   "yard",
+   "weekend",
+   "signs",
+   "office",
+   "swing",
+   "team",
+   "incredible",
+   "volunteers",
+   "knocking"
+  ],
+  "examples": [
+   "Phone bank tonight at 7pm! Grab a coffee and join us \u2014 training provided, no experience needed.",
+   "Phone bank tonight at 2pm! Grab a coffee and join us \u2014 training provided, no experience needed.",
+   "Phone bank tonight at 6pm! Grab a coffee and join us \u2014 training provided, no experience needed."
+  ],
+  "n_tweets": 3401
+ },
+ {
+  "item_id": "T023",
+  "terms": [
+   "minimum",
+   "working",
+   "rein",
+   "wage",
+   "lift",
+   "gouging",
+   "price",
+   "raise",
+   "corporate",
+   "deserve"
+  ],
+  "examples": [
+   "Working families deserve a raise. I'll fight to lift the minimum wage and rein in corporate price gouging.",
+   "Working families deserve a raise. I'll fight to lift the minimum wage and rein in corporate price gouging.",
+   "Working families deserve a raise. I'll fight to lift the minimum wage and rein in corporate price gouging."
+  ],
+  "n_tweets": 160
+ },
+ {
+  "item_id": "T024",
+  "terms": [
+   "rode",
+   "shift",
+   "night",
+   "grateful",
+   "officers",
+   "alton",
+   "harrisburg",
+   "franklin",
+   "georgetown",
+   "summit"
+  ],
+  "examples": [
+   "Rode along with Alton officers last night. Grateful for what they do every shift.",
+   "Rode along with Alton officers last night. Grateful for what they do every shift.",
+   "Rode along with Alton officers last night. Grateful for what they do every shift."
+  ],
+  "n_tweets": 2233
+ },
+ {
+  "item_id": "T025",
+  "terms": [
+   "constitutional",
+   "owner",
+   "proud",
+   "rights",
+   "defend",
+   "gun",
+   "washington",
+   "ill",
+   "fundraising",
+   "funded"
+  ],
+  "examples": [
+   "I'm a proud gun owner and I'll defend your constitutional rights in Washington.",
+   "I'm a proud gun owner and I'll defend your constitutional rights in Washington.",
+   "I'm a proud gun owner and I'll defend your constitutional rights in Washington."
+  ],
+  "n_tweets": 179
+ },
+ {
+  "item_id": "T026",
+  "terms": [
+   "raise",
+   "voters",
+   "sharply",
+   "analysis",
+   "household",
+   "truth",
+   "deserve",
+   "electric",
+   "bills",
+   "mandates"
+  ],
+  "examples": [
+   "RT @TaxpayersFirstOrg: New analysis: energy mandates will raise household electric bills sharply. Voters deserve the truth.",
+   "RT @BorderWatchNet: New analysis: energy mandates will raise household electric bills sharply. Voters deserve the truth.",
+   "RT @FaithAndFlagDaily: New analysis: energy mandates will raise household electric bills sharply. Voters deserve the truth."
+  ],
+  "n_tweets": 3173
+ },
+ {
+  "item_id": "T027",
+  "terms": [
+   "costs",
+   "crushing",
+   "invests",
+   "providers",
+   "caps",
+   "childcare",
+   "plan",
+   "parents",
+   "mandate",
+   "transparency"
+  ],
+  "examples": [
+   "Childcare costs are crushing parents in OH. My plan caps costs and invests in providers.",
+   "Childcare costs are crushing parents in CA. My plan caps costs and invests in providers.",
+   "Childcare costs are crushing parents in KS. My plan caps costs and invests in providers."
+  ],
+  "n_tweets": 1281
+ },
+ {
+  "item_id": "T028",
+  "terms": [
+   "veterans",
+   "words",
+   "meet",
+   "honored",
+   "owe",
+   "today",
+   "dime",
+   "overseas",
+   "care",
+   "kingsport"
+  ],
+  "examples": [
+   "Honored to meet with veterans in Alton today. We owe them more than words.",
+   "Honored to meet with veterans in Alton today. We owe them more than words.",
+   "Honored to meet with veterans in Alton today. We owe them more than words."
+  ],
+  "n_tweets": 2200
+ },
+ {
+  "item_id": "T029",
+  "terms": [
+   "tougher",
+   "offenders",
+   "violent",
+   "consequences",
+   "sentences",
+   "soft",
+   "crime",
+   "policies",
+   "fight",
+   "ill"
+  ],
+  "examples": [
+   "Soft-on-crime policies have consequences. I'll fight for tougher sentences for violent offenders.",
+   "Soft-on-crime policies have consequences. I'll fight for tougher sentences for violent offenders.",
+   "Soft-on-crime policies have consequences. I'll fight for tougher sentences for violent offenders."
+  ],
+  "n_tweets": 100
+ },
+ {
+  "item_id": "T030",
+  "terms": [
+   "accelerating",
+   "tracking",
+   "purges",
+   "quietly",
+   "ahead",
+   "talked",
+   "plant",
+   "supply",
+   "chains",
+   "state"
+  ],
+  "examples": [
+   "RT @CleanAirCoalition: Voter purges are quietly accelerating ahead of the midterms. We're tracking every state.",
+   "RT @CarePolicyProject: Voter purges are quietly accelerating ahead of the midterms. We're tracking every state.",
+   "RT @PatriotPressWire: Voter purges are quietly accelerating ahead of the midterms. We're tracking every state."
+  ],
+  "n_tweets": 5174
+ },
+ {
+  "item_id": "T031",
+  "terms": [
+   "crime",
+   "stats",
+   "damning",
+   "evidence",
+   "body",
+   "soft",
+   "policies",
+   "morning",
+   "gas",
+   "fundraising"
+  ],
+  "examples": [
+   "RT @FreeMarketForum: Crime stats out this morning. Soft-on-crime policies have a body of evidence now \u2014 and it's damning.",
+   "RT @FreeMarketForum: Crime stats out this morning. Soft-on-crime policies have a body of evidence now \u2014 and it's damning.",
+   "RT @FreeMarketForum: Crime stats out this morning. Soft-on-crime policies have a body of evidence now \u2014 and it's damning."
+  ],
+  "n_tweets": 83
+ },
+ {
+  "item_id": "T032",
+  "terms": [
+   "washington",
+   "healthcare",
+   "defend",
+   "public",
+   "gun",
+   "means",
+   "ill",
+   "isnt",
+   "human",
+   "proud"
+  ],
+  "examples": [
+   "I'm a proud gun owner and I'll defend your constitutional rights in Washington.",
+   "I'm a proud gun owner and I'll defend your constitutional rights in Washington.",
+   "I'm a proud gun owner and I'll defend your constitutional rights in Washington."
+  ],
+  "n_tweets": 13319
+ },
+ {
+  "item_id": "T033",
+  "terms": [
+   "border",
+   "immigration",
+   "parties",
+   "decades",
+   "blame",
+   "solutions",
+   "broken",
+   "crossings",
+   "surge",
+   "accountability"
+  ],
+  "examples": [
+   "Our immigration system has been broken for decades. Both parties share the blame \u2014 TX deserves solutions.",
+   "Our immigration system has been broken for decades. Both parties share the blame \u2014 WI deserves solutions.",
+   "Our immigration system has been broken for decades. Both parties share the blame \u2014 OH deserves solutions."
+  ],
+  "n_tweets": 8341
+ },
+ {
+  "item_id": "T034",
+  "terms": [
+   "yard",
+   "signs",
+   "office",
+   "swing",
+   "weekend",
+   "grab",
+   "madison",
+   "heights",
+   "millbrook",
+   "bellview"
+  ],
+  "examples": [
+   "Yard signs are IN. Swing by the Bellview office and grab one this weekend!",
+   "Yard signs are IN. Swing by the Bellview office and grab one this weekend!",
+   "Yard signs are IN. Swing by the Bellview office and grab one this weekend!"
+  ],
+  "n_tweets": 225
+ },
+ {
+  "item_id": "T035",
+  "terms": [
+   "shot",
+   "thats",
+   "campaign",
+   "good",
+   "fair",
+   "jobs",
+   "better",
+   "think",
+   "know",
+   "elites"
+  ],
+  "examples": [
+   "Good jobs and a fair shot \u2014 that's what this campaign is about for AR.",
+   "Good jobs and a fair shot \u2014 that's what this campaign is about for SD.",
+   "Good jobs and a fair shot \u2014 that's what this campaign is about for NC."
+  ],
+  "n_tweets": 1813
+ },
+ {
+  "item_id": "T036",
+  "terms": [
+   "energy",
+   "clean",
+   "bills",
+   "electric",
+   "mandates",
+   "analysis",
+   "truth",
+   "sharply",
+   "household",
+   "growth"
+  ],
+  "examples": [
+   "RT @TaxpayersFirstOrg: New analysis: energy mandates will raise household electric bills sharply. Voters deserve the truth.",
+   "RT @CarePolicyProject: New analysis: energy mandates will raise household electric bills sharply. Voters deserve the truth.",
+   "RT @BorderWatchNet: New analysis: energy mandates will raise household electric bills sharply. Voters deserve the truth."
+  ],
+  "n_tweets": 7322
+ },
+ {
+  "item_id": "T037",
+  "terms": [
+   "oppose",
+   "negotiable",
+   "amendment",
+   "grab",
+   "time",
+   "second",
+   "isnt",
+   "gun",
+   "ill",
+   "georgetown"
+  ],
+  "examples": [
+   "The Second Amendment isn't negotiable. I'll oppose every gun grab, every time.",
+   "The Second Amendment isn't negotiable. I'll oppose every gun grab, every time.",
+   "The Second Amendment isn't negotiable. I'll oppose every gun grab, every time."
+  ],
+  "n_tweets": 487
+ },
+ {
+  "item_id": "T038",
+  "terms": [
+   "ill",
+   "energy",
+   "deserve",
+   "crime",
+   "morning",
+   "new",
+   "fight",
+   "policies",
+   "workers",
+   "voters"
+  ],
+  "examples": [
+   "RT @BorderWatchNet: New analysis: energy mandates will raise household electric bills sharply. Voters deserve the truth.",
+   "RT @TaxpayersFirstOrg: New analysis: energy mandates will raise household electric bills sharply. Voters deserve the truth.",
+   "RT @BorderWatchNet: New analysis: energy mandates will raise household electric bills sharply. Voters deserve the truth."
+  ],
+  "n_tweets": 37884
+ },
+ {
+  "item_id": "T039",
+  "terms": [
+   "bio",
+   "registration",
+   "democracy",
+   "works",
+   "check",
+   "link",
+   "today",
+   "unborn",
+   "pro",
+   "proudly"
+  ],
+  "examples": [
+   "Democracy works when we show up. Check your registration today \u2014 link in bio.",
+   "Democracy works when we show up. Check your registration today \u2014 link in bio.",
+   "Democracy works when we show up. Check your registration today \u2014 link in bio."
+  ],
+  "n_tweets": 236
+ },
+ {
+  "item_id": "T040",
+  "terms": [
+   "weeks",
+   "primaries",
+   "beat",
+   "turnout",
+   "levels",
+   "counties",
+   "future",
+   "fundraising",
+   "funded",
+   "fund"
+  ],
+  "examples": [
+   "RT @WorkersUnitedHQ: Turnout in this week's primaries beat 2018 levels in most counties.",
+   "RT @WorkersUnitedHQ: Turnout in this week's primaries beat 2018 levels in most counties.",
+   "RT @WorkersUnitedHQ: Turnout in this week's primaries beat 2018 levels in most counties."
+  ],
+  "n_tweets": 147
+ },
+ {
+  "item_id": "T041",
+  "terms": [
+   "experience",
+   "needed",
+   "provided",
+   "coffee",
+   "phone",
+   "training",
+   "bank",
+   "join",
+   "tonight",
+   "grab"
+  ],
+  "examples": [
+   "Phone bank tonight at 5:30pm! Grab a coffee and join us \u2014 training provided, no experience needed.",
+   "Phone bank tonight at 6pm! Grab a coffee and join us \u2014 training provided, no experience needed.",
+   "Phone bank tonight at 7pm! Grab a coffee and join us \u2014 training provided, no experience needed."
+  ],
+  "n_tweets": 1121
+ },
+ {
+  "item_id": "T042",
+  "terms": [
+   "thank",
+   "supporter",
+   "quarter",
+   "filed",
+   "fundraising",
+   "fec",
+   "movement",
+   "growing",
+   "best",
+   "standing"
+  ],
+  "examples": [
+   "Filed our FEC report: best fundraising quarter yet. Thank you to every supporter.",
+   "Filed our FEC report: best fundraising quarter yet. Thank you to every supporter.",
+   "Filed our FEC report: best fundraising quarter yet. Thank you to every supporter."
+  ],
+  "n_tweets": 2244
+ },
+ {
+  "item_id": "T043",
+  "terms": [
+   "sharply",
+   "household",
+   "analysis",
+   "truth",
+   "mandates",
+   "raise",
+   "electric",
+   "bills",
+   "staff",
+   "nurses"
+  ],
+  "examples": [
+   "RT @FaithAndFlagDaily: New analysis: energy mandates will raise household electric bills sharply. Voters deserve the truth.",
+   "RT @LibertyLedger: New analysis: energy mandates will raise household electric bills sharply. Voters deserve the truth.",
+   "RT @TaxpayersFirstOrg: New analysis: energy mandates will raise household electric bills sharply. Voters deserve the truth."
+  ],
+  "n_tweets": 3328
+ },
+ {
+  "item_id": "T044",
+  "terms": [
+   "issue",
+   "deeply",
+   "personal",
+   "listen",
+   "families",
+   "ill",
+   "generation",
+   "gas",
+   "future",
+   "fundraising"
+  ],
+  "examples": [
+   "This issue is deeply personal for families across IA. I'll always listen first.",
+   "This issue is deeply personal for families across MO. I'll always listen first.",
+   "This issue is deeply personal for families across RI. I'll always listen first."
+  ],
+  "n_tweets": 1741
+ },
+ {
+  "item_id": "T045",
+  "terms": [
+   "prices",
+   "spends",
+   "millions",
+   "pharma",
+   "negotiate",
+   "lobbying",
+   "high",
+   "gerrymandering",
+   "fix",
+   "independent"
+  ],
+  "examples": [
+   "Big Pharma spends millions lobbying to keep prices high. I don't take their money \u2014 and I'll vote to negotiate prices.",
+   "Big Pharma spends millions lobbying to keep prices high. I don't take their money \u2014 and I'll vote to negotiate prices.",
+   "Big Pharma spends millions lobbying to keep prices high. I don't take their money \u2014 and I'll vote to negotiate prices."
+  ],
+  "n_tweets": 1361
+ },
+ {
+  "item_id": "T046",
+  "terms": [
+   "crossings",
+   "surge",
+   "accountability",
+   "border",
+   "pipelines",
+   "mining",
+   "building",
+   "independence",
+   "drilling",
+   "means"
+  ],
+  "examples": [
+   "RT @TaxpayersFirstOrg: Border crossings surge again \u2014 where is the accountability?",
+   "RT @BorderWatchNet: Border crossings surge again \u2014 where is the accountability?",
+   "RT @CleanAirCoalition: Border crossings surge again \u2014 where is the accountability?"
+  ],
+  "n_tweets": 2278
+ },
+ {
+  "item_id": "T047",
+  "terms": [
+   "dropping",
+   "endorsement",
+   "tomorrow",
+   "tuned",
+   "stay",
+   "morning",
+   "new",
+   "generation",
+   "gas",
+   "future"
+  ],
+  "examples": [
+   "New endorsement dropping tomorrow morning. Stay tuned, RI!",
+   "New endorsement dropping tomorrow morning. Stay tuned, NY!",
+   "New endorsement dropping tomorrow morning. Stay tuned, NC!"
+  ],
+  "n_tweets": 1151
+ },
+ {
+  "item_id": "T048",
+  "terms": [
+   "quality",
+   "access",
+   "affordable",
+   "care",
+   "stop",
+   "deserves",
+   "border",
+   "family",
+   "agents",
+   "wall"
+  ],
+  "examples": [
+   "Every family in MI deserves access to quality, affordable care. Full stop.",
+   "Every family in FL deserves access to quality, affordable care. Full stop.",
+   "Every family in KY deserves access to quality, affordable care. Full stop."
+  ],
+  "n_tweets": 2685
+ },
+ {
+  "item_id": "T049",
+  "terms": [
+   "doctors",
+   "bureaucrats",
+   "patients",
+   "decisions",
+   "make",
+   "health",
+   "government",
+   "generation",
+   "gas",
+   "future"
+  ],
+  "examples": [
+   "Patients and doctors should make health decisions \u2014 not government bureaucrats.",
+   "Patients and doctors should make health decisions \u2014 not government bureaucrats.",
+   "Patients and doctors should make health decisions \u2014 not government bureaucrats."
+  ],
+  "n_tweets": 554
+ },
+ {
+  "item_id": "T050",
+  "terms": [
+   "donors",
+   "grassroots",
+   "gift",
+   "crossed",
+   "pacs",
+   "powered",
+   "average",
+   "campaign",
+   "just",
+   "people"
+  ],
+  "examples": [
+   "We just crossed 50,000 grassroots donors! Average gift: $27. This campaign is powered by people, not PACs.",
+   "We just crossed 25,000 grassroots donors! Average gift: $27. This campaign is powered by people, not PACs.",
+   "We just crossed 10,000 grassroots donors! Average gift: $27. This campaign is powered by people, not PACs."
+  ],
+  "n_tweets": 1742
+ },
+ {
+  "item_id": "T051",
+  "terms": [
+   "corporate",
+   "undeniable",
+   "stagnate",
+   "data",
+   "hit",
+   "highs",
+   "wages",
+   "report",
+   "record",
+   "profits"
+  ],
+  "examples": [
+   "RT @WorkersUnitedHQ: NEW REPORT: Corporate profits hit record highs while wages stagnate. The data is undeniable.",
+   "RT @GreenFutureFund: NEW REPORT: Corporate profits hit record highs while wages stagnate. The data is undeniable.",
+   "RT @ProgressNowDaily: NEW REPORT: Corporate profits hit record highs while wages stagnate. The data is undeniable."
+  ],
+  "n_tweets": 3562
+ },
+ {
+  "item_id": "T052",
+  "terms": [
+   "watch",
+   "live",
+   "chip",
+   "contrast",
+   "night",
+   "debate",
+   "share",
+   "new",
+   "noon",
+   "gas"
+  ],
+  "examples": [
+   "Our new ad is live. Watch it, share it, and chip in $5 if you can.",
+   "Our new ad is live. Watch it, share it, and chip in $5 if you can.",
+   "Our new ad is live. Watch it, share it, and chip in $5 if you can."
+  ],
+  "n_tweets": 2319
+ },
+ {
+  "item_id": "T053",
+  "terms": [
+   "tracker",
+   "house",
+   "candidate",
+   "covers",
+   "senate",
+   "bookmark",
+   "race",
+   "generation",
+   "future",
+   "fundraising"
+  ],
+  "examples": [
+   "RT @GreenFutureFund: ICYMI: our candidate tracker now covers every House and Senate race. Bookmark it.",
+   "RT @CivicSignal: ICYMI: our candidate tracker now covers every House and Senate race. Bookmark it.",
+   "RT @BorderWatchNet: ICYMI: our candidate tracker now covers every House and Senate race. Bookmark it."
+  ],
+  "n_tweets": 2638
+ },
+ {
+  "item_id": "T054",
+  "terms": [
+   "yard",
+   "office",
+   "weekend",
+   "signs",
+   "swing",
+   "grab",
+   "expand",
+   "cap",
+   "insulin",
+   "patient"
+  ],
+  "examples": [
+   "Yard signs are IN. Swing by the Newport office and grab one this weekend!",
+   "Yard signs are IN. Swing by the Newport office and grab one this weekend!",
+   "Yard signs are IN. Swing by the Newport office and grab one this weekend!"
+  ],
+  "n_tweets": 2361
+ },
+ {
+  "item_id": "T055",
+  "terms": [
+   "generation",
+   "relief",
+   "student",
+   "college",
+   "debt",
+   "holding",
+   "community",
+   "free",
+   "support",
+   "future"
+  ],
+  "examples": [
+   "Student debt is holding back a generation. I support relief and free community college.",
+   "Student debt is holding back a generation. I support relief and free community college.",
+   "Student debt is holding back a generation. I support relief and free community college."
+  ],
+  "n_tweets": 669
+ },
+ {
+  "item_id": "T056",
+  "terms": [
+   "chip",
+   "fundraising",
+   "fec",
+   "quarter",
+   "supporter",
+   "filed",
+   "gift",
+   "average",
+   "donors",
+   "grassroots"
+  ],
+  "examples": [
+   "Our new ad is live. Watch it, share it, and chip in $5 if you can.",
+   "Our new ad is live. Watch it, share it, and chip in $5 if you can.",
+   "Our new ad is live. Watch it, share it, and chip in $5 if you can."
+  ],
+  "n_tweets": 3419
+ },
+ {
+  "item_id": "T057",
+  "terms": [
+   "businesses",
+   "small",
+   "red",
+   "cut",
+   "tape",
+   "regulations",
+   "cost",
+   "thank",
+   "single",
+   "report"
+  ],
+  "examples": [
+   "RT @HeritageHorizon: REPORT: Federal regulations cost small businesses billions last year. Time to cut the red tape.",
+   "RT @MainStreetMonitor: REPORT: Federal regulations cost small businesses billions last year. Time to cut the red tape.",
+   "RT @FaithAndFlagDaily: REPORT: Federal regulations cost small businesses billions last year. Time to cut the red tape."
+  ],
+  "n_tweets": 13158
+ },
+ {
+  "item_id": "T058",
+  "terms": [
+   "experience",
+   "needed",
+   "provided",
+   "coffee",
+   "phone",
+   "training",
+   "bank",
+   "tonight",
+   "join",
+   "grab"
+  ],
+  "examples": [
+   "Phone bank tonight at 2pm! Grab a coffee and join us \u2014 training provided, no experience needed.",
+   "Phone bank tonight at 5:30pm! Grab a coffee and join us \u2014 training provided, no experience needed.",
+   "Phone bank tonight at 2pm! Grab a coffee and join us \u2014 training provided, no experience needed."
+  ],
+  "n_tweets": 333
+ },
+ {
+  "item_id": "T059",
+  "terms": [
+   "good",
+   "shot",
+   "fair",
+   "thats",
+   "campaign",
+   "jobs",
+   "future",
+   "fundraising",
+   "funded",
+   "fund"
+  ],
+  "examples": [
+   "Good jobs and a fair shot \u2014 that's what this campaign is about for KS.",
+   "Good jobs and a fair shot \u2014 that's what this campaign is about for KS.",
+   "Good jobs and a fair shot \u2014 that's what this campaign is about for TX."
+  ],
+  "n_tweets": 154
+ },
+ {
+  "item_id": "T060",
+  "terms": [
+   "youth",
+   "policing",
+   "programs",
+   "response",
+   "mental",
+   "investing",
+   "safety",
+   "means",
+   "communities",
+   "accountable"
+  ],
+  "examples": [
+   "Real public safety means investing in communities \u2014 mental health response, youth programs, and accountable policing.",
+   "Real public safety means investing in communities \u2014 mental health response, youth programs, and accountable policing.",
+   "Real public safety means investing in communities \u2014 mental health response, youth programs, and accountable policing."
+  ],
+  "n_tweets": 67
+ },
+ {
+  "item_id": "T061",
+  "terms": [
+   "shift",
+   "rode",
+   "grateful",
+   "officers",
+   "night",
+   "prevention",
+   "violence",
+   "ive",
+   "seen",
+   "crisis"
+  ],
+  "examples": [
+   "Rode along with Alton officers last night. Grateful for what they do every shift.",
+   "Rode along with Alton officers last night. Grateful for what they do every shift.",
+   "Rode along with Alton officers last night. Grateful for what they do every shift."
+  ],
+  "n_tweets": 2757
+ },
+ {
+  "item_id": "T062",
+  "terms": [
+   "tracker",
+   "house",
+   "candidate",
+   "covers",
+   "senate",
+   "bookmark",
+   "race",
+   "generation",
+   "future",
+   "fundraising"
+  ],
+  "examples": [
+   "RT @BorderWatchNet: ICYMI: our candidate tracker now covers every House and Senate race. Bookmark it.",
+   "RT @BorderWatchNet: ICYMI: our candidate tracker now covers every House and Senate race. Bookmark it.",
+   "RT @BorderWatchNet: ICYMI: our candidate tracker now covers every House and Senate race. Bookmark it."
+  ],
+  "n_tweets": 72
+ },
+ {
+  "item_id": "T063",
+  "terms": [
+   "tougher",
+   "offenders",
+   "violent",
+   "consequences",
+   "sentences",
+   "soft",
+   "crime",
+   "policies",
+   "fight",
+   "ill"
+  ],
+  "examples": [
+   "Soft-on-crime policies have consequences. I'll fight for tougher sentences for violent offenders.",
+   "Soft-on-crime policies have consequences. I'll fight for tougher sentences for violent offenders.",
+   "Soft-on-crime policies have consequences. I'll fight for tougher sentences for violent offenders."
+  ],
+  "n_tweets": 92
+ },
+ {
+  "item_id": "T064",
+  "terms": [
+   "tougher",
+   "offenders",
+   "violent",
+   "consequences",
+   "sentences",
+   "soft",
+   "crime",
+   "policies",
+   "fight",
+   "ill"
+  ],
+  "examples": [
+   "Soft-on-crime policies have consequences. I'll fight for tougher sentences for violent offenders.",
+   "Soft-on-crime policies have consequences. I'll fight for tougher sentences for violent offenders.",
+   "Soft-on-crime policies have consequences. I'll fight for tougher sentences for violent offenders."
+  ],
+  "n_tweets": 182
+ },
+ {
+  "item_id": "T065",
+  "terms": [
+   "rural",
+   "medicaid",
+   "hospitals",
+   "immediately",
+   "benefit",
+   "breaking",
+   "expands",
+   "access",
+   "affordable",
+   "quality"
+  ],
+  "examples": [
+   "RT @FaithAndFlagDaily: BREAKING: Another state expands Medicaid \u2014 and rural hospitals immediately benefit.",
+   "RT @VotingRightsWatch: BREAKING: Another state expands Medicaid \u2014 and rural hospitals immediately benefit.",
+   "RT @PublicSquareNews: BREAKING: Another state expands Medicaid \u2014 and rural hospitals immediately benefit."
+  ],
+  "n_tweets": 8063
+ },
+ {
+  "item_id": "T066",
+  "terms": [
+   "stopped",
+   "elementary",
+   "heroes",
+   "period",
+   "teachers",
+   "today",
+   "create",
+   "entrepreneurs",
+   "doesnt",
+   "prosperity"
+  ],
+  "examples": [
+   "Stopped by Summit Elementary today. Our teachers are heroes \u2014 period.",
+   "Stopped by Summit Elementary today. Our teachers are heroes \u2014 period.",
+   "Stopped by Summit Elementary today. Our teachers are heroes \u2014 period."
+  ],
+  "n_tweets": 2977
+ },
+ {
+  "item_id": "T067",
+  "terms": [
+   "chains",
+   "talked",
+   "supply",
+   "plant",
+   "manufacturing",
+   "morning",
+   "workers",
+   "falls",
+   "cedar",
+   "franklin"
+  ],
+  "examples": [
+   "Talked supply chains and manufacturing with workers at the plant in Summit this morning.",
+   "Talked supply chains and manufacturing with workers at the plant in Summit this morning.",
+   "Talked supply chains and manufacturing with workers at the plant in Summit this morning."
+  ],
+  "n_tweets": 1345
+ },
+ {
+  "item_id": "T068",
+  "terms": [
+   "gun",
+   "laws",
+   "amendment",
+   "second",
+   "dont",
+   "ill",
+   "isnt",
+   "defend",
+   "seen",
+   "violence"
+  ],
+  "examples": [
+   "The Second Amendment isn't negotiable. I'll oppose every gun grab, every time.",
+   "The Second Amendment isn't negotiable. I'll oppose every gun grab, every time.",
+   "The Second Amendment isn't negotiable. I'll oppose every gun grab, every time."
+  ],
+  "n_tweets": 3881
+ },
+ {
+  "item_id": "T069",
+  "terms": [
+   "today",
+   "border",
+   "community",
+   "grateful",
+   "health",
+   "met",
+   "period",
+   "works",
+   "check",
+   "accountability"
+  ],
+  "examples": [
+   "Democracy works when we show up. Check your registration today \u2014 link in bio.",
+   "Democracy works when we show up. Check your registration today \u2014 link in bio.",
+   "Democracy works when we show up. Check your registration today \u2014 link in bio."
+  ],
+  "n_tweets": 25752
+ },
+ {
+  "item_id": "T070",
+  "terms": [
+   "weeks",
+   "primaries",
+   "beat",
+   "turnout",
+   "levels",
+   "counties",
+   "future",
+   "fundraising",
+   "funded",
+   "fund"
+  ],
+  "examples": [
+   "RT @CleanAirCoalition: Turnout in this week's primaries beat 2018 levels in most counties.",
+   "RT @TheDailyLedgerUS: Turnout in this week's primaries beat 2018 levels in most counties.",
+   "RT @TheDailyLedgerUS: Turnout in this week's primaries beat 2018 levels in most counties."
+  ],
+  "n_tweets": 2456
+ },
+ {
+  "item_id": "T071",
+  "terms": [
+   "midterms",
+   "state",
+   "voter",
+   "live",
+   "roundup",
+   "polling",
+   "latest",
+   "tightening",
+   "key",
+   "races"
+  ],
+  "examples": [
+   "RT @SecondAmendmentNow: Our latest polling roundup for the 2022 midterms is live. Key races tightening.",
+   "RT @GreenFutureFund: Our latest polling roundup for the 2022 midterms is live. Key races tightening.",
+   "RT @ProgressNowDaily: Our latest polling roundup for the 2022 midterms is live. Key races tightening."
+  ],
+  "n_tweets": 9287
+ },
+ {
+  "item_id": "T072",
+  "terms": [
+   "debate",
+   "calendar",
+   "schedule",
+   "fall",
+   "link",
+   "contrast",
+   "watch",
+   "night",
+   "live",
+   "noon"
+  ],
+  "examples": [
+   "RT @StatehouseWire: Debate schedule for the fall is out. Full calendar at the link.",
+   "RT @TheDailyLedgerUS: Debate schedule for the fall is out. Full calendar at the link.",
+   "RT @HeritageHorizon: Debate schedule for the fall is out. Full calendar at the link."
+  ],
+  "n_tweets": 3743
+ },
+ {
+  "item_id": "T073",
+  "terms": [
+   "keeping",
+   "leaders",
+   "neighborhoods",
+   "met",
+   "enforcement",
+   "safe",
+   "law",
+   "community",
+   "government",
+   "existing"
+  ],
+  "examples": [
+   "Met with law enforcement and community leaders in Riverton about keeping our neighborhoods safe.",
+   "Met with law enforcement and community leaders in Riverton about keeping our neighborhoods safe.",
+   "Met with law enforcement and community leaders in Riverton about keeping our neighborhoods safe."
+  ],
+  "n_tweets": 4220
+ },
+ {
+  "item_id": "T074",
+  "terms": [
+   "prices",
+   "vote",
+   "lobbying",
+   "high",
+   "pharma",
+   "spends",
+   "negotiate",
+   "millions",
+   "money",
+   "big"
+  ],
+  "examples": [
+   "Big Pharma spends millions lobbying to keep prices high. I don't take their money \u2014 and I'll vote to negotiate prices.",
+   "Big Pharma spends millions lobbying to keep prices high. I don't take their money \u2014 and I'll vote to negotiate prices.",
+   "Big Pharma spends millions lobbying to keep prices high. I don't take their money \u2014 and I'll vote to negotiate prices."
+  ],
+  "n_tweets": 1574
+ },
+ {
+  "item_id": "T075",
+  "terms": [
+   "accelerating",
+   "purges",
+   "quietly",
+   "tracking",
+   "ahead",
+   "state",
+   "midterms",
+   "voter",
+   "generation",
+   "gas"
+  ],
+  "examples": [
+   "RT @FreeMarketForum: Voter purges are quietly accelerating ahead of the midterms. We're tracking every state.",
+   "RT @PublicSquareNews: Voter purges are quietly accelerating ahead of the midterms. We're tracking every state.",
+   "RT @CarePolicyProject: Voter purges are quietly accelerating ahead of the midterms. We're tracking every state."
+  ],
+  "n_tweets": 1626
+ },
+ {
+  "item_id": "T076",
+  "terms": [
+   "staff",
+   "nurses",
+   "running",
+   "visited",
+   "center",
+   "grateful",
+   "community",
+   "health",
+   "riverton",
+   "greenville"
+  ],
+  "examples": [
+   "Visited the community health center in Summit \u2014 grateful for the nurses and staff who keep it running.",
+   "Visited the community health center in Summit \u2014 grateful for the nurses and staff who keep it running.",
+   "Visited the community health center in Summit \u2014 grateful for the nurses and staff who keep it running."
+  ],
+  "n_tweets": 1444
+ },
+ {
+  "item_id": "T077",
+  "terms": [
+   "parties",
+   "blame",
+   "solutions",
+   "decades",
+   "immigration",
+   "deserves",
+   "broken",
+   "share",
+   "paid",
+   "worth"
+  ],
+  "examples": [
+   "Our immigration system has been broken for decades. Both parties share the blame \u2014 SC deserves solutions.",
+   "Our immigration system has been broken for decades. Both parties share the blame \u2014 MN deserves solutions.",
+   "Our immigration system has been broken for decades. Both parties share the blame \u2014 TX deserves solutions."
+  ],
+  "n_tweets": 4246
+ },
+ {
+  "item_id": "T078",
+  "terms": [
+   "needed",
+   "training",
+   "bank",
+   "experience",
+   "provided",
+   "coffee",
+   "phone",
+   "tonight",
+   "join",
+   "grab"
+  ],
+  "examples": [
+   "Phone bank tonight at 6pm! Grab a coffee and join us \u2014 training provided, no experience needed.",
+   "Phone bank tonight at 6pm! Grab a coffee and join us \u2014 training provided, no experience needed.",
+   "Phone bank tonight at 2pm! Grab a coffee and join us \u2014 training provided, no experience needed."
+  ],
+  "n_tweets": 1602
+ },
+ {
+  "item_id": "T079",
+  "terms": [
+   "fall",
+   "calendar",
+   "schedule",
+   "debate",
+   "link",
+   "consequences",
+   "tougher",
+   "sentences",
+   "offenders",
+   "violent"
+  ],
+  "examples": [
+   "RT @PublicSquareNews: Debate schedule for the fall is out. Full calendar at the link.",
+   "RT @CivicSignal: Debate schedule for the fall is out. Full calendar at the link.",
+   "RT @CarePolicyProject: Debate schedule for the fall is out. Full calendar at the link."
+  ],
+  "n_tweets": 4370
+ },
+ {
+  "item_id": "T080",
+  "terms": [
+   "blue",
+   "defunding",
+   "officers",
+   "ill",
+   "pathway",
+   "dreamers",
+   "citizenship",
+   "paperwork",
+   "support",
+   "deserve"
+  ],
+  "examples": [
+   "I'll always back the blue. Our officers in MT deserve support, not defunding.",
+   "I'll always back the blue. Our officers in FL deserve support, not defunding.",
+   "I'll always back the blue. Our officers in MT deserve support, not defunding."
+  ],
+  "n_tweets": 2769
+ },
+ {
+  "item_id": "T081",
+  "terms": [
+   "stop",
+   "care",
+   "access",
+   "affordable",
+   "quality",
+   "family",
+   "deserves",
+   "reckless",
+   "inflation",
+   "spending"
+  ],
+  "examples": [
+   "Every family in KS deserves access to quality, affordable care. Full stop.",
+   "Every family in CA deserves access to quality, affordable care. Full stop.",
+   "Every family in NV deserves access to quality, affordable care. Full stop."
+  ],
+  "n_tweets": 3176
+ },
+ {
+  "item_id": "T082",
+  "terms": [
+   "choices",
+   "options",
+   "fewer",
+   "private",
+   "waits",
+   "run",
+   "longer",
+   "healthcare",
+   "means",
+   "defend"
+  ],
+  "examples": [
+   "Washington-run healthcare means longer waits and fewer choices. I'll defend private options for WA families.",
+   "Washington-run healthcare means longer waits and fewer choices. I'll defend private options for PA families.",
+   "Washington-run healthcare means longer waits and fewer choices. I'll defend private options for AL families."
+  ],
+  "n_tweets": 574
+ },
+ {
+  "item_id": "T083",
+  "terms": [
+   "regulations",
+   "tape",
+   "cut",
+   "red",
+   "small",
+   "businesses",
+   "billions",
+   "federal",
+   "year",
+   "cost"
+  ],
+  "examples": [
+   "RT @GreenFutureFund: REPORT: Federal regulations cost small businesses billions last year. Time to cut the red tape.",
+   "RT @TaxpayersFirstOrg: REPORT: Federal regulations cost small businesses billions last year. Time to cut the red tape.",
+   "RT @SecondAmendmentNow: REPORT: Federal regulations cost small businesses billions last year. Time to cut the red tape."
+  ],
+  "n_tweets": 6369
+ },
+ {
+  "item_id": "T084",
+  "terms": [
+   "existing",
+   "takeover",
+   "medicine",
+   "conditions",
+   "big",
+   "people",
+   "pre",
+   "protect",
+   "government",
+   "bankrupt"
+  ],
+  "examples": [
+   "We can protect people with pre-existing conditions without a big-government takeover of medicine.",
+   "We can protect people with pre-existing conditions without a big-government takeover of medicine.",
+   "We can protect people with pre-existing conditions without a big-government takeover of medicine."
+  ],
+  "n_tweets": 61
+ },
+ {
+  "item_id": "T085",
+  "terms": [
+   "watch",
+   "live",
+   "chip",
+   "contrast",
+   "night",
+   "debate",
+   "share",
+   "got",
+   "sick",
+   "right"
+  ],
+  "examples": [
+   "Our new ad is live. Watch it, share it, and chip in $5 if you can.",
+   "Our new ad is live. Watch it, share it, and chip in $5 if you can.",
+   "Our new ad is live. Watch it, share it, and chip in $5 if you can."
+  ],
+  "n_tweets": 4200
+ },
+ {
+  "item_id": "T086",
+  "terms": [
+   "growing",
+   "movement",
+   "single",
+   "tonight",
+   "thank",
+   "room",
+   "standing",
+   "day",
+   "greenville",
+   "bremerton"
+  ],
+  "examples": [
+   "Thank you Newport! Standing room only tonight. This movement is growing every single day.",
+   "Thank you Newport! Standing room only tonight. This movement is growing every single day.",
+   "Thank you Newport! Standing room only tonight. This movement is growing every single day."
+  ],
+  "n_tweets": 1108
+ },
+ {
+  "item_id": "T087",
+  "terms": [
+   "supports",
+   "poll",
+   "controversial",
+   "majority",
+   "overwhelming",
+   "shouldnt",
+   "voter",
+   "growth",
+   "fund",
+   "fully"
+  ],
+  "examples": [
+   "RT @TheDailyLedgerUS: Poll: overwhelming majority supports voter ID. This shouldn't be controversial.",
+   "RT @PatriotPressWire: Poll: overwhelming majority supports voter ID. This shouldn't be controversial.",
+   "RT @FreeMarketForum: Poll: overwhelming majority supports voter ID. This shouldn't be controversial."
+  ],
+  "n_tweets": 1807
+ },
+ {
+  "item_id": "T088",
+  "terms": [
+   "crime",
+   "policies",
+   "soft",
+   "evidence",
+   "damning",
+   "stats",
+   "body",
+   "morning",
+   "tougher",
+   "consequences"
+  ],
+  "examples": [
+   "RT @HeritageHorizon: Crime stats out this morning. Soft-on-crime policies have a body of evidence now \u2014 and it's damning.",
+   "RT @FaithAndFlagDaily: Crime stats out this morning. Soft-on-crime policies have a body of evidence now \u2014 and it's damning.",
+   "RT @FaithAndFlagDaily: Crime stats out this morning. Soft-on-crime policies have a body of evidence now \u2014 and it's damning."
+  ],
+  "n_tweets": 3238
+ },
+ {
+  "item_id": "T089",
+  "terms": [
+   "family",
+   "dropping",
+   "tomorrow",
+   "endorsement",
+   "tuned",
+   "happy",
+   "stay",
+   "morning",
+   "new",
+   "blank"
+  ],
+  "examples": [
+   "New endorsement dropping tomorrow morning. Stay tuned, FL!",
+   "New endorsement dropping tomorrow morning. Stay tuned, FL!",
+   "New endorsement dropping tomorrow morning. Stay tuned, RI!"
+  ],
+  "n_tweets": 3493
+ },
+ {
+  "item_id": "T090",
+  "terms": [
+   "registration",
+   "bio",
+   "democracy",
+   "works",
+   "link",
+   "check",
+   "today",
+   "gas",
+   "future",
+   "gun"
+  ],
+  "examples": [
+   "Democracy works when we show up. Check your registration today \u2014 link in bio.",
+   "Democracy works when we show up. Check your registration today \u2014 link in bio.",
+   "Democracy works when we show up. Check your registration today \u2014 link in bio."
+  ],
+  "n_tweets": 1939
+ },
+ {
+  "item_id": "T091",
+  "terms": [
+   "decade",
+   "pays",
+   "study",
+   "pass",
+   "universal",
+   "pre",
+   "future",
+   "fundraising",
+   "funded",
+   "fund"
+  ],
+  "examples": [
+   "RT @GreenFutureFund: Study: universal pre-K pays for itself within a decade. Pass it on.",
+   "RT @GreenFutureFund: Study: universal pre-K pays for itself within a decade. Pass it on.",
+   "RT @GreenFutureFund: Study: universal pre-K pays for itself within a decade. Pass it on."
+  ],
+  "n_tweets": 181
+ },
+ {
+  "item_id": "T092",
+  "terms": [
+   "crime",
+   "soft",
+   "stats",
+   "evidence",
+   "damning",
+   "body",
+   "policies",
+   "morning",
+   "blue",
+   "defunding"
+  ],
+  "examples": [
+   "RT @BorderWatchNet: Crime stats out this morning. Soft-on-crime policies have a body of evidence now \u2014 and it's damning.",
+   "RT @TaxpayersFirstOrg: Crime stats out this morning. Soft-on-crime policies have a body of evidence now \u2014 and it's damning.",
+   "RT @FreeMarketForum: Crime stats out this morning. Soft-on-crime policies have a body of evidence now \u2014 and it's damning."
+  ],
+  "n_tweets": 5136
+ },
+ {
+  "item_id": "T093",
+  "terms": [
+   "veterans",
+   "words",
+   "meet",
+   "honored",
+   "owe",
+   "today",
+   "dime",
+   "overseas",
+   "care",
+   "kingsport"
+  ],
+  "examples": [
+   "Honored to meet with veterans in Alton today. We owe them more than words.",
+   "Honored to meet with veterans in Alton today. We owe them more than words.",
+   "Honored to meet with veterans in Alton today. We owe them more than words."
+  ],
+  "n_tweets": 2200
+ },
+ {
+  "item_id": "T094",
+  "terms": [
+   "stopped",
+   "heroes",
+   "elementary",
+   "period",
+   "teachers",
+   "today",
+   "springdale",
+   "fairview",
+   "summit",
+   "heights"
+  ],
+  "examples": [
+   "Stopped by Summit Elementary today. Our teachers are heroes \u2014 period.",
+   "Stopped by Summit Elementary today. Our teachers are heroes \u2014 period.",
+   "Stopped by Summit Elementary today. Our teachers are heroes \u2014 period."
+  ],
+  "n_tweets": 2203
+ },
+ {
+  "item_id": "T095",
+  "terms": [
+   "issue",
+   "deeply",
+   "personal",
+   "listen",
+   "families",
+   "ill",
+   "generation",
+   "gas",
+   "future",
+   "fundraising"
+  ],
+  "examples": [
+   "This issue is deeply personal for families across IL. I'll always listen first.",
+   "This issue is deeply personal for families across VT. I'll always listen first.",
+   "This issue is deeply personal for families across IL. I'll always listen first."
+  ],
+  "n_tweets": 136
+ },
+ {
+  "item_id": "T096",
+  "terms": [
+   "release",
+   "deterrence",
+   "catch",
+   "washington",
+   "real",
+   "border",
+   "need",
+   "generation",
+   "future",
+   "fundraising"
+  ],
+  "examples": [
+   "Catch-and-release is over when I get to Washington. We need real deterrence at the border.",
+   "Catch-and-release is over when I get to Washington. We need real deterrence at the border.",
+   "Catch-and-release is over when I get to Washington. We need real deterrence at the border."
+  ],
+  "n_tweets": 281
+ },
+ {
+  "item_id": "T097",
+  "terms": [
+   "facility",
+   "toured",
+   "energy",
+   "today",
+   "second",
+   "workers",
+   "new",
+   "knocking",
+   "incredible",
+   "team"
+  ],
+  "examples": [
+   "Toured the new energy facility in Summit today. MS workers are second to none.",
+   "Toured the new energy facility in Summit today. PA workers are second to none.",
+   "Toured the new energy facility in Summit today. TX workers are second to none."
+  ],
+  "n_tweets": 3687
+ },
+ {
+  "item_id": "T098",
+  "terms": [
+   "meet",
+   "words",
+   "honored",
+   "owe",
+   "veterans",
+   "today",
+   "kingsport",
+   "heights",
+   "madison",
+   "alton"
+  ],
+  "examples": [
+   "Honored to meet with veterans in Alton today. We owe them more than words.",
+   "Honored to meet with veterans in Alton today. We owe them more than words.",
+   "Honored to meet with veterans in Alton today. We owe them more than words."
+  ],
+  "n_tweets": 1694
+ },
+ {
+  "item_id": "T099",
+  "terms": [
+   "safe",
+   "law",
+   "keeping",
+   "leaders",
+   "neighborhoods",
+   "met",
+   "enforcement",
+   "community",
+   "order",
+   "ballot"
+  ],
+  "examples": [
+   "Met with law enforcement and community leaders in Riverton about keeping our neighborhoods safe.",
+   "Met with law enforcement and community leaders in Riverton about keeping our neighborhoods safe.",
+   "Met with law enforcement and community leaders in Riverton about keeping our neighborhoods safe."
+  ],
+  "n_tweets": 3431
+ },
+ {
+  "item_id": "T100",
+  "terms": [
+   "parties",
+   "solutions",
+   "blame",
+   "decades",
+   "broken",
+   "share",
+   "immigration",
+   "deserves",
+   "gas",
+   "fundraising"
+  ],
+  "examples": [
+   "Our immigration system has been broken for decades. Both parties share the blame \u2014 NY deserves solutions.",
+   "Our immigration system has been broken for decades. Both parties share the blame \u2014 ME deserves solutions.",
+   "Our immigration system has been broken for decades. Both parties share the blame \u2014 MS deserves solutions."
+  ],
+  "n_tweets": 2424
+ },
+ {
+  "item_id": "T101",
+  "terms": [
+   "registration",
+   "bio",
+   "democracy",
+   "works",
+   "check",
+   "link",
+   "today",
+   "gas",
+   "future",
+   "gun"
+  ],
+  "examples": [
+   "Democracy works when we show up. Check your registration today \u2014 link in bio.",
+   "Democracy works when we show up. Check your registration today \u2014 link in bio.",
+   "Democracy works when we show up. Check your registration today \u2014 link in bio."
+  ],
+  "n_tweets": 69
+ },
+ {
+  "item_id": "T102",
+  "terms": [
+   "deserves",
+   "immigration",
+   "family",
+   "blame",
+   "solutions",
+   "decades",
+   "parties",
+   "share",
+   "broken",
+   "stop"
+  ],
+  "examples": [
+   "Our immigration system has been broken for decades. Both parties share the blame \u2014 WA deserves solutions.",
+   "Our immigration system has been broken for decades. Both parties share the blame \u2014 IL deserves solutions.",
+   "Our immigration system has been broken for decades. Both parties share the blame \u2014 FL deserves solutions."
+  ],
+  "n_tweets": 9683
+ },
+ {
+  "item_id": "T103",
+  "terms": [
+   "bookmark",
+   "race",
+   "tracker",
+   "senate",
+   "covers",
+   "candidate",
+   "house",
+   "polling",
+   "key",
+   "latest"
+  ],
+  "examples": [
+   "RT @CarePolicyProject: ICYMI: our candidate tracker now covers every House and Senate race. Bookmark it.",
+   "RT @BorderWatchNet: ICYMI: our candidate tracker now covers every House and Senate race. Bookmark it.",
+   "RT @CleanAirCoalition: ICYMI: our candidate tracker now covers every House and Senate race. Bookmark it."
+  ],
+  "n_tweets": 7604
+ },
+ {
+  "item_id": "T104",
+  "terms": [
+   "fair",
+   "shot",
+   "jobs",
+   "pay",
+   "thats",
+   "campaign",
+   "good",
+   "illegal",
+   "drives",
+   "enforce"
+  ],
+  "examples": [
+   "Good jobs and a fair shot \u2014 that's what this campaign is about for WI.",
+   "Good jobs and a fair shot \u2014 that's what this campaign is about for TX.",
+   "Good jobs and a fair shot \u2014 that's what this campaign is about for IL."
+  ],
+  "n_tweets": 3213
+ },
+ {
+  "item_id": "T105",
+  "terms": [
+   "starts",
+   "soon",
+   "counts",
+   "plan",
+   "voting",
+   "single",
+   "early",
+   "make",
+   "vote",
+   "fundraising"
+  ],
+  "examples": [
+   "Early voting starts soon in IN. Make your plan now \u2014 every single vote counts.",
+   "Early voting starts soon in OR. Make your plan now \u2014 every single vote counts.",
+   "Early voting starts soon in IN. Make your plan now \u2014 every single vote counts."
+  ],
+  "n_tweets": 97
+ },
+ {
+  "item_id": "T106",
+  "terms": [
+   "starts",
+   "soon",
+   "counts",
+   "plan",
+   "early",
+   "single",
+   "voting",
+   "vote",
+   "make",
+   "fundraising"
+  ],
+  "examples": [
+   "Early voting starts soon in TX. Make your plan now \u2014 every single vote counts.",
+   "Early voting starts soon in MA. Make your plan now \u2014 every single vote counts.",
+   "Early voting starts soon in VA. Make your plan now \u2014 every single vote counts."
+  ],
+  "n_tweets": 1126
+ },
+ {
+  "item_id": "T107",
+  "terms": [
+   "toured",
+   "facility",
+   "second",
+   "workers",
+   "today",
+   "new",
+   "energy",
+   "roaring",
+   "taxes",
+   "freedom"
+  ],
+  "examples": [
+   "Toured the new energy facility in Summit today. FL workers are second to none.",
+   "Toured the new energy facility in Summit today. MI workers are second to none.",
+   "Toured the new energy facility in Summit today. NY workers are second to none."
+  ],
+  "n_tweets": 2928
+ },
+ {
+  "item_id": "T108",
+  "terms": [
+   "utility",
+   "subsidies",
+   "doubled",
+   "oil",
+   "end",
+   "big",
+   "record",
+   "profits",
+   "ill",
+   "gas"
+  ],
+  "examples": [
+   "Big Oil made record profits while your utility bill doubled. I'll end their subsidies.",
+   "Big Oil made record profits while your utility bill doubled. I'll end their subsidies.",
+   "Big Oil made record profits while your utility bill doubled. I'll end their subsidies."
+  ],
+  "n_tweets": 70
+ },
+ {
+  "item_id": "T109",
+  "terms": [
+   "grateful",
+   "today",
+   "met",
+   "community",
+   "shift",
+   "rode",
+   "stopped",
+   "elementary",
+   "heroes",
+   "toured"
+  ],
+  "examples": [
+   "Toured the new energy facility in Summit today. TX workers are second to none.",
+   "Toured the new energy facility in Summit today. TX workers are second to none.",
+   "Toured the new energy facility in Summit today. MI workers are second to none."
+  ],
+  "n_tweets": 12523
+ },
+ {
+  "item_id": "T110",
+  "terms": [
+   "pre",
+   "pays",
+   "decade",
+   "study",
+   "pass",
+   "universal",
+   "takeover",
+   "existing",
+   "medicine",
+   "conditions"
+  ],
+  "examples": [
+   "RT @LibertyLedger: Study: universal pre-K pays for itself within a decade. Pass it on.",
+   "RT @ProgressNowDaily: Study: universal pre-K pays for itself within a decade. Pass it on.",
+   "RT @CivicSignal: Study: universal pre-K pays for itself within a decade. Pass it on."
+  ],
+  "n_tweets": 2268
+ },
+ {
+  "item_id": "T111",
+  "terms": [
+   "pays",
+   "decade",
+   "study",
+   "teachers",
+   "pass",
+   "pre",
+   "universal",
+   "great",
+   "school",
+   "classroom"
+  ],
+  "examples": [
+   "RT @FaithAndFlagDaily: Study: universal pre-K pays for itself within a decade. Pass it on.",
+   "RT @ProgressNowDaily: Study: universal pre-K pays for itself within a decade. Pass it on.",
+   "RT @BorderWatchNet: Study: universal pre-K pays for itself within a decade. Pass it on."
+  ],
+  "n_tweets": 6119
+ },
+ {
+  "item_id": "T112",
+  "terms": [
+   "turnout",
+   "beat",
+   "primaries",
+   "counties",
+   "weeks",
+   "levels",
+   "politics",
+   "math",
+   "writing",
+   "reading"
+  ],
+  "examples": [
+   "RT @TaxpayersFirstOrg: Turnout in this week's primaries beat 2018 levels in most counties.",
+   "RT @LibertyLedger: Turnout in this week's primaries beat 2018 levels in most counties.",
+   "RT @BorderWatchNet: Turnout in this week's primaries beat 2018 levels in most counties."
+  ],
+  "n_tweets": 3784
+ },
+ {
+  "item_id": "T113",
+  "terms": [
+   "democracy",
+   "registration",
+   "bio",
+   "works",
+   "link",
+   "check",
+   "today",
+   "starts",
+   "soon",
+   "counts"
+  ],
+  "examples": [
+   "Democracy works when we show up. Check your registration today \u2014 link in bio.",
+   "Democracy works when we show up. Check your registration today \u2014 link in bio.",
+   "Democracy works when we show up. Check your registration today \u2014 link in bio."
+  ],
+  "n_tweets": 3065
+ },
+ {
+  "item_id": "T114",
+  "terms": [
+   "pay",
+   "sanctuary",
+   "risk",
+   "billionaires",
+   "rate",
+   "wealthy",
+   "communities",
+   "end",
+   "fair",
+   "shouldnt"
+  ],
+  "examples": [
+   "Sanctuary policies put MI communities at risk. I'll end them.",
+   "Sanctuary policies put IL communities at risk. I'll end them.",
+   "Sanctuary policies put IL communities at risk. I'll end them."
+  ],
+  "n_tweets": 1315
+ },
+ {
+  "item_id": "T115",
+  "terms": [
+   "clean",
+   "energy",
+   "growth",
+   "news",
+   "page",
+   "map",
+   "job",
+   "future",
+   "wind",
+   "battery"
+  ],
+  "examples": [
+   "RT @GreenFutureFund: This map of clean-energy job growth should be front-page news.",
+   "RT @ProgressNowDaily: This map of clean-energy job growth should be front-page news.",
+   "RT @CivicSignal: This map of clean-energy job growth should be front-page news."
+  ],
+  "n_tweets": 2818
+ },
+ {
+  "item_id": "T116",
+  "terms": [
+   "powered",
+   "average",
+   "crossed",
+   "pacs",
+   "gift",
+   "donors",
+   "grassroots",
+   "just",
+   "campaign",
+   "people"
+  ],
+  "examples": [
+   "We just crossed 20,000 grassroots donors! Average gift: $27. This campaign is powered by people, not PACs.",
+   "We just crossed 25,000 grassroots donors! Average gift: $27. This campaign is powered by people, not PACs.",
+   "We just crossed 25,000 grassroots donors! Average gift: $27. This campaign is powered by people, not PACs."
+  ],
+  "n_tweets": 141
+ },
+ {
+  "item_id": "T117",
+  "terms": [
+   "listen",
+   "deeply",
+   "issue",
+   "personal",
+   "voting",
+   "team",
+   "volunteers",
+   "knocking",
+   "incredible",
+   "counts"
+  ],
+  "examples": [
+   "This issue is deeply personal for families across MT. I'll always listen first.",
+   "This issue is deeply personal for families across NC. I'll always listen first.",
+   "This issue is deeply personal for families across OH. I'll always listen first."
+  ],
+  "n_tweets": 5528
+ },
+ {
+  "item_id": "T118",
+  "terms": [
+   "heroes",
+   "elementary",
+   "stopped",
+   "period",
+   "teachers",
+   "today",
+   "georgetown",
+   "bremerton",
+   "alton",
+   "generation"
+  ],
+  "examples": [
+   "Stopped by Georgetown Elementary today. Our teachers are heroes \u2014 period.",
+   "Stopped by Georgetown Elementary today. Our teachers are heroes \u2014 period.",
+   "Stopped by Georgetown Elementary today. Our teachers are heroes \u2014 period."
+  ],
+  "n_tweets": 273
+ },
+ {
+  "item_id": "T119",
+  "terms": [
+   "registration",
+   "bio",
+   "democracy",
+   "works",
+   "check",
+   "link",
+   "today",
+   "gas",
+   "future",
+   "gun"
+  ],
+  "examples": [
+   "Democracy works when we show up. Check your registration today \u2014 link in bio.",
+   "Democracy works when we show up. Check your registration today \u2014 link in bio.",
+   "Democracy works when we show up. Check your registration today \u2014 link in bio."
+  ],
+  "n_tweets": 67
+ },
+ {
+  "item_id": "T120",
+  "terms": [
+   "tightening",
+   "latest",
+   "polling",
+   "roundup",
+   "key",
+   "races",
+   "midterms",
+   "live",
+   "future",
+   "fundraising"
+  ],
+  "examples": [
+   "RT @FreeMarketForum: Our latest polling roundup for the 2022 midterms is live. Key races tightening.",
+   "RT @BorderWatchNet: Our latest polling roundup for the 2022 midterms is live. Key races tightening.",
+   "RT @MainStreetMonitor: Our latest polling roundup for the 2022 midterms is live. Key races tightening."
+  ],
+  "n_tweets": 2510
+ },
+ {
+  "item_id": "T121",
+  "terms": [
+   "political",
+   "dark",
+   "voices",
+   "dollar",
+   "disclosure",
+   "commissions",
+   "gerrymandering",
+   "pick",
+   "independent",
+   "fix"
+  ],
+  "examples": [
+   "Dark money is drowning out NY voices. I support full disclosure of every political dollar.",
+   "Dark money is drowning out PA voices. I support full disclosure of every political dollar.",
+   "Dark money is drowning out MA voices. I support full disclosure of every political dollar."
+  ],
+  "n_tweets": 1251
+ },
+ {
+  "item_id": "T122",
+  "terms": [
+   "grow",
+   "local",
+   "hire",
+   "business",
+   "owners",
+   "met",
+   "today",
+   "need",
+   "georgetown",
+   "lakewood"
+  ],
+  "examples": [
+   "Met with local business owners in Georgetown today about what they need to grow and hire.",
+   "Met with local business owners in Georgetown today about what they need to grow and hire.",
+   "Met with local business owners in Georgetown today about what they need to grow and hire."
+  ],
+  "n_tweets": 1416
+ },
+ {
+  "item_id": "T123",
+  "terms": [
+   "border",
+   "accountability",
+   "crossings",
+   "surge",
+   "wall",
+   "patrol",
+   "agents",
+   "fund",
+   "period",
+   "secure"
+  ],
+  "examples": [
+   "RT @CarePolicyProject: Border crossings surge again \u2014 where is the accountability?",
+   "RT @TaxpayersFirstOrg: Border crossings surge again \u2014 where is the accountability?",
+   "RT @StatehouseWire: Border crossings surge again \u2014 where is the accountability?"
+  ],
+  "n_tweets": 3100
+ },
+ {
+  "item_id": "T124",
+  "terms": [
+   "debate",
+   "calendar",
+   "schedule",
+   "fall",
+   "link",
+   "contrast",
+   "watch",
+   "live",
+   "night",
+   "noon"
+  ],
+  "examples": [
+   "RT @ProgressNowDaily: Debate schedule for the fall is out. Full calendar at the link.",
+   "RT @MainStreetMonitor: Debate schedule for the fall is out. Full calendar at the link.",
+   "RT @FaithAndFlagDaily: Debate schedule for the fall is out. Full calendar at the link."
+  ],
+  "n_tweets": 3743
+ },
+ {
+  "item_id": "T125",
+  "terms": [
+   "bring",
+   "town",
+   "saturday",
+   "hall",
+   "questions",
+   "open",
+   "early",
+   "join",
+   "doors",
+   "noon"
+  ],
+  "examples": [
+   "Join us Saturday at 7pm for a town hall in Newport! Doors open early \u2014 bring your questions.",
+   "Join us Saturday at 5:30pm for a town hall in Newport! Doors open early \u2014 bring your questions.",
+   "Join us Saturday at 10am for a town hall in Newport! Doors open early \u2014 bring your questions."
+  ],
+  "n_tweets": 1111
+ },
+ {
+  "item_id": "T126",
+  "terms": [
+   "local",
+   "business",
+   "grow",
+   "hire",
+   "springdale",
+   "owners",
+   "met",
+   "need",
+   "today",
+   "gas"
+  ],
+  "examples": [
+   "Met with local business owners in Springdale today about what they need to grow and hire.",
+   "Met with local business owners in Springdale today about what they need to grow and hire.",
+   "Met with local business owners in Springdale today about what they need to grow and hire."
+  ],
+  "n_tweets": 67
+ },
+ {
+  "item_id": "T127",
+  "terms": [
+   "listen",
+   "issue",
+   "deeply",
+   "personal",
+   "life",
+   "women",
+   "abortion",
+   "families",
+   "ill",
+   "healthcare"
+  ],
+  "examples": [
+   "This issue is deeply personal for families across NV. I'll always listen first.",
+   "This issue is deeply personal for families across KY. I'll always listen first.",
+   "This issue is deeply personal for families across MO. I'll always listen first."
+  ],
+  "n_tweets": 4641
+ },
+ {
+  "item_id": "T128",
+  "terms": [
+   "costs",
+   "lower",
+   "government",
+   "taxes",
+   "freedom",
+   "roaring",
+   "caps",
+   "childcare",
+   "invests",
+   "providers"
+  ],
+  "examples": [
+   "Price transparency and competition will lower costs faster than any government mandate.",
+   "Price transparency and competition will lower costs faster than any government mandate.",
+   "Price transparency and competition will lower costs faster than any government mandate."
+  ],
+  "n_tweets": 2011
+ },
+ {
+  "item_id": "T129",
+  "terms": [
+   "neighborhoods",
+   "keeping",
+   "leaders",
+   "enforcement",
+   "safe",
+   "met",
+   "law",
+   "community",
+   "clayton",
+   "bremerton"
+  ],
+  "examples": [
+   "Met with law enforcement and community leaders in Clayton about keeping our neighborhoods safe.",
+   "Met with law enforcement and community leaders in Clayton about keeping our neighborhoods safe.",
+   "Met with law enforcement and community leaders in Clayton about keeping our neighborhoods safe."
+  ],
+  "n_tweets": 165
+ },
+ {
+  "item_id": "T130",
+  "terms": [
+   "tracker",
+   "house",
+   "candidate",
+   "covers",
+   "senate",
+   "bookmark",
+   "race",
+   "generation",
+   "future",
+   "fundraising"
+  ],
+  "examples": [
+   "RT @HeartlandDispatch: ICYMI: our candidate tracker now covers every House and Senate race. Bookmark it.",
+   "RT @StatehouseWire: ICYMI: our candidate tracker now covers every House and Senate race. Bookmark it.",
+   "RT @TheDailyLedgerUS: ICYMI: our candidate tracker now covers every House and Senate race. Bookmark it."
+  ],
+  "n_tweets": 2638
+ },
+ {
+  "item_id": "T131",
+  "terms": [
+   "tightening",
+   "latest",
+   "polling",
+   "roundup",
+   "key",
+   "races",
+   "midterms",
+   "live",
+   "future",
+   "fundraising"
+  ],
+  "examples": [
+   "RT @CivicSignal: Our latest polling roundup for the 2022 midterms is live. Key races tightening.",
+   "RT @ProgressNowDaily: Our latest polling roundup for the 2022 midterms is live. Key races tightening.",
+   "RT @CivicSignal: Our latest polling roundup for the 2022 midterms is live. Key races tightening."
+  ],
+  "n_tweets": 186
+ },
+ {
+  "item_id": "T132",
+  "terms": [
+   "record",
+   "profits",
+   "highs",
+   "stagnate",
+   "data",
+   "hit",
+   "undeniable",
+   "wages",
+   "report",
+   "corporate"
+  ],
+  "examples": [
+   "RT @GreenFutureFund: NEW REPORT: Corporate profits hit record highs while wages stagnate. The data is undeniable.",
+   "RT @FreeMarketForum: NEW REPORT: Corporate profits hit record highs while wages stagnate. The data is undeniable.",
+   "RT @GreenFutureFund: NEW REPORT: Corporate profits hit record highs while wages stagnate. The data is undeniable."
+  ],
+  "n_tweets": 2997
+ },
+ {
+  "item_id": "T133",
+  "terms": [
+   "democracy",
+   "registration",
+   "bio",
+   "works",
+   "link",
+   "check",
+   "dropping",
+   "tuned",
+   "tomorrow",
+   "endorsement"
+  ],
+  "examples": [
+   "Democracy works when we show up. Check your registration today \u2014 link in bio.",
+   "Democracy works when we show up. Check your registration today \u2014 link in bio.",
+   "Democracy works when we show up. Check your registration today \u2014 link in bio."
+  ],
+  "n_tweets": 3601
+ },
+ {
+  "item_id": "T134",
+  "terms": [
+   "safe",
+   "law",
+   "ballot",
+   "neighborhood",
+   "order",
+   "healthcare",
+   "college",
+   "holding",
+   "student",
+   "generation"
+  ],
+  "examples": [
+   "Every family deserves a safe neighborhood. Law and order is on the ballot.",
+   "Every family deserves a safe neighborhood. Law and order is on the ballot.",
+   "Every family deserves a safe neighborhood. Law and order is on the ballot."
+  ],
+  "n_tweets": 2436
+ },
+ {
+  "item_id": "T135",
+  "terms": [
+   "antitrust",
+   "consolidation",
+   "squeezing",
+   "enforcement",
+   "farms",
+   "corporate",
+   "small",
+   "businesses",
+   "real",
+   "need"
+  ],
+  "examples": [
+   "Corporate consolidation is squeezing family farms and small businesses. We need real antitrust enforcement.",
+   "Corporate consolidation is squeezing family farms and small businesses. We need real antitrust enforcement.",
+   "Corporate consolidation is squeezing family farms and small businesses. We need real antitrust enforcement."
+  ],
+  "n_tweets": 673
+ },
+ {
+  "item_id": "T136",
+  "terms": [
+   "happy",
+   "family",
+   "day",
+   "thanksgiving",
+   "labor",
+   "july",
+   "fourth",
+   "memorial",
+   "year",
+   "veterans"
+  ],
+  "examples": [
+   "Happy Veterans Day from our family to yours, NE!",
+   "Happy Veterans Day from our family to yours, IL!",
+   "Happy Veterans Day from our family to yours, IN!"
+  ],
+  "n_tweets": 1118
+ },
+ {
+  "item_id": "T137",
+  "terms": [
+   "schedule",
+   "calendar",
+   "fall",
+   "link",
+   "debate",
+   "gas",
+   "future",
+   "fundraising",
+   "funded",
+   "fund"
+  ],
+  "examples": [
+   "RT @CleanAirCoalition: Debate schedule for the fall is out. Full calendar at the link.",
+   "RT @SecondAmendmentNow: Debate schedule for the fall is out. Full calendar at the link.",
+   "RT @WorkersUnitedHQ: Debate schedule for the fall is out. Full calendar at the link."
+  ],
+  "n_tweets": 2593
+ },
+ {
+  "item_id": "T138",
+  "terms": [
+   "arent",
+   "demand",
+   "opposites",
+   "police",
+   "accountability",
+   "generation",
+   "gas",
+   "future",
+   "fundraising",
+   "funded"
+  ],
+  "examples": [
+   "We can back the police AND demand accountability. Those aren't opposites.",
+   "We can back the police AND demand accountability. Those aren't opposites.",
+   "We can back the police AND demand accountability. Those aren't opposites."
+  ],
+  "n_tweets": 72
+ },
+ {
+  "item_id": "T139",
+  "terms": [
+   "businesses",
+   "small",
+   "cut",
+   "tape",
+   "regulations",
+   "red",
+   "federal",
+   "billions",
+   "cost",
+   "year"
+  ],
+  "examples": [
+   "RT @BorderWatchNet: REPORT: Federal regulations cost small businesses billions last year. Time to cut the red tape.",
+   "RT @BorderWatchNet: REPORT: Federal regulations cost small businesses billions last year. Time to cut the red tape.",
+   "RT @BorderWatchNet: REPORT: Federal regulations cost small businesses billions last year. Time to cut the red tape."
+  ],
+  "n_tweets": 3793
+ },
+ {
+  "item_id": "T140",
+  "terms": [
+   "drives",
+   "enforce",
+   "illegal",
+   "wages",
+   "american",
+   "jobs",
+   "protect",
+   "law",
+   "immigration",
+   "workers"
+  ],
+  "examples": [
+   "Illegal immigration drives down wages for MD workers. Enforce the law, protect American jobs.",
+   "Illegal immigration drives down wages for IL workers. Enforce the law, protect American jobs.",
+   "Illegal immigration drives down wages for AR workers. Enforce the law, protect American jobs."
+  ],
+  "n_tweets": 151
+ },
+ {
+  "item_id": "T141",
+  "terms": [
+   "strength",
+   "allies",
+   "weakness",
+   "alliances",
+   "lives",
+   "dearly",
+   "diplomacy",
+   "wars",
+   "endless",
+   "guarantee"
+  ],
+  "examples": [
+   "Standing with our allies isn't weakness, it's strength. Alliances keep Americans safe.",
+   "Standing with our allies isn't weakness, it's strength. Alliances keep Americans safe.",
+   "Standing with our allies isn't weakness, it's strength. Alliances keep Americans safe."
+  ],
+  "n_tweets": 1990
+ },
+ {
+  "item_id": "T142",
+  "terms": [
+   "weeks",
+   "primaries",
+   "beat",
+   "turnout",
+   "levels",
+   "counties",
+   "future",
+   "fundraising",
+   "funded",
+   "fund"
+  ],
+  "examples": [
+   "RT @TheDailyLedgerUS: Turnout in this week's primaries beat 2018 levels in most counties.",
+   "RT @BorderWatchNet: Turnout in this week's primaries beat 2018 levels in most counties.",
+   "RT @HeritageHorizon: Turnout in this week's primaries beat 2018 levels in most counties."
+  ],
+  "n_tweets": 2456
+ },
+ {
+  "item_id": "T143",
+  "terms": [
+   "powered",
+   "average",
+   "crossed",
+   "pacs",
+   "gift",
+   "donors",
+   "grassroots",
+   "just",
+   "campaign",
+   "people"
+  ],
+  "examples": [
+   "We just crossed 15,000 grassroots donors! Average gift: $27. This campaign is powered by people, not PACs.",
+   "We just crossed 25,000 grassroots donors! Average gift: $27. This campaign is powered by people, not PACs.",
+   "We just crossed 15,000 grassroots donors! Average gift: $27. This campaign is powered by people, not PACs."
+  ],
+  "n_tweets": 1114
+ },
+ {
+  "item_id": "T144",
+  "terms": [
+   "china",
+   "eating",
+   "lunch",
+   "technology",
+   "trade",
+   "american",
+   "workers",
+   "ill",
+   "future",
+   "fundraising"
+  ],
+  "examples": [
+   "China is eating our lunch on trade and technology. I'll put American workers first.",
+   "China is eating our lunch on trade and technology. I'll put American workers first.",
+   "China is eating our lunch on trade and technology. I'll put American workers first."
+  ],
+  "n_tweets": 499
+ },
+ {
+  "item_id": "T145",
+  "terms": [
+   "crime",
+   "stats",
+   "body",
+   "damning",
+   "evidence",
+   "soft",
+   "morning",
+   "policies",
+   "supporter",
+   "fundraising"
+  ],
+  "examples": [
+   "RT @BorderWatchNet: Crime stats out this morning. Soft-on-crime policies have a body of evidence now \u2014 and it's damning.",
+   "RT @PatriotPressWire: Crime stats out this morning. Soft-on-crime policies have a body of evidence now \u2014 and it's damning.",
+   "RT @FaithAndFlagDaily: Crime stats out this morning. Soft-on-crime policies have a body of evidence now \u2014 and it's damning."
+  ],
+  "n_tweets": 2949
+ },
+ {
+  "item_id": "T146",
+  "terms": [
+   "fair",
+   "campaign",
+   "thats",
+   "good",
+   "shot",
+   "jobs",
+   "profit",
+   "poisoning",
+   "protecting",
+   "water"
+  ],
+  "examples": [
+   "Good jobs and a fair shot \u2014 that's what this campaign is about for MN.",
+   "Good jobs and a fair shot \u2014 that's what this campaign is about for CA.",
+   "Good jobs and a fair shot \u2014 that's what this campaign is about for AR."
+  ],
+  "n_tweets": 2491
+ },
+ {
+  "item_id": "T147",
+  "terms": [
+   "tightening",
+   "polling",
+   "key",
+   "roundup",
+   "latest",
+   "races",
+   "live",
+   "midterms",
+   "washingtons",
+   "inflation"
+  ],
+  "examples": [
+   "RT @ProgressNowDaily: Our latest polling roundup for the 2022 midterms is live. Key races tightening.",
+   "RT @WorkersUnitedHQ: Our latest polling roundup for the 2022 midterms is live. Key races tightening.",
+   "RT @TheDailyLedgerUS: Our latest polling roundup for the 2022 midterms is live. Key races tightening."
+  ],
+  "n_tweets": 3289
+ },
+ {
+  "item_id": "T148",
+  "terms": [
+   "chip",
+   "watch",
+   "share",
+   "live",
+   "new",
+   "gas",
+   "future",
+   "fundraising",
+   "funded",
+   "fund"
+  ],
+  "examples": [
+   "Our new ad is live. Watch it, share it, and chip in $5 if you can.",
+   "Our new ad is live. Watch it, share it, and chip in $5 if you can.",
+   "Our new ad is live. Watch it, share it, and chip in $5 if you can."
+  ],
+  "n_tweets": 151
+ },
+ {
+  "item_id": "T149",
+  "terms": [
+   "proudly",
+   "unborn",
+   "pro",
+   "life",
+   "defend",
+   "fundraising",
+   "funded",
+   "fund",
+   "fully",
+   "freedom"
+  ],
+  "examples": [
+   "I am proudly pro-life and will always defend the unborn.",
+   "I am proudly pro-life and will always defend the unborn.",
+   "I am proudly pro-life and will always defend the unborn."
+  ],
+  "n_tweets": 65
+ },
+ {
+  "item_id": "T150",
+  "terms": [
+   "office",
+   "swing",
+   "signs",
+   "weekend",
+   "yard",
+   "grab",
+   "bremerton",
+   "fairview",
+   "newport",
+   "lakewood"
+  ],
+  "examples": [
+   "Yard signs are IN. Swing by the Newport office and grab one this weekend!",
+   "Yard signs are IN. Swing by the Newport office and grab one this weekend!",
+   "Yard signs are IN. Swing by the Newport office and grab one this weekend!"
+  ],
+  "n_tweets": 1151
+ },
+ {
+  "item_id": "T151",
+  "terms": [
+   "allies",
+   "alliances",
+   "weakness",
+   "strength",
+   "standing",
+   "americans",
+   "isnt",
+   "safe",
+   "generation",
+   "gas"
+  ],
+  "examples": [
+   "Standing with our allies isn't weakness, it's strength. Alliances keep Americans safe.",
+   "Standing with our allies isn't weakness, it's strength. Alliances keep Americans safe.",
+   "Standing with our allies isn't weakness, it's strength. Alliances keep Americans safe."
+  ],
+  "n_tweets": 69
+ }
+]

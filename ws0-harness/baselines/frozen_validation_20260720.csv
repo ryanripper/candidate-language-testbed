@@ -1,0 +1,6 @@
+measure,pearson_r,spearman_rho
+word2vec PC2 (partisan axis),0.8856356960116624,0.8560602344635475
+word2vec PC1 (dominant axis),0.1709430429343615,0.1708013710436319
+TF-IDF PC1 (partisan axis),0.9737576975157686,0.9393954382457028
+raw cosine distance vs |ideology gap| (pairwise),0.2811077735990913,
+corrected cosine distance vs |ideology gap| (pairwise),0.5966391079131852,

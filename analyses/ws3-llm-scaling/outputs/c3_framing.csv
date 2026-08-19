@@ -1,0 +1,17 @@
+instrument,scope,n,pearson_r
+LLM ask-and-average,overall,150,0.9330483941356773
+LLM ask-and-average,topic0,44,0.893471496105277
+LLM ask-and-average,topic1,23,0.874313896520371
+LLM ask-and-average,topic2,16,0.9781429725052633
+TF-IDF+SVD PC1,overall,150,0.9550826426608158
+TF-IDF+SVD PC1,topic0,44,0.9066964525067103
+TF-IDF+SVD PC1,topic1,23,0.8850338508536008
+TF-IDF+SVD PC1,topic2,16,0.9719845603271
+WS1 Tier A Model2Vec,overall,150,0.8730113275991651
+WS1 Tier A Model2Vec,topic0,44,0.8050105434838221
+WS1 Tier A Model2Vec,topic1,23,0.8313213414209107
+WS1 Tier A Model2Vec,topic2,16,0.9619183817281592
+Oracle (true_ideology),overall,150,0.9453486840174885
+Oracle (true_ideology),topic0,44,0.90820438050352
+Oracle (true_ideology),topic1,23,0.9053600074684461
+Oracle (true_ideology),topic2,16,0.9706886711554072

@@ -1,0 +1,179 @@
+"""
+04_verify_harness.py — WS0 verification gate
+--------------------------------------------
+Checks the harness end-to-end before the workstreams build on it.
+
+1. Seal integrity — blind corpus has no true_* columns; hashes match the
+   manifest; blind + sealed rows align 1:1 on tweet_id.
+2. Baseline reproduction — regenerated instruments hit the frozen 07-20
+   validation numbers. THIS IS A SANCTIONED UNSEAL: it re-verifies already
+   published quantities (validation_results.csv, 2026-07-20) and computes
+   the TF-IDF distance-validity equivalents the plan assigns to WS0.4
+   ("frozen baselines … TF-IDF equivalents from WS0.4", WS1 E1.5).
+   No new design decision is informed by truth here.
+3. Splits — determinism, coverage, stratification balance (blind checks).
+
+Writes baselines/baseline_validation.csv — the canonical comparison table
+all workstreams cite (extends the frozen 07-20 Table 1 with TF-IDF distance
+rows). Exits nonzero if any check fails.
+"""
+
+import hashlib
+import json
+import sys
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+
+import metrics
+
+HERE = Path(__file__).resolve().parent
+BASE = HERE / "baselines"
+
+# frozen 07-20 values (embeddings-pca-analysis/outputs/validation_results.csv)
+FROZEN = {
+    "w2v_partisan_r": 0.8856356960116624,
+    "w2v_pc1_r": 0.17094304293436158,
+    "tfidf_partisan_r": 0.9737576975157686,
+    "dist_raw_r": 0.28110777359909134,
+    "dist_corr_r": 0.5966391079131852,
+}
+# TF-IDF is deterministic given versions; w2v was retrained (workers=1),
+# so allow statistical tolerance there.
+TOL = {"tfidf": 0.01, "w2v": 0.04, "dist": 0.06}
+
+failures = []
+
+
+def check(name: str, ok: bool, detail: str = "") -> None:
+    print(f"  [{'PASS' if ok else 'FAIL'}] {name}" + (f" — {detail}" if detail else ""))
+    if not ok:
+        failures.append(name)
+
+
+def sha256(path: Path) -> str:
+    h = hashlib.sha256()
+    with open(path, "rb") as fh:
+        for chunk in iter(lambda: fh.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def main() -> None:
+    print("== 1. Seal integrity ==")
+    manifest = json.load(open(HERE / "seal_manifest.json"))
+    blind = pd.read_parquet(HERE / "blind_corpus.parquet")
+    sealed = pd.read_parquet(HERE / "sealed_truth.parquet")
+    check("no true_* columns in blind corpus",
+          not any(c.startswith("true_") for c in blind.columns))
+    check("blind corpus hash matches manifest",
+          sha256(HERE / "blind_corpus.parquet") == manifest["blind_corpus"]["sha256"])
+    check("sealed truth hash matches manifest",
+          sha256(HERE / "sealed_truth.parquet") == manifest["sealed_truth"]["sha256"])
+    check("row alignment blind vs sealed",
+          len(blind) == len(sealed)
+          and (blind["tweet_id"].to_numpy() == sealed["tweet_id"].to_numpy()).all())
+    check("expected corpus size", len(blind) == 104601
+          and blind["candidate_id"].nunique() == 910)
+
+    print("== 2. Metrics self-tests ==")
+    metrics._self_test()
+
+    print("== 3. Baseline reproduction (sanctioned unseal) ==")
+    meta = pd.read_csv(BASE / "candidate_metadata.csv")
+    scores = pd.read_csv(BASE / "axis_scores.csv")
+    assert (meta["candidate_id"] == scores["candidate_id"]).all()
+    truth = (sealed.groupby("candidate_id")["true_ideology"].first()
+             .reindex(meta["candidate_id"]).to_numpy())
+    party = meta["party"].to_numpy()
+
+    r_tfidf = metrics.axis_recovery(scores["tfidf_partisan_score"], truth)["pearson_r"]
+    r_w2v = metrics.axis_recovery(scores["w2v_partisan_score"], truth)["pearson_r"]
+    r_pc1 = metrics.axis_recovery(scores["w2v_pc1_style_score"], truth)["pearson_r"]
+
+    D_raw = np.load(BASE / "D_w2v_raw.npy")
+    D_corr = np.load(BASE / "D_w2v_corrected.npy")
+    D_tfidf = np.load(BASE / "D_tfidf.npy")
+    dv_raw = metrics.distance_validity(D_raw, truth)
+    dv_corr = metrics.distance_validity(D_corr, truth)
+    dv_tfidf = metrics.distance_validity(D_tfidf, truth)
+
+    check("TF-IDF partisan axis r ≈ 0.974",
+          abs(r_tfidf - FROZEN["tfidf_partisan_r"]) < TOL["tfidf"],
+          f"r={r_tfidf:+.4f}")
+    check("w2v partisan axis r ≈ 0.886",
+          abs(r_w2v - FROZEN["w2v_partisan_r"]) < TOL["w2v"],
+          f"r={r_w2v:+.4f}")
+    check("w2v PC1 (style) low r ≈ 0.171",
+          abs(abs(r_pc1) - abs(FROZEN["w2v_pc1_r"])) < TOL["w2v"],
+          f"r={r_pc1:+.4f}")
+    check("raw distance validity ≈ 0.281",
+          abs(dv_raw - FROZEN["dist_raw_r"]) < TOL["dist"], f"r={dv_raw:+.4f}")
+    check("corrected distance validity ≈ 0.597",
+          abs(dv_corr - FROZEN["dist_corr_r"]) < TOL["dist"], f"r={dv_corr:+.4f}")
+
+    # style-confound diagnosis reproduces (PC1 vs retweet share, observable)
+    pz = np.load(BASE / "pca_scores.npz", allow_pickle=True)
+    r_style = np.corrcoef(pz["P_w2v"][:, 0], meta["share_retweets"])[0, 1]
+    check("w2v PC1 tracks retweet share (|r| ≈ 0.96)", abs(r_style) > 0.9,
+          f"r={r_style:+.4f}")
+
+    wb_raw = metrics.within_between_ratio(D_raw, party)
+    wb_corr = metrics.within_between_ratio(D_corr, party)
+    wb_tfidf = metrics.within_between_ratio(D_tfidf, party)
+    check("within/between ratio raw ≈ 1.26", abs(wb_raw["ratio"] - 1.26) < 0.08,
+          f"ratio={wb_raw['ratio']:.3f}")
+    check("within/between ratio corrected ≈ 1.35",
+          abs(wb_corr["ratio"] - 1.35) < 0.08, f"ratio={wb_corr['ratio']:.3f}")
+
+    rows = [
+        ("TF-IDF partisan axis vs true_ideology (r)", r_tfidf, FROZEN["tfidf_partisan_r"]),
+        ("word2vec partisan axis vs true_ideology (r)", r_w2v, FROZEN["w2v_partisan_r"]),
+        ("word2vec PC1 style axis vs true_ideology (r)", r_pc1, FROZEN["w2v_pc1_r"]),
+        ("w2v raw distance validity", dv_raw, FROZEN["dist_raw_r"]),
+        ("w2v corrected distance validity", dv_corr, FROZEN["dist_corr_r"]),
+        ("TF-IDF distance validity  [NEW at WS0.4]", dv_tfidf, np.nan),
+        ("w2v raw between/within ratio", wb_raw["ratio"], 1.26),
+        ("w2v corrected between/within ratio", wb_corr["ratio"], 1.35),
+        ("TF-IDF between/within ratio  [NEW at WS0.4]", wb_tfidf["ratio"], np.nan),
+    ]
+    pd.DataFrame(rows, columns=["measure", "ws0_value", "frozen_0720_value"]).to_csv(
+        BASE / "baseline_validation.csv", index=False)
+    print(f"  TF-IDF distance validity (new reference): {dv_tfidf:+.4f}")
+    print(f"  TF-IDF between/within ratio (new reference): {wb_tfidf['ratio']:.3f}")
+
+    print("== 4. Splits ==")
+    splits = json.load(open(HERE / "splits.json"))
+    ab = pd.read_parquet(HERE / "tweet_split_ab.parquet")
+    check("A/B covers every tweet exactly once",
+          len(ab) == len(blind) and ab["tweet_id"].is_unique
+          and set(ab["tweet_id"]) == set(blind["tweet_id"]))
+    check("A/B file hash matches splits.json",
+          sha256(HERE / "tweet_split_ab.parquet") == splits["tweet_ab_split"]["sha256"])
+    check("every candidate has both A and B",
+          ab.groupby("candidate_id")["split"].nunique().min() == 2)
+    check("no candidate lost all retweets in B",
+          splits["tweet_ab_split"]["candidates_with_zero_retweets_in_B"]
+          == int((meta["share_retweets"] == 0).sum()))
+    sub_ids = splits["subsample_150"]["candidate_ids"]
+    sub = meta[meta["candidate_id"].isin(sub_ids)]
+    check("subsample size ≈ 150", 145 <= len(sub_ids) <= 155,
+          f"n={len(sub_ids)}")
+    p_share = sub["party"].value_counts(normalize=True)
+    P_share = meta["party"].value_counts(normalize=True)
+    check("subsample party shares within 5pp of corpus",
+          max(abs(p_share - P_share).fillna(1)) < 0.05)
+    check("subsample includes Senate",
+          (sub["chamber"] == "Senate").sum() >= 5,
+          f"n_senate={(sub['chamber'] == 'Senate').sum()}")
+
+    print()
+    if failures:
+        print(f"HARNESS NOT VERIFIED — {len(failures)} failure(s): {failures}")
+        sys.exit(1)
+    print("HARNESS VERIFIED — all checks passed. Workstreams may build on ws0/.")
+
+
+if __name__ == "__main__":
+    main()

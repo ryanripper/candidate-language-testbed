@@ -1,0 +1,17 @@
+{
+  "mode": "hdbscan_mcs60",
+  "ladder": [
+    {
+      "min_cluster_size": 200,
+      "outlier_rate": 0.5829580979149339,
+      "n_topics": 89
+    },
+    {
+      "min_cluster_size": 60,
+      "outlier_rate": 0.1720155639047428,
+      "n_topics": 763
+    }
+  ],
+  "n_topics_final": 763,
+  "wall_seconds": 352.9
+}

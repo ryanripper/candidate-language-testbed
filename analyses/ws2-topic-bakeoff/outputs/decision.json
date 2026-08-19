@@ -1,0 +1,7 @@
+{
+  "winner": "llm",
+  "winner_ari": 0.2889,
+  "tie_break_used": false,
+  "success_bar_ari_0.60": false,
+  "rule": "highest ARI; within 0.03 -> higher judge interpretability"
+}

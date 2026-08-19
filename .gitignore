@@ -1,0 +1,47 @@
+# --- OS / editor cruft ---
+.DS_Store
+._*
+Thumbs.db
+.idea/
+.vscode/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# --- Regenerable derived artifacts (see REGENERATE.md in each folder) ---
+# Sealed/blind corpus views: rebuilt by ws0-harness/01_seal_corpus.py
+ws0-harness/blind_corpus.parquet
+ws0-harness/sealed_truth.parquet
+ws0-harness/tweet_split_ab.parquet
+
+# Frozen baseline matrices: rebuilt by ws0-harness/02_freeze_baselines.py
+ws0-harness/baselines/D_tfidf.npy
+ws0-harness/baselines/D_w2v_raw.npy
+ws0-harness/baselines/D_w2v_corrected.npy
+ws0-harness/baselines/candidate_vectors.npz
+
+# WS1 distance matrices + candidate representations: scripts/02 and 04
+analyses/ws1-sentence-transformers/outputs/D_tier*.npy
+analyses/ws1-sentence-transformers/outputs/centroids_tier*.npz
+analyses/ws1-sentence-transformers/outputs/corrected_tier*.npz
+
+# WS2 per-topic distance tensors: scripts/07_stagec.py
+analyses/ws2-topic-bakeoff/outputs/stagec_llm.npz
+analyses/ws2-topic-bakeoff/outputs/stagec_llm_refined.npz
+
+# WS4 feature matrices: scripts/02_embed.py
+analyses/ws4-preanalysis/outputs/candidate_vectors_all.npz
+
+# --- Intermediates never committed in the first place ---
+**/outputs/batches/
+**/outputs/raw_scores/
+*_embeddings.npy
+*_embeddings.npz
+tokens_*.pkl
+tfidf_*.npz
