@@ -60,7 +60,8 @@ def main() -> None:
                 "ERROR: source corpus hash does not match the committed "
                 "seal_manifest.json. Refusing to overwrite the seal record. "
                 "If the corpus was accidentally regenerated, restore it with "
-                "`git checkout -- data/synthetic-candidate-tweets/`. If a "
+                "`git checkout -- :/data/synthetic-candidate-tweets/` "
+                "(the :/ prefix works from any directory). If a "
                 "reseal is genuinely intended, rerun with --reseal (and say "
                 "so loudly in the commit message)."
             )

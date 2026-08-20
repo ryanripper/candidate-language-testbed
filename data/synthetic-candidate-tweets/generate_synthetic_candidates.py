@@ -549,7 +549,8 @@ def main():
     # will not byte-match the hash pinned in ws0-harness — the CSV *content*
     # is identical (seed-determined), only the gzip header differs. If you
     # regenerate by accident, restore the pinned artifact with
-    # `git checkout -- data/synthetic-candidate-tweets/`.
+    # `git checkout -- :/data/synthetic-candidate-tweets/` (the :/ prefix
+    # makes the pathspec repo-rooted, so it works from any directory).
     with open(out, "rb") as f_in, \
             gzip.GzipFile(out + ".gz", "wb", mtime=0) as f_out:
         f_out.writelines(f_in)

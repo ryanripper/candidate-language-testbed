@@ -48,10 +48,12 @@ judge agents (152 topics).
 `stagec_validity.csv` (+`_refined`), `exploratory_rt_routing.csv`,
 `assignments_*.npy` (5 entrants + `llm_refined`), `llm_taxonomy.json`,
 `judge_scores.csv` + `judge_key.json`, `coherence_diversity.csv`,
-`stagec_*.npz` (distance matrices, reusable by WS3/synthesis).
+`stagec_*.npz` (distance matrices, reusable by WS3/synthesis — NOT
+committed; regenerable via `python scripts/07_stagec.py llm` /
+`llm_refined`, see REGENERATE.md).
 
-Tweet-level MiniLM/Model2Vec embeddings are NOT committed (regenerable via
-`../ws1-sentence-transformers/scripts/01_embed_corpus.py`).
+Tweet-level MiniLM/Model2Vec embeddings are also NOT committed (regenerable
+via `../ws1-sentence-transformers/scripts/01_embed_corpus.py A` / `B`).
 
 ## Notes for downstream workstreams
 

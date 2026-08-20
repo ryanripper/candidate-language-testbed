@@ -200,7 +200,7 @@ the following corrections apply to it.
 
 2. **§4 "Quimby also has the pilot's highest rep SD, .152" is wrong in
    scope.** .152 is the maximum among the eight divergence cases only; the
-   pilot-wide maximum is **.254** (C0450), with eight candidates above .152
+   pilot-wide maximum is **.254** (C0450), with fifteen candidates above .152
    (`outputs/divergence_index.csv` / ws3 `scores_main.csv`).
 
 3. **§4's style-overshoot range "−2.2…−2.5 z" is too narrow.**

@@ -8,7 +8,7 @@ Run from inside `ws0-harness/`:
 
 | Excluded file | Rebuild with | Notes |
 |---|---|---|
-| `blind_corpus.parquet`, `sealed_truth.parquet` | `python 01_seal_corpus.py` | Reads `../data/synthetic-candidate-tweets/synthetic_candidate_tweets_2022.csv.gz`. Also rewrites the committed `seal_manifest.json` — the SHA-256 stamps there let you confirm you rebuilt the same split. |
+| `blind_corpus.parquet`, `sealed_truth.parquet` | `python 01_seal_corpus.py` | Reads `../data/synthetic-candidate-tweets/synthetic_candidate_tweets_2022.csv.gz`. Also rewrites the committed `seal_manifest.json`; the load-bearing stamp is `source_sha256` (guarded in-script and pinned as a constant in `04_verify_harness.py`) — the parquet hashes can legitimately drift with pandas/pyarrow versions, so a parquet-hash diff alone does not mean a different split. |
 | `tweet_split_ab.parquet` | `python 03_build_splits.py` | Seed 20260725. Also rewrites the committed `splits.json`. |
 | `baselines/candidate_vectors.npz`, `baselines/D_w2v_raw.npy`, `baselines/D_w2v_corrected.npy`, `baselines/D_tfidf.npy` | `python 02_freeze_baselines.py` | ~10 minutes. Word2vec is retrained single-threaded with a deterministic hashfxn (seed 20260720) — **do not** raise `workers`, it destroys reproducibility. |
 

@@ -64,7 +64,7 @@ Held-out behavior prediction (retweet-source choice, estimated on split A, evalu
 
 **1. Direction is much easier than distance.** Four instrument families place candidates on a left–right axis at r ≥ .90, yet no high-dimensional text geometry gets above .66 agreement with the true pairwise-distance structure. Recovering *who is to the left of whom* and recovering *how far apart they are* are different problems with a large difficulty gap between them.
 
-**2. The retweet-style confound is universal.** Every embedding space tested — word2vec, GloVe, fastText, doc2vec, MiniLM, Model2Vec, TF-IDF — devotes a dominant principal component to **retweet share**, an observable covariate, at |r| = .84–.97 (.90–.96 for the five WS4 spaces; Model2Vec −.97, MiniLM −.84). It is PC1 in the word-vector models, MiniLM, and Model2Vec, and PC2 in doc2vec and TF-IDF. This is detectable blind, which is the point: the confound gate catches it before any substantive claim is made. Correcting for it is what lifts word2vec distance validity from .278 to .592.
+**2. The retweet-style confound is universal.** Every embedding space tested — word2vec, GloVe, fastText, doc2vec, MiniLM, Model2Vec, TF-IDF — devotes a dominant principal component to **retweet share**, an observable covariate, at |r| = .84–.97 (the five WS4 spaces at .897–.96; Model2Vec −.97, MiniLM −.84). It is PC1 in the word-vector models, MiniLM, and Model2Vec, and PC2 in doc2vec and TF-IDF. This is detectable blind, which is the point: the confound gate catches it before any substantive claim is made. Correcting for it is what lifts word2vec distance validity from .278 to .592.
 
 **3. Instrument errors cluster into two families.** Partialling out the oracle and correlating the residuals reveals a **content family** (LLM–behavioral .58, LLM–TF-IDF .55) and a **style family** (word2vec–MiniLM .61, MiniLM–Model2Vec .47), with cross-family residuals at .15–.38 for eight of the nine pairs (the exception is TF-IDF–word2vec at .45, the leakiest boundary between the families). Practical consequence: an ensemble gains almost nothing from a second instrument *within* a family. Buy diversity *across* families.
 
@@ -76,8 +76,8 @@ Python 3.10+, plus `requirements.txt`:
 
 ```
 numpy>=1.26                   pandas>=2.0             scipy>=1.11
-scikit-learn>=1.3             matplotlib>=3.8         pyarrow>=14.0
-gensim>=4.3                   sentence-transformers>=2.2
+scikit-learn>=1.3             matplotlib>=3.8         pyarrow>=14.0.1
+gensim>=4.3.3                 sentence-transformers>=2.2
 model2vec>=0.3                umap-learn>=0.5         hdbscan>=0.8
 ```
 
@@ -155,7 +155,7 @@ Also omitted: a technical writing sample PDF and an annotated companion, both jo
 
 This research was produced in a sandboxed working directory, not a git repo. Converting it required a folder reorganization and a set of path fixes — scripts had hardcoded sandbox absolute paths and located each other by their old directory names. Every one of those edits is itemized in [docs/repo-restructure-notes.md](docs/repo-restructure-notes.md), along with a folder mapping table. No seed, hyperparameter, metric, or decision rule changed.
 
-The **pre-registrations and write-ups were deliberately not edited.** Several are dated documents written *before* the corresponding unseal, and their evidential value depends on not being rewritten afterward. They therefore refer to folders by their original names — use the mapping table when following a path mentioned in one of them.
+The **pre-registrations and write-ups were deliberately not edited.** (A 2026-08 post-hoc audit appended clearly-dated errata sections to two write-ups; the original dated text above each separator remains untouched.) Several are dated documents written *before* the corresponding unseal, and their evidential value depends on not being rewritten afterward. They therefore refer to folders by their original names — use the mapping table when following a path mentioned in one of them.
 
 ## Standing caveats
 
@@ -175,7 +175,7 @@ WS0–WS3 and the synthesis stage are complete. WS4 (supervised prediction of pl
 
 ## Tech stack
 
-NumPy, pandas, SciPy, scikit-learn (PCA, TF-IDF/SVD, ridge, clustering metrics), gensim (word2vec, doc2vec), sentence-transformers (MiniLM), Model2Vec (static distilled embeddings), UMAP + HDBSCAN (BERTopic-style topic entrant), matplotlib (figures), PyArrow (parquet I/O for the sealed corpus), and an external LLM API for the WS2 labelling and WS3 scoring steps.
+NumPy, pandas, SciPy, scikit-learn (PCA, TF-IDF/SVD, ridge, clustering metrics), gensim (word2vec, doc2vec), sentence-transformers (MiniLM), Model2Vec (static distilled embeddings), UMAP + HDBSCAN (BERTopic-style topic entrant), matplotlib (figures), PyArrow (parquet I/O for the sealed corpus), and in-session LLM agents for the WS2 labelling and WS3 scoring steps (pilot scale; no API-calling code is committed — see Usage).
 
 ## Author
 

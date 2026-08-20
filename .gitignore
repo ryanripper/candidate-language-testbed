@@ -63,7 +63,12 @@ analyses/ws4-preanalysis/outputs/glove_*
 # Corpus generator: uncompressed intermediate (also deleted by the script)
 data/synthetic-candidate-tweets/synthetic_candidate_tweets_2022.csv
 # Pilot (00-embeddings-pca) regenerable binaries + its honor-system truth
-# file — a pilot rerun must not be committable via `git add -A`
+# file, so a pilot rerun can't stage them via `git add -A`. NOTE: a rerun
+# also rewrites the pilot's TRACKED outputs (validation_results.csv — the
+# frozen 07-20 reference — candidate_metadata.csv, pair CSVs, figures);
+# those can't be gitignored, but they surface as modifications in git diff.
+# The pilot's w2v is nondeterministic (workers=4), so do not commit rerun
+# outputs over the frozen originals.
 analyses/00-embeddings-pca/outputs/ground_truth_SEALED.csv
 analyses/00-embeddings-pca/outputs/tokenized_corpus.jsonl.gz
 analyses/00-embeddings-pca/outputs/candidate_vectors.npz

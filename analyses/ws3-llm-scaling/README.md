@@ -11,8 +11,9 @@ gated on the pre-registered r ≥ 0.90 bar.
 - **Stage A/B (ask-and-average, identifiers stripped, n=25 × m=5):**
   pilot **r = 0.970** vs `true_ideology` on the 150 — **clears the
   pre-registered 0.90 bar** (manifesto-literature figure). On identical
-  support: behavioral 0.977, TF-IDF 0.974, **LLM 0.970**, WS1 Model2Vec
-  0.899, w2v 0.878. The LLM matches the lexical ceiling to two decimals
+  support: behavioral 0.977 (n = 146 — four pilot candidates have no
+  split-A retweets; all other rows n = 150), TF-IDF 0.974, **LLM 0.970**,
+  WS1 Model2Vec 0.899, w2v 0.878. The LLM matches the lexical ceiling to two decimals
   without any corpus-specific training. Median across-rep SD 0.089;
   calibrated RMSE 0.163; both confound screens clean (max |r| ≈ 0.11).
 - **Cue-bias ablation:** leaving the 20 org handles in changed almost
