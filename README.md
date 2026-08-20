@@ -1,4 +1,4 @@
-# candidate-language-testbed
+# candidate_language_testbed_summer2026
 
 **How well do text-based instruments recover a politician's ideological position — and how would you know?**
 
