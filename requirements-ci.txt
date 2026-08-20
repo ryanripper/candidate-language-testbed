@@ -1,0 +1,12 @@
+# Minimal dependency set for CI (lint + tests).
+#
+# The full requirements.txt pulls sentence-transformers (torch), umap-learn
+# (numba), and hdbscan (compiles C) — none of which the test suite needs.
+# The tests cover ws0-harness/metrics.py, the corpus generator, and the
+# sealed-corpus integrity checks, which only need the scientific base.
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.3
+
+pytest>=8.0
+ruff>=0.6

@@ -290,7 +290,8 @@ def _self_test() -> None:
     m = mantel_test(Dp, Dp, permutations=199)
     assert m["mantel_r"] > 0.999 and m["p_value"] < 0.01
     Dr = np.abs(rng.normal(size=(100, 100)))
-    Dr = (Dr + Dr.T) / 2; np.fill_diagonal(Dr, 0)
+    Dr = (Dr + Dr.T) / 2
+    np.fill_diagonal(Dr, 0)
     m2 = mantel_test(Dp, Dr, permutations=199)
     assert abs(m2["mantel_r"]) < 0.1
 

@@ -1,4 +1,9 @@
 # candidate_language_testbed_summer2026
+<<<<<<< HEAD
+=======
+
+[![CI](https://github.com/ryanripper/candidate-language-testbed/actions/workflows/ci.yml/badge.svg)](https://github.com/ryanripper/candidate-language-testbed/actions/workflows/ci.yml)
+>>>>>>> b71a15c (Include tests for hygiene purposes.)
 
 **How well do text-based instruments recover a politician's ideological position — and how would you know?**
 
@@ -108,6 +113,22 @@ Then run any analysis folder's `scripts/` in numeric order. Every script is seed
 
 The LLM-dependent steps (WS2 topic labelling, WS3 scoring) were performed by in-session LLM agents at pilot scale — there is no committed API-calling code, so they are the only steps that cannot be re-run from this repo. Their outputs are committed so the downstream analyses reproduce without re-scoring; `analyses/ws3-llm-scaling/outputs/raw_scores.tar.gz` is the audit archive of the raw scores, and `analyses/ws3-llm-scaling/prompts/scoring_prompt_v1.md` is the frozen scoring prompt.
 
+## Testing and continuous integration
+
+The maintained surface — `ws0-harness/metrics.py`, the corpus generator, and the sealed artifact itself — is covered by a pytest suite in `tests/`:
+
+- **Metrics** (`test_metrics.py`): every scoring function the workstreams share, including the degenerate-PC guard, Mantel determinism under seed, and Procrustes invariance to rotation/scale.
+- **Generator** (`test_generator.py`): determinism under `SEED = 20260719` (the roster must reproduce the sealed corpus's 910 candidates and 447 R / 433 D / 30 I split), ideology bounds and party ordering, topic-mix validity, the framing-encodes-ideology logistic link, and retweet-source proximity. The suite never regenerates or overwrites the hash-pinned corpus.
+- **Corpus integrity** (`test_corpus_integrity.py`): re-verifies the SHA-256 pin in `seal_manifest.json` and the structural invariants downstream analyses assume (schema, chronological IDs, one ideology per candidate, retweet conventions).
+
+```bash
+pip install -r requirements-ci.txt
+pytest        # 42 tests, a few seconds
+ruff check .  # lint (analyses/ is excluded: those scripts are archived as run)
+```
+
+CI (GitHub Actions) runs both on Python 3.10 and 3.12 for every push and pull request, using the minimal `requirements-ci.txt` — the heavy embedding dependencies are not needed to test the harness.
+
 ## Project structure
 
 ```
@@ -124,6 +145,9 @@ The LLM-dependent steps (WS2 topic labelling, WS3 scoring) were performed by in-
 │   │                                  fastText, doc2vec) — informal, truth-visible
 │   └── synthesis/                     agreement matrix, Mantel/Procrustes,
 │                                      divergence cases, consolidated table
+├── tests/                             pytest suite: metrics, generator,
+│                                      sealed-corpus integrity
+├── .github/workflows/ci.yml           CI: ruff + pytest (py 3.10 / 3.12)
 └── docs/
     ├── writeups.md                    index of every stage write-up + article draft
     ├── plans/                         research plan and execution plan

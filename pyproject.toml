@@ -1,0 +1,17 @@
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+# analyses/ holds the frozen, results-pinned workstream scripts (results in
+# the writeups were produced by these exact files) — they are archived as
+# run, not linted. The maintained surface is the harness, the generator,
+# and the tests.
+extend-exclude = ["analyses"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+# ws0-harness on the path so tests can `from metrics import ...`.
+pythonpath = ["ws0-harness"]

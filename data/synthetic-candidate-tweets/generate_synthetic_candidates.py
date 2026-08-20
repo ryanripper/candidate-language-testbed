@@ -25,7 +25,6 @@ import gzip
 import math
 import os
 import random
-import string
 from datetime import datetime, timedelta
 
 SEED = 20260719
