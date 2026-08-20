@@ -1,9 +1,6 @@
 # candidate_language_testbed_summer2026
-<<<<<<< HEAD
-=======
 
 [![CI](https://github.com/ryanripper/candidate-language-testbed/actions/workflows/ci.yml/badge.svg)](https://github.com/ryanripper/candidate-language-testbed/actions/workflows/ci.yml)
->>>>>>> b71a15c (Include tests for hygiene purposes.)
 
 **How well do text-based instruments recover a politician's ideological position — and how would you know?**
 
